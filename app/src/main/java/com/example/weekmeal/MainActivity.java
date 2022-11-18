@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private Button buttonLessMeal;
     private Button buttonMorePeople;
     private Button buttonLessPeople;
+    private Button buttonGenerate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         buttonLessMeal = (Button) findViewById(R.id.buttonLessMeal);
         buttonMorePeople = (Button) findViewById(R.id.buttonMorePeople);
         buttonLessPeople = (Button) findViewById(R.id.buttonLessPeople);
+        buttonGenerate = (Button) findViewById(R.id.buttonGenerate);
 
         //récupérer tous les textes lors du lancement de l'application
         mealPerDayText = (TextView) findViewById(R.id.mealPerDay);
@@ -66,6 +68,15 @@ public class MainActivity extends AppCompatActivity {
                     numberPeople--;
                     numberPeopleText.setText(String.valueOf(numberPeople));
                 }
+
+            }
+        });
+
+        buttonGenerate.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MakeAChoice.class);
+                startActivity(intent);
 
             }
         });
