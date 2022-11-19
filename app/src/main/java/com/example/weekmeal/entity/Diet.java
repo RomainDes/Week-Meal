@@ -9,6 +9,10 @@ public class Diet {
         this.title = title;
     }
 
+    public Diet(){
+
+    }
+
     public Integer getId() {
         return id;
     }

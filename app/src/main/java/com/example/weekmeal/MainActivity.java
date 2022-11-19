@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.example.weekmeal.connector.DietController;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        DietController.getInstance().readDiet(this);
 
     }
 }

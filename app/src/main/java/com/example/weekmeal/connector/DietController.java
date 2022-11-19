@@ -7,6 +7,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 
 import com.example.weekmeal.entity.Diet;
+import com.example.weekmeal.tools.JSONTool;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.CollectionReference;
@@ -60,7 +61,8 @@ public class DietController {
                         dietList.add(diet);
                     }
                     Toast.makeText(activity, dietList.size()+" diets found !", Toast.LENGTH_SHORT).show();
-
+                    synchronizedWithDB(activity);
+                    readLocalDB(activity);
                 }
                 else{
                     Toast.makeText(activity, "No data found", Toast.LENGTH_SHORT).show();
@@ -74,6 +76,15 @@ public class DietController {
         });
     }
 
+
+    public void synchronizedWithDB(Activity activity){
+        JSONTool.getInstance().writeJSON(activity, dietList, "Diet");
+    }
+
+    public void readLocalDB(Activity activity){
+        ArrayList<Diet> dietsLocal = (ArrayList<Diet>) JSONTool.getInstance().loadJSONFromAsset(activity, dietList, "Diet");
+        int i = 0;
+    }
     //Singleton:
     private static DietController instance;
 
