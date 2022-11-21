@@ -10,6 +10,10 @@ public class Ingredient {
         this.title = title;
     }
 
+    public Ingredient(){
+
+    }
+
     public Integer getId() {
         return id;
     }
