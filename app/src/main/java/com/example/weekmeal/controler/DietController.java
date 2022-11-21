@@ -14,18 +14,35 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
+import com.google.gson.internal.LinkedTreeMap;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 public class DietController {
 
     private FirebaseFirestore db;
     private ArrayList<Diet> dietList;
 
+    public ArrayList<Diet> getDietList(){
+        return dietList;
+    }
+
     public DietController(){
         db = FirebaseFirestore.getInstance();
         dietList = new ArrayList<>();
+    }
+
+    @Override
+    public String toString(){
+        String str = new String();
+        str = str.concat("Diets :\n");
+        for(Diet d : dietList){
+            str = str.concat(d.getId()+": "+d.getTitle()+"\n");
+        }
+        str = str.concat("---");
+        return str;
     }
 
     public void addDiet(Diet diet, Activity activity){
@@ -43,7 +60,7 @@ public class DietController {
         });
     }
 
-    public void readDiet(Activity activity ){
+    public void synchronizedWithDB(Activity activity ){
         CollectionReference dbDiet = db.collection("Diet");
         dietList = new ArrayList<>();
 
@@ -59,30 +76,27 @@ public class DietController {
                         );
                         dietList.add(diet);
                     }
-                    Toast.makeText(activity, dietList.size()+" diets found !", Toast.LENGTH_SHORT).show();
-//                    synchronizedWithDB(activity);
-                    readLocalDB(activity);
+                    JSONTool.getInstance().writeJSON(activity, dietList, "Diet");
+                    Toast.makeText(activity, dietList.size()+"Synchronized with data base !", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    Toast.makeText(activity, "No data found", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(activity, "Fail to synchronize !", Toast.LENGTH_SHORT).show();
                 }
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                Toast.makeText(activity, "Fail to get the data", Toast.LENGTH_SHORT).show();
+                Toast.makeText(activity, "Fail to connect !", Toast.LENGTH_SHORT).show();
             }
         });
     }
 
-
-    public void synchronizedWithDB(Activity activity){
-        JSONTool.getInstance().writeJSON(activity, dietList, "Diet");
-    }
-
     public void readLocalDB(Activity activity){
-        ArrayList<Diet> dietsLocal = (ArrayList<Diet>) JSONTool.getInstance().loadJSONFromAsset(activity, dietList, "Diet");
-        int i = 0;
+        ArrayList<LinkedTreeMap> dietsLocal = (ArrayList<LinkedTreeMap>) JSONTool.getInstance().loadJSONFromAsset(activity, dietList, "Diet");
+        for(LinkedTreeMap ltm : dietsLocal){
+            Object[] keyset = ltm.keySet().toArray();
+            dietList.add(new Diet(new Integer(((Double) ltm.get(keyset[0])).intValue()), (String) ltm.get(keyset[1])));
+        }
     }
     //Singleton:
     private static DietController instance;

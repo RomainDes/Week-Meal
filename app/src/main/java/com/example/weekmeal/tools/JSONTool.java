@@ -27,7 +27,8 @@ public class JSONTool {
     public void writeJSON(Activity activity, Object o, String type){
         Gson gson = new Gson();
         String objectJSON = gson.toJson(o);
-        //Write file :
+        //Write file
+        // in /data/user/0/com.example.weekmeal/files/DataBase/object.json:
         File DataBaseDir = new File(activity.getFilesDir(), "DataBase");
         if (!DataBaseDir.exists()) {
             DataBaseDir.mkdir();
@@ -38,7 +39,6 @@ public class JSONTool {
             writer.append(objectJSON);
             writer.flush();
             writer.close();
-            Toast.makeText(activity, "Synchronized with DB", Toast.LENGTH_LONG).show();
         } catch (Exception e) { }
     }
 
