@@ -61,7 +61,7 @@ public class DietController {
                         dietList.add(diet);
                     }
                     Toast.makeText(activity, dietList.size()+" diets found !", Toast.LENGTH_SHORT).show();
-                    synchronizedWithDB(activity);
+//                    synchronizedWithDB(activity);
                     readLocalDB(activity);
                 }
                 else{
