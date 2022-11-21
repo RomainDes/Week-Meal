@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.weekmeal.connector.DietController;
+import com.example.weekmeal.controler.DietController;
 
 
 public class MainActivity extends AppCompatActivity {

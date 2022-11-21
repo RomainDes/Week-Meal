@@ -1,7 +1,6 @@
-package com.example.weekmeal.connector;
+package com.example.weekmeal.controler;
 
 import android.app.Activity;
-import android.view.View;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
