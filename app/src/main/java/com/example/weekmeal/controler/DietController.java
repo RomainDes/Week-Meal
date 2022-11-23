@@ -6,9 +6,11 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 
 import com.example.weekmeal.entity.Diet;
+import com.example.weekmeal.entity.Ingredient;
 import com.example.weekmeal.tools.JSONTool;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -23,9 +25,9 @@ import java.util.Set;
 public class DietController {
 
     private FirebaseFirestore db;
-    private ArrayList<Diet> dietList;
+    private List<Diet> dietList;
 
-    public ArrayList<Diet> getDietList(){
+    public List<Diet> getDietList(){
         return dietList;
     }
 
@@ -46,49 +48,13 @@ public class DietController {
     }
 
     public void addDiet(Diet diet, Activity activity){
-        CollectionReference dbDiet = db.collection("Diet");
-        dbDiet.add(diet).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-            @Override
-            public void onSuccess(DocumentReference documentReference) {
-                Toast.makeText(activity.getBaseContext(), "Diet added with success", Toast.LENGTH_SHORT).show();
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Toast.makeText(activity, "Fail to add Diet !", Toast.LENGTH_SHORT).show();
-            }
-        });
+        Connector.getInstance().addEntity(activity, diet);
+        synchronizedWithDB(activity);
     }
 
     public void synchronizedWithDB(Activity activity ){
-        CollectionReference dbDiet = db.collection("Diet");
         dietList = new ArrayList<>();
-
-        dbDiet.get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
-            @Override
-            public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
-                if (!queryDocumentSnapshots.isEmpty()){
-                    List<DocumentSnapshot> listSnap = queryDocumentSnapshots.getDocuments();
-                    for (DocumentSnapshot docSnap : listSnap){
-                        Diet diet = new Diet(
-                                docSnap.toObject(Diet.class).getId(),
-                                docSnap.toObject(Diet.class).getTitle()
-                        );
-                        dietList.add(diet);
-                    }
-                    JSONTool.getInstance().writeJSON(activity, dietList, "Diet");
-                    Toast.makeText(activity, dietList.size()+"Synchronized with data base !", Toast.LENGTH_SHORT).show();
-                }
-                else{
-                    Toast.makeText(activity, "Fail to synchronize !", Toast.LENGTH_SHORT).show();
-                }
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Toast.makeText(activity, "Fail to connect !", Toast.LENGTH_SHORT).show();
-            }
-        });
+        Connector.getInstance().synchronizedWithDB(activity, new Diet());
     }
 
     public void readLocalDB(Activity activity){

@@ -9,6 +9,7 @@ import com.example.weekmeal.entity.Ingredient;
 import com.example.weekmeal.tools.JSONTool;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -21,15 +22,13 @@ import java.util.List;
 
 public class IngredientController {
 
-    private FirebaseFirestore db;
-    private ArrayList<Ingredient> ingredientList;
+    private List<Ingredient> ingredientList;
 
-    public ArrayList<Ingredient> getIngredientList(){
+    public List<Ingredient> getIngredientList(){
         return ingredientList;
     }
 
     public IngredientController(){
-        db = FirebaseFirestore.getInstance();
         ingredientList = new ArrayList<>();
     }
 
@@ -44,51 +43,14 @@ public class IngredientController {
         return str;
     }
 
-    public void addIngredient(Ingredient Ingredient, Activity activity){
-        CollectionReference dbIngredient = db.collection("Ingredient");
-        dbIngredient.add(Ingredient).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-            @Override
-            public void onSuccess(DocumentReference documentReference) {
-                Toast.makeText(activity.getBaseContext(), "Ingredient added with success", Toast.LENGTH_SHORT).show();
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Toast.makeText(activity, "Fail to add Ingredient !", Toast.LENGTH_SHORT).show();
-            }
-        });
+    public void addIngredient(Ingredient ingredient, Activity activity){
+        Connector.getInstance().addEntity(activity, ingredient);
+        synchronizedWithDB(activity);
     }
 
     public void synchronizedWithDB(Activity activity ){
-        CollectionReference dbIngredient = db.collection("Ingredient");
         ingredientList = new ArrayList<>();
-
-        dbIngredient.get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
-            @Override
-            public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
-                if (!queryDocumentSnapshots.isEmpty()){
-                    List<DocumentSnapshot> listSnap = queryDocumentSnapshots.getDocuments();
-                    for (DocumentSnapshot docSnap : listSnap){
-                        Ingredient Ingredient = new Ingredient(
-                                docSnap.toObject(Ingredient.class).getId(),
-                                docSnap.toObject(Ingredient.class).getTitle()
-                        );
-                        ingredientList.add(Ingredient);
-                    }
-                    JSONTool.getInstance().writeJSON(activity, ingredientList, "Ingredient");
-                    Toast.makeText(activity, ingredientList.size()+"Synchronized with data base !", Toast.LENGTH_SHORT).show();
-//                    readLocalDB(activity);
-                }
-                else{
-                    Toast.makeText(activity, "Fail to synchronize !", Toast.LENGTH_SHORT).show();
-                }
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Toast.makeText(activity, "Fail to connect !", Toast.LENGTH_SHORT).show();
-            }
-        });
+        Connector.getInstance().synchronizedWithDB(activity, new Ingredient());
     }
 
     public void readLocalDB(Activity activity){

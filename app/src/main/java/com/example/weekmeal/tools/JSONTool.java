@@ -5,6 +5,7 @@ import android.os.Environment;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
+import com.google.gson.internal.LinkedTreeMap;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -17,6 +18,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.ArrayList;
 
 public class JSONTool {
 
@@ -35,8 +37,9 @@ public class JSONTool {
         }
         try {
             File JSONFile = new File(DataBaseDir, type.concat("List.json"));
-            FileWriter writer = new FileWriter(JSONFile);
-            writer.append(objectJSON);
+            FileWriter writer = new FileWriter(JSONFile, false); //rewrite all the file
+//            writer.append(objectJSON);
+            writer.write(objectJSON);
             writer.flush();
             writer.close();
         } catch (Exception e) { }
@@ -60,6 +63,8 @@ public class JSONTool {
             e.printStackTrace();
         }
 
+        if(json == null)
+            return new ArrayList<LinkedTreeMap>();
         return gson.fromJson(json, o.getClass());
     }
 
