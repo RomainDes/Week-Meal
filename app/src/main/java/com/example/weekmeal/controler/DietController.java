@@ -24,7 +24,6 @@ import java.util.Set;
 
 public class DietController {
 
-    private FirebaseFirestore db;
     private List<Diet> dietList;
 
     public List<Diet> getDietList(){
@@ -32,7 +31,6 @@ public class DietController {
     }
 
     public DietController(){
-        db = FirebaseFirestore.getInstance();
         dietList = new ArrayList<>();
     }
 
