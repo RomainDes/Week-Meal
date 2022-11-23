@@ -37,7 +37,7 @@ public class IngredientController {
         String str = new String();
         str = str.concat("Ingredients :\n");
         for(Ingredient d : ingredientList){
-            str = str.concat(d.getId()+": "+d.getTitle()+"\n");
+            str = str.concat(d.toString());
         }
         str = str.concat("---");
         return str;

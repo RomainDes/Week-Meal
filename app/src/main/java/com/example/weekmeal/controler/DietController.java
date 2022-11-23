@@ -39,7 +39,7 @@ public class DietController {
         String str = new String();
         str = str.concat("Diets :\n");
         for(Diet d : dietList){
-            str = str.concat(d.getId()+": "+d.getTitle()+"\n");
+            str = str.concat(d.toString());
         }
         str = str.concat("---");
         return str;

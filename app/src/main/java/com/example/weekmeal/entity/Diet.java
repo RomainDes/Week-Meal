@@ -1,5 +1,7 @@
 package com.example.weekmeal.entity;
 
+import com.google.gson.internal.LinkedTreeMap;
+
 public class Diet {
     private Integer id;
     private String title;
@@ -19,5 +21,17 @@ public class Diet {
 
     public String getTitle() {
         return title;
+    }
+
+    //ToString():
+    public String toString(){
+        String str = "";
+        str = str.concat(this.getId()+": "+this.getTitle()+"\n");
+        return str;
+    }
+
+    //Converter from LinkedTreeMap to Diet:
+    public static Diet convertLTM(LinkedTreeMap dietLTM){
+        return new Diet(new Integer(((Double) dietLTM.get("id")).intValue()), (String) dietLTM.get("title"));
     }
 }
