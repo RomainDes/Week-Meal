@@ -66,174 +66,338 @@
             android:textSize="17sp" />
 
 
-        <HorizontalScrollView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
             android:layout_marginLeft="20dp"
-            android:layout_weight="1"
-            android:fadeScrollbars="false"
-            android:fillViewport="true"
-            android:background="@drawable/makeachoice"
-            android:scrollbarSize="15dp"
-            >
-
+            android:layout_marginRight="20dp"
+            android:layout_weight="7">
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:layout_weight="3">
 
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/ic_action_name"
-                    />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/ic_action_name" />
+                    <RadioButton
+                        android:id="@+id/choice1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:background="@drawable/makeachoice" />
 
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/ic_action_name" />
+                    <RadioButton
+                        android:id="@+id/choice2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:button="@null"
+                        android:background="@drawable/makeachoice"
+    />
+                    <RadioButton
+                        android:id="@+id/choice3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/makeachoice"
+   />
+                </RadioGroup>
 
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/ic_action_name" />
-
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/ic_action_name" />
             </LinearLayout>
 
-
-        </HorizontalScrollView>
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_weight="1"
-            android:fadeScrollbars="false"
-            android:fillViewport="true"
-            android:background="@drawable/makeachoice"
-            android:scrollbarSize="15dp"
-            >
-
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
 
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/ic_action_name"
-                    />
 
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/ic_action_name" />
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
 
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/ic_action_name" />
+                    android:layout_marginBottom="10dp"
 
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/ic_action_name" />
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:fadeScrollbars="false"
+                    android:fillViewport="true"
+                    android:background="@drawable/makeachoice"
+                    android:scrollbarSize="15dp"
+                    >
 
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/ic_action_name" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_action_name"
+                            />
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_action_name"
+                            />
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_action_name"
+                            />
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_action_name"
+                            />
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_action_name"
+                            />
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_action_name"
+                            />
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_action_name"
+                            />
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:fadeScrollbars="false"
+                    android:fillViewport="true"
+                    android:background="@drawable/makeachoice"
+                    android:scrollbarSize="15dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_action_name"
+                            />
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_action_name"
+                            />
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_action_name"
+                            />
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_action_name"
+                            /><ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_action_name"
+                        />
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_action_name"
+                            />
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_action_name"
+                            />
+
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:fadeScrollbars="false"
+                    android:fillViewport="true"
+                    android:background="@drawable/makeachoice"
+                    android:scrollbarSize="15dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_action_name"
+                            />
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_action_name"
+                            /><ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_action_name"
+                        />
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_action_name"
+                            />
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_action_name"
+                            />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_action_name"
+                            />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_action_name"
+                            />
+
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+
             </LinearLayout>
+        </LinearLayout>
 
 
-        </HorizontalScrollView>
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_weight="1"
-            android:fadeScrollbars="false"
-            android:fillViewport="true"
-            android:background="@drawable/makeachoice"
-            android:scrollbarSize="15dp"
-            >
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_marginLeft="5dp"
-                    android:src="@drawable/ic_action_name"
-                    />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_marginLeft="5dp"
-                    android:src="@drawable/ic_action_name" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_marginLeft="5dp"
-                    android:src="@drawable/ic_action_name" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_marginLeft="5dp"
-                    android:src="@drawable/ic_action_name" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_marginLeft="5dp"
-                    android:src="@drawable/ic_action_name" />
-            </LinearLayout>
 
 
-        </HorizontalScrollView>
+
+
+
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -241,6 +405,7 @@
             android:layout_margin="20dp"
             android:gravity="center"
             android:orientation="horizontal"
+            android:layout_weight="1"
            >
 
             <Button
