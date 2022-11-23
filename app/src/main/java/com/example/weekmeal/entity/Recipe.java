@@ -1,29 +1,27 @@
 package com.example.weekmeal.entity;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 public class Recipe {
 
     private Integer id;
     private String title;
-    private String directions;
+    private String direction;
+    private List<Ingredient> ingredients;
     private List<Diet> diets;
-    //Ingredients with there quantity
-    private HashMap<Ingredient, Float> ingredients;
-
-    public Recipe(Integer id, String title, String directions, List<Diet> diets, HashMap<Ingredient, Float> ingredients) {
-        this.id = id;
-        this.title = title;
-        this.directions = directions;
-        this.diets = diets;
-        this.ingredients = ingredients;
-    }
 
     public Recipe(){
-        diets = new ArrayList<>();
-        ingredients = new HashMap<>();
+        this.ingredients = new ArrayList<>();
+        this.diets = new ArrayList<>();
+    }
+
+    public Recipe(Integer id, String title, String direction, List<Ingredient> ingredients, List<Diet> diets) {
+        this.id = id;
+        this.title = title;
+        this.direction = direction;
+        this.ingredients = ingredients;
+        this.diets = diets;
     }
 
     public Integer getId() {
@@ -34,15 +32,15 @@ public class Recipe {
         return title;
     }
 
-    public String getDirections() {
-        return directions;
+    public String getDirection() {
+        return direction;
+    }
+
+    public List<Ingredient> getIngredients() {
+        return ingredients;
     }
 
     public List<Diet> getDiets() {
         return diets;
-    }
-
-    public HashMap<Ingredient, Float> getIngredients() {
-        return ingredients;
     }
 }

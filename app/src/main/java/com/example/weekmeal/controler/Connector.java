@@ -7,17 +7,16 @@ import androidx.annotation.NonNull;
 
 import com.example.weekmeal.entity.Diet;
 import com.example.weekmeal.entity.Ingredient;
+import com.example.weekmeal.entity.Recipe;
 import com.example.weekmeal.tools.JSONTool;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
 
-import java.lang.reflect.TypeVariable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -74,6 +73,18 @@ public class Connector {
                                         docSnap.toObject(Diet.class).getTitle()
                                 );
                                 objectList.add(diet);
+                            }
+                            break;
+                            case "Recipe":
+                            for (DocumentSnapshot docSnap : listSnap){
+                                T recipe = (T) new Recipe(
+                                        docSnap.toObject(Recipe.class).getId(),
+                                        docSnap.toObject(Recipe.class).getTitle(),
+                                        docSnap.toObject(Recipe.class).getDirection(),
+                                        docSnap.toObject(Recipe.class).getIngredients(),
+                                        docSnap.toObject(Recipe.class).getDiets()
+                                );
+                                objectList.add(recipe);
                             }
                             break;
                     }
