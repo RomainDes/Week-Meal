@@ -64,6 +64,28 @@ public class DietController {
             dietList.add(new Diet(new Integer(((Double) ltm.get(keyset[0])).intValue()), (String) ltm.get(keyset[1])));
         }
     }
+
+
+    public Diet getDietByID(Activity activity, int i){
+        readLocalDB(activity);
+        for(Diet diet: dietList){
+            if (diet.getId() == i)
+                return diet;
+        }
+
+        return null;
+    }
+
+    public Diet getDietByTitle(Activity activity, String title){
+        readLocalDB(activity);
+        for(Diet diet: dietList){
+            if (diet.getTitle().equals(title))
+                return diet;
+        }
+
+        return null;
+    }
+
     //Singleton:
     private static DietController instance;
 
