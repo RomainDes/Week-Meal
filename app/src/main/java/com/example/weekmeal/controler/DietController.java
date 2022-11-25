@@ -24,6 +24,8 @@ import java.util.Set;
 
 public class DietController {
 
+    private int  indice = 1;
+
     private List<Diet> dietList;
 
     public List<Diet> getDietList(){
@@ -70,5 +72,16 @@ public class DietController {
             instance = new DietController();
         }
         return instance;
+    }
+
+    public ArrayList<Diet> getDietTrue(ArrayList<Diet> dietsTrue,boolean toggle,String valueToggle){
+
+        if (toggle == true){
+            Diet diet = new Diet(indice ,valueToggle);
+            dietsTrue.add(diet);
+            indice++;
+        }
+
+    return dietsTrue;
     }
 }

@@ -34,4 +34,7 @@ public class Diet {
     public static Diet convertLTM(LinkedTreeMap dietLTM){
         return new Diet(new Integer(((Double) dietLTM.get("id")).intValue()), (String) dietLTM.get("title"));
     }
+
+
+
 }
