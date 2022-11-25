@@ -98,7 +98,6 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:layout_marginBottom="10dp"
-                        android:layout_marginTop="10dp"
                         android:button="@null"
                         android:background="@drawable/makeachoice"
     />
@@ -108,7 +107,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:button="@null"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
                         android:background="@drawable/makeachoice"
    />
                 </RadioGroup>
@@ -124,6 +123,280 @@
 
 
                 <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_marginBottom="10dp"
+
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:fadeScrollbars="false"
+                android:fillViewport="true"
+
+                android:scrollbarSize="15dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        >
+
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            app:layout_constraintDimensionRatio="H,1:1"
+
+
+                            android:background="@drawable/unnamed"
+                            />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            app:layout_constraintDimensionRatio="H,1:1"
+
+
+                            android:background="@drawable/unnamed"
+                            />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            app:layout_constraintDimensionRatio="H,1:1"
+
+
+                            android:background="@drawable/unnamed"
+                            />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            app:layout_constraintDimensionRatio="H,1:1"
+
+
+                            android:background="@drawable/unnamed"
+                            />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            app:layout_constraintDimensionRatio="H,1:1"
+
+
+                            android:background="@drawable/unnamed"
+                            />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    >
+
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintDimensionRatio="H,1:1"
+
+
+                        android:background="@drawable/unnamed"
+                        />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    >
+
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintDimensionRatio="H,1:1"
+
+
+                        android:background="@drawable/unnamed"
+                        />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    >
+
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintDimensionRatio="H,1:1"
+
+
+                        android:background="@drawable/unnamed"
+                        />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    >
+
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintDimensionRatio="H,1:1"
+
+
+                        android:background="@drawable/unnamed"
+                        />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            app:layout_constraintDimensionRatio="H,1:1"
+
+
+                            android:background="@drawable/unnamed"
+                            />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            app:layout_constraintDimensionRatio="H,1:1"
+
+
+                            android:background="@drawable/unnamed"
+                            />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            app:layout_constraintDimensionRatio="H,1:1"
+
+
+                            android:background="@drawable/unnamed"
+                            />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            app:layout_constraintDimensionRatio="H,1:1"
+
+
+                            android:background="@drawable/unnamed"
+                            />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        >
+
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            app:layout_constraintDimensionRatio="H,1:1"
+
+
+                            android:background="@drawable/unnamed"
+                            />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+                <HorizontalScrollView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -134,7 +407,7 @@
                     android:layout_weight="1"
                     android:fadeScrollbars="false"
                     android:fillViewport="true"
-                    android:background="@drawable/makeachoice"
+
                     android:scrollbarSize="15dp"
                     >
 
@@ -142,88 +415,273 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            >
 
 
-                        <ImageView
-                            android:layout_width="100dp"
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                app:layout_constraintDimensionRatio="H,1:1"
+
+
+                                android:background="@drawable/unnamed"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginLeft="5dp"
-                            android:src="@drawable/ic_action_name"
-                            />
-                        <ImageView
-                            android:layout_width="100dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            >
+
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                app:layout_constraintDimensionRatio="H,1:1"
+
+
+                                android:background="@drawable/unnamed"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginLeft="5dp"
-                            android:src="@drawable/ic_action_name"
-                            />
-                        <ImageView
-                            android:layout_width="100dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            >
+
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                app:layout_constraintDimensionRatio="H,1:1"
+
+
+                                android:background="@drawable/unnamed"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginLeft="5dp"
-                            android:src="@drawable/ic_action_name"
-                            />
-                        <ImageView
-                            android:layout_width="100dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            >
+
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                app:layout_constraintDimensionRatio="H,1:1"
+
+
+                                android:background="@drawable/unnamed"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginLeft="5dp"
-                            android:src="@drawable/ic_action_name"
-                            />
-                        <ImageView
-                            android:layout_width="100dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            >
+
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                app:layout_constraintDimensionRatio="H,1:1"
+
+
+                                android:background="@drawable/unnamed"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginLeft="5dp"
-                            android:src="@drawable/ic_action_name"
-                            />
-                        <ImageView
-                            android:layout_width="100dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            >
+
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                app:layout_constraintDimensionRatio="H,1:1"
+
+
+                                android:background="@drawable/unnamed"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginLeft="5dp"
-                            android:src="@drawable/ic_action_name"
-                            />
-                        <ImageView
-                            android:layout_width="100dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            >
+
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                app:layout_constraintDimensionRatio="H,1:1"
+
+
+                                android:background="@drawable/unnamed"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginLeft="5dp"
-                            android:src="@drawable/ic_action_name"
-                            />
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            >
+
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                app:layout_constraintDimensionRatio="H,1:1"
+
+
+                                android:background="@drawable/unnamed"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            >
+
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                app:layout_constraintDimensionRatio="H,1:1"
+
+
+                                android:background="@drawable/unnamed"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            >
+
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                app:layout_constraintDimensionRatio="H,1:1"
+
+
+                                android:background="@drawable/unnamed"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            >
+
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                app:layout_constraintDimensionRatio="H,1:1"
+
+
+                                android:background="@drawable/unnamed"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            >
+
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                app:layout_constraintDimensionRatio="H,1:1"
+
+
+                                android:background="@drawable/unnamed"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            >
+
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                app:layout_constraintDimensionRatio="H,1:1"
+
+
+                                android:background="@drawable/unnamed"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            >
+
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                app:layout_constraintDimensionRatio="H,1:1"
+
+
+                                android:background="@drawable/unnamed"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
                     </LinearLayout>
 
 
                 </HorizontalScrollView>
-
-
                 <HorizontalScrollView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
+
                     android:layout_marginBottom="10dp"
+
                     android:layout_marginLeft="10dp"
                     android:layout_weight="1"
                     android:fadeScrollbars="false"
                     android:fillViewport="true"
-                    android:background="@drawable/makeachoice"
+
                     android:scrollbarSize="15dp"
                     >
 
@@ -231,162 +689,268 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            >
 
-                        <ImageView
-                            android:layout_width="100dp"
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                app:layout_constraintDimensionRatio="H,1:1"
+
+
+                                android:background="@drawable/unnamed"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginLeft="5dp"
-                            android:src="@drawable/ic_action_name"
-                            />
-                        <ImageView
-                            android:layout_width="100dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            >
+
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                app:layout_constraintDimensionRatio="H,1:1"
+
+
+                                android:background="@drawable/unnamed"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginLeft="5dp"
-                            android:src="@drawable/ic_action_name"
-                            />
-                        <ImageView
-                            android:layout_width="100dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            >
+
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                app:layout_constraintDimensionRatio="H,1:1"
+
+
+                                android:background="@drawable/unnamed"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginLeft="5dp"
-                            android:src="@drawable/ic_action_name"
-                            />
-                        <ImageView
-                            android:layout_width="100dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            >
+
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                app:layout_constraintDimensionRatio="H,1:1"
+
+
+                                android:background="@drawable/unnamed"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginLeft="5dp"
-                            android:src="@drawable/ic_action_name"
-                            /><ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginLeft="5dp"
-                        android:src="@drawable/ic_action_name"
-                        />
-                        <ImageView
-                            android:layout_width="100dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            >
+
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                app:layout_constraintDimensionRatio="H,1:1"
+
+
+                                android:background="@drawable/unnamed"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginLeft="5dp"
-                            android:src="@drawable/ic_action_name"
-                            />
-                        <ImageView
-                            android:layout_width="100dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            >
+
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                app:layout_constraintDimensionRatio="H,1:1"
+
+
+                                android:background="@drawable/unnamed"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginLeft="5dp"
-                            android:src="@drawable/ic_action_name"
-                            />
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            >
+
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                app:layout_constraintDimensionRatio="H,1:1"
+
+
+                                android:background="@drawable/unnamed"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            >
+
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                app:layout_constraintDimensionRatio="H,1:1"
+
+
+                                android:background="@drawable/unnamed"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            >
+
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                app:layout_constraintDimensionRatio="H,1:1"
+
+
+                                android:background="@drawable/unnamed"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            >
+
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                app:layout_constraintDimensionRatio="H,1:1"
+
+
+                                android:background="@drawable/unnamed"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            >
+
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                app:layout_constraintDimensionRatio="H,1:1"
+
+
+                                android:background="@drawable/unnamed"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            >
+
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                app:layout_constraintDimensionRatio="H,1:1"
+
+
+                                android:background="@drawable/unnamed"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            >
+
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                app:layout_constraintDimensionRatio="H,1:1"
+
+
+                                android:background="@drawable/unnamed"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            >
+
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                app:layout_constraintDimensionRatio="H,1:1"
+
+
+                                android:background="@drawable/unnamed"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
 
                     </LinearLayout>
 
 
                 </HorizontalScrollView>
-                <HorizontalScrollView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-
-                    android:layout_marginLeft="10dp"
-                    android:layout_weight="1"
-                    android:fadeScrollbars="false"
-                    android:fillViewport="true"
-                    android:background="@drawable/makeachoice"
-                    android:scrollbarSize="15dp"
-                    >
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginLeft="5dp"
-                            android:src="@drawable/ic_action_name"
-                            />
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginLeft="5dp"
-                            android:src="@drawable/ic_action_name"
-                            /><ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginLeft="5dp"
-                        android:src="@drawable/ic_action_name"
-                        />
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginLeft="5dp"
-                            android:src="@drawable/ic_action_name"
-                            />
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginLeft="5dp"
-                            android:src="@drawable/ic_action_name"
-                            />
-
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginLeft="5dp"
-                            android:src="@drawable/ic_action_name"
-                            />
-
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginLeft="5dp"
-                            android:src="@drawable/ic_action_name"
-                            />
-
-                    </LinearLayout>
 
 
-                </HorizontalScrollView>
+
+
+
+
+
 
             </LinearLayout>
         </LinearLayout>
@@ -405,19 +969,74 @@
             android:layout_margin="20dp"
             android:gravity="center"
             android:orientation="horizontal"
-            android:layout_weight="1"
            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="50dp"
+                >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintDimensionRatio="H,1:1"
+
+
+                    android:background="@drawable/ic_arrow"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="RETURN"
-                 />
-
-            <Button
+                android:fontFamily="@font/glacialindifference_regular"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                />
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="CHOOSE"/>
+                android:layout_marginLeft="50dp"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/choose1"
+                    android:background="@color/white"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/glacialindifference_regular"
+                    android:text="CHOOSE"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    >
+
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintDimensionRatio="H,1:1"
+                        android:id="@+id/choose2"
+                        android:scaleX="-1"
+                        android:background="@drawable/ic_arrow"
+                        />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
         </LinearLayout>
 
 
