@@ -152,6 +152,7 @@ public class MainActivity extends AppCompatActivity {
                 DietController.getInstance().getDietTrue(dietsTrue,togglecheese.isChecked(),togglecheese.getText().toString());
                 DietController.getInstance().getDietTrue(dietsTrue,toggletomatoes.isChecked(),toggletomatoes.getText().toString());
                 DietController.getInstance().getDietTrue(dietsTrue,togglepepper.isChecked(),togglepepper.getText().toString());
+                DietController.getInstance().getDietTrue(dietsTrue,toggleonion.isChecked(),toggleonion.getText().toString());
                 DietController.getInstance().getDietTrue(dietsTrue,togglecucumber.isChecked(),togglecucumber.getText().toString());
                 DietController.getInstance().getDietTrue(dietsTrue,togglecarrots.isChecked(),togglecarrots.getText().toString());
                 DietController.getInstance().getDietTrue(dietsTrue,togglelettuce.isChecked(),togglelettuce.getText().toString());
@@ -159,15 +160,11 @@ public class MainActivity extends AppCompatActivity {
                 DietController.getInstance().getDietTrue(dietsTrue,togglegarlic.isChecked(),togglegarlic.getText().toString());
                 DietController.getInstance().getDietTrue(dietsTrue,togglefish.isChecked(),togglefish.getText().toString());
 
-
-               ;
-
-
                 Log.i("taille :  ",dietsTrue.size()+ "");
                 for (int i = 0 ; i< dietsTrue.size();i++){
                     Log.i("Diet : ",dietsTrue.get(i).getId()+" || "+dietsTrue.get(i).getTitle() +"");
                     }
-                //intent.putExtra("dietsTrue",dietsTrue);
+                intent.putExtra("dietsTrue", dietsTrue);
                 intent.putExtra("mealPerDay",mealPerDayText.getText().toString());
                 intent.putExtra("numberPeople", numberPeopleText.getText().toString());
 

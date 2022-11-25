@@ -2,7 +2,9 @@ package com.example.weekmeal.entity;
 
 import com.google.gson.internal.LinkedTreeMap;
 
-public class Diet {
+import java.io.Serializable;
+
+public class Diet implements Serializable {
     private Integer id;
     private String title;
 

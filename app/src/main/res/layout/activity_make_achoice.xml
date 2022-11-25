@@ -409,15 +409,16 @@
            >
 
             <Button
+                android:id="@+id/choiceReturn"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="RETURN"
-                 />
+                android:text="RETURN" />
 
             <Button
+                android:id="@+id/choiceChoose"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="CHOOSE"/>
+                android:text="CHOOSE" />
         </LinearLayout>
 
 
