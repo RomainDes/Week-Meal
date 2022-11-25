@@ -72,6 +72,17 @@ public class DietController {
 
         return null;
     }
+
+    public Diet getDietByTitle(Activity activity, String title){
+        readLocalDB(activity);
+        for(Diet diet: dietList){
+            if (diet.getTitle().equals(title))
+                return diet;
+        }
+
+        return null;
+    }
+
     //Singleton:
     private static DietController instance;
 
