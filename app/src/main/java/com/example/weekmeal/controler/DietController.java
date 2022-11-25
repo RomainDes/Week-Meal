@@ -24,7 +24,7 @@ import java.util.Set;
 
 public class DietController {
 
-    private int  indice = 1;
+
 
     private List<Diet> dietList;
 
@@ -75,11 +75,55 @@ public class DietController {
     }
 
     public ArrayList<Diet> getDietTrue(ArrayList<Diet> dietsTrue,boolean toggle,String valueToggle){
-
+        int indice = -1;
         if (toggle == true){
+            if (valueToggle.equals("PASTA")){
+                indice =0;
+            }else if (valueToggle.equals("RICE")){
+                indice =1;
+            }else if(valueToggle.equals("HEALTHY")){
+                indice =2;
+            }else if(valueToggle.equals("STEAK")){
+                indice =3;
+            }else if(valueToggle.equals("CHICKEN")){
+                indice =4;
+            }else if(valueToggle.equals("POTATOES")){
+                indice =5;
+            }else if(valueToggle.equals("OVEN")){
+                indice =6;
+            }else if(valueToggle.equals("EGG")){
+                indice =7;
+            }else if(valueToggle.equals("VEGETARIAN")){
+                indice =8;
+            }else if(valueToggle.equals("BIG EATER")){
+                indice =9;
+            }else if(valueToggle.equals("MEDIUM EATER")){
+                indice =10;
+            }else if(valueToggle.equals("LITTLE EATER")){
+                indice =11;
+            }else if(valueToggle.equals("CHESSE")){
+                indice =12;
+            }else if(valueToggle.equals("TOMATOES")){
+                indice =13;
+            }else if(valueToggle.equals("PEPPER")){
+                indice =14;
+            }else if(valueToggle.equals("ONION")){
+                indice =15;
+            }else if(valueToggle.equals("CUCUMBER")){
+                indice =16;
+            }else if(valueToggle.equals("CARROTS")){
+                indice =17;
+            }else if(valueToggle.equals("LETTUCE")){
+                indice =18;
+            }else if(valueToggle.equals("SPINACH")){
+                indice =19;
+            }else if(valueToggle.equals("GARLIC")){
+                indice =20;
+            }else if(valueToggle.equals("FISH")){
+                indice =21;
+            }
             Diet diet = new Diet(indice ,valueToggle);
             dietsTrue.add(diet);
-            indice++;
         }
 
     return dietsTrue;
