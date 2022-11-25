@@ -2,7 +2,9 @@ package com.example.weekmeal.entity;
 
 import com.google.gson.internal.LinkedTreeMap;
 
-public class Diet {
+import java.io.Serializable;
+
+public class Diet implements Serializable {
     private Integer id;
     private String title;
 
@@ -34,4 +36,7 @@ public class Diet {
     public static Diet convertLTM(LinkedTreeMap dietLTM){
         return new Diet(new Integer(((Double) dietLTM.get("id")).intValue()), (String) dietLTM.get("title"));
     }
+
+
+
 }
