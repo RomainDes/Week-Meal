@@ -9,7 +9,6 @@ import com.example.weekmeal.tools.JSONTool;
 import com.google.gson.internal.LinkedTreeMap;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 public class RecipeController {
@@ -34,8 +33,8 @@ public class RecipeController {
             for(Diet diet: d.getDiets())
                 str = str.concat(diet.toString());
             str = str.concat("Ingredients:\n");
-//            for(Ingredient ingredient: d.getIngredients())
-//                str = str.concat(ingredient.toString());
+            for(Ingredient ingredient: d.getIngredients())
+                str = str.concat(ingredient.toString());
             str = str.concat("Directions: "+d.getDirection()+"\n");
         }
         str = str.concat("---");
@@ -57,10 +56,10 @@ public class RecipeController {
         for(LinkedTreeMap ltm : RecipesLocal){
 //            Object[] keyset = ltm.keySet().toArray();
             //get every ingredients and diets:
-            HashMap<Integer, Ingredient> ingredients = new HashMap<>();
+            List<Ingredient> ingredients = new ArrayList<>();
             List<LinkedTreeMap> listLTM = (List<LinkedTreeMap>) ltm.get("ingredients");
             for (LinkedTreeMap ingredientLTM : listLTM){
-//                ingredients.add(Ingredient.convertLTM(ingredientLTM));
+                ingredients.add(Ingredient.convertLTM(ingredientLTM));
             }
             List<Diet> diets = new ArrayList<>();
             listLTM = (List<LinkedTreeMap>) ltm.get("diets");
