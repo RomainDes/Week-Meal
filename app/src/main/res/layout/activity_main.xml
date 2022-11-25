@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#FFFDEF"
     tools:context=".MainActivity">
 
     <ScrollView
@@ -28,7 +28,7 @@
                 android:textAlignment="center"
                 android:textSize="40sp"
                 android:fontFamily="@font/luthier_bold"
-                android:textColor="#696969"
+                android:textColor="#FB4F5A"
 
 
                 />
@@ -41,7 +41,7 @@
                 android:textAlignment="center"
                 android:textSize="40sp"
                 android:fontFamily="@font/luthier_regular"
-                android:textColor="#696969"
+                android:textColor="#F6DD67"
 
 
                 />
@@ -71,7 +71,7 @@
                     android:layout_margin="10dp"
                     android:textSize="17sp"
                     android:fontFamily="@font/glacialindifference_bold"
-                    android:textColor="#696969"
+                    android:textColor="#FB4F5A"
                     />
 
                 <EditText
@@ -83,9 +83,9 @@
                     android:inputType="textPersonName"
                     android:layout_marginLeft="20sp"
                     android:layout_marginRight="20sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:hint="Tap your planning's name"
-                    android:textColorHint="@color/white"
+                    android:textColorHint="@color/black"
                     android:textStyle="italic"
                     android:textSize="13sp"
                     android:fontFamily="@font/glacialindifference_regular"/>
@@ -98,7 +98,7 @@
                     android:padding="10dp"
                     android:fontFamily="@font/glacialindifference_bold"
                     android:textSize="17sp"
-                    android:textColor="#696969"
+                    android:textColor="#FB4F5A"
                     />
 
 
@@ -129,7 +129,7 @@
                             android:focusableInTouchMode="false"
                             android:paddingRight="25sp"
                             android:textAlignment="center"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:textOff="PASTA"
                             android:textOn="PASTA"
                             android:fontFamily="@font/glacialindifference_regular"/>
@@ -149,7 +149,7 @@
                             android:focusableInTouchMode="false"
                             android:paddingRight="25sp"
                             android:textAlignment="center"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:textOff="RICE"
                             android:textOn="RICE"
                             android:fontFamily="@font/glacialindifference_regular"/>
@@ -178,7 +178,7 @@
                             android:focusableInTouchMode="false"
                             android:paddingRight="25sp"
                             android:textAlignment="center"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:textOff="HEALTHY"
                             android:textOn="HEALTHY"
                             android:fontFamily="@font/glacialindifference_regular"/>
@@ -198,7 +198,7 @@
                             android:focusableInTouchMode="false"
                             android:paddingRight="25sp"
                             android:textAlignment="center"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:textOff="STEAK"
                             android:textOn="STEAK"
                             android:fontFamily="@font/glacialindifference_regular"/>
@@ -227,7 +227,7 @@
                             android:focusableInTouchMode="false"
                             android:paddingRight="25sp"
                             android:textAlignment="center"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:textOff="CHICKEN"
                             android:textOn="CHICKEN"
                             android:fontFamily="@font/glacialindifference_regular"/>
@@ -247,7 +247,7 @@
                             android:focusableInTouchMode="false"
                             android:paddingRight="25sp"
                             android:textAlignment="center"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:textOff="POTATOES"
                             android:textOn="POTATOES"
                             android:fontFamily="@font/glacialindifference_regular"/>
@@ -276,7 +276,7 @@
                             android:focusableInTouchMode="false"
                             android:paddingRight="25sp"
                             android:textAlignment="center"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:textOff="OVEN"
                             android:textOn="OVEN"
                             android:fontFamily="@font/glacialindifference_regular"/>
@@ -296,7 +296,7 @@
                             android:focusableInTouchMode="false"
                             android:paddingRight="25sp"
                             android:textAlignment="center"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:textOff="EGG"
                             android:textOn="EGG"
                             android:fontFamily="@font/glacialindifference_regular"/>
@@ -325,7 +325,7 @@
                             android:focusableInTouchMode="false"
                             android:paddingRight="25sp"
                             android:textAlignment="center"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:textOff="VEGETARIAN"
                             android:textOn="VEGETARIAN"
                             android:fontFamily="@font/glacialindifference_regular"/>
@@ -345,7 +345,7 @@
                             android:focusableInTouchMode="false"
                             android:paddingRight="25sp"
                             android:textAlignment="center"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:textOff="BIG\nEATER"
                             android:textOn="BIG EATER"
                             android:fontFamily="@font/glacialindifference_regular"/>
@@ -374,7 +374,7 @@
                             android:focusableInTouchMode="false"
                             android:paddingRight="25sp"
                             android:textAlignment="center"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:textOff="MEDIUM\nEATER"
                             android:textOn="MEDIUM\nEATER"
                             android:fontFamily="@font/glacialindifference_regular"/>
@@ -394,7 +394,7 @@
                             android:focusableInTouchMode="false"
                             android:paddingRight="25sp"
                             android:textAlignment="center"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:textOff="LITTLE\nEATER"
                             android:textOn="LITTLE\nEATER"
                             android:fontFamily="@font/glacialindifference_regular"/>
@@ -423,7 +423,7 @@
                             android:focusableInTouchMode="false"
                             android:paddingRight="25sp"
                             android:textAlignment="center"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:textOff="CHEESE"
                             android:textOn="CHEESE"
                             android:fontFamily="@font/glacialindifference_regular"/>
@@ -443,7 +443,7 @@
                             android:focusableInTouchMode="false"
                             android:paddingRight="25sp"
                             android:textAlignment="center"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:textOff="TOMATOES"
                             android:textOn="TOMATOES"
                             android:fontFamily="@font/glacialindifference_regular"/>
@@ -472,7 +472,7 @@
                             android:focusableInTouchMode="false"
                             android:paddingRight="25sp"
                             android:textAlignment="center"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:textOff="PEPPER"
                             android:textOn="PEPPER"
                             android:fontFamily="@font/glacialindifference_regular"/>
@@ -492,7 +492,7 @@
                             android:focusableInTouchMode="false"
                             android:paddingRight="25sp"
                             android:textAlignment="center"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:textOff="ONION"
                             android:textOn="ONION"
                             android:fontFamily="@font/glacialindifference_regular"/>
@@ -521,7 +521,7 @@
                             android:focusableInTouchMode="false"
                             android:paddingRight="25sp"
                             android:textAlignment="center"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:textOff="CUCUMBER"
                             android:textOn="CUCUMBER"
                             android:fontFamily="@font/glacialindifference_regular"/>
@@ -541,7 +541,7 @@
                             android:focusableInTouchMode="false"
                             android:paddingRight="25sp"
                             android:textAlignment="center"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:textOff="CARROTS"
                             android:textOn="CARROTS"
                             android:fontFamily="@font/glacialindifference_regular"/>
@@ -570,7 +570,7 @@
                             android:focusableInTouchMode="false"
                             android:paddingRight="25sp"
                             android:textAlignment="center"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:textOff="LETTUCE"
                             android:textOn="LETTUCE"
                             android:fontFamily="@font/glacialindifference_regular"/>
@@ -590,7 +590,7 @@
                             android:focusableInTouchMode="false"
                             android:paddingRight="25sp"
                             android:textAlignment="center"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:textOff="SPINACH"
                             android:textOn="SPINACH"
                             android:fontFamily="@font/glacialindifference_regular"/>
@@ -619,7 +619,7 @@
                             android:focusableInTouchMode="false"
                             android:paddingRight="25sp"
                             android:textAlignment="center"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:textOff="GARLIC"
                             android:textOn="GARLIC"
                             android:fontFamily="@font/glacialindifference_regular"/>
@@ -639,7 +639,7 @@
                             android:focusableInTouchMode="false"
                             android:paddingRight="25sp"
                             android:textAlignment="center"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:textOff="FISH"
                             android:textOn="FISH"
                             android:fontFamily="@font/glacialindifference_regular"/>
@@ -657,7 +657,7 @@
                     android:padding="10dp"
                     android:fontFamily="@font/glacialindifference_bold"
                     android:textSize="17sp"
-                    android:textColor="#696969"/>
+                    android:textColor="#FB4F5A"/>
                 <TableLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -672,7 +672,7 @@
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="50sp"
                             android:fontFamily="@font/glacialindifference_regular"
-                            android:textColor="#696969"
+                            android:textColor="@color/black"
                             />
 
                         <androidx.appcompat.widget.AppCompatButton
@@ -709,7 +709,7 @@
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="50sp"
                             android:fontFamily="@font/glacialindifference_regular"
-                            android:textColor="#696969"
+                            android:textColor="@color/black"
                             />
 
                         <androidx.appcompat.widget.AppCompatButton
@@ -745,7 +745,7 @@
                     android:layout_height="50dp"
                     android:layout_margin="20dp"
                     android:text="GENERATE YOUR WEEK'MEAL"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:background="@drawable/generate"
                     android:fontFamily="@font/glacialindifference_regular"/>
 

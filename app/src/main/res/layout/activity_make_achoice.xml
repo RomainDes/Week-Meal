@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#FFFDEF"
     android:orientation="vertical"
     tools:context=".MakeAChoice">
 
@@ -27,7 +27,7 @@
             android:fontFamily="@font/luthier_bold"
             android:text="WEEK"
             android:textAlignment="center"
-            android:textColor="#696969"
+            android:textColor="#FB4F5A"
             android:textSize="40sp"
 
 
@@ -41,7 +41,7 @@
             android:fontFamily="@font/luthier_regular"
             android:text="meal"
             android:textAlignment="center"
-            android:textColor="#696969"
+            android:textColor="#F6DD67"
             android:textSize="40sp"
 
 
@@ -62,7 +62,7 @@
             android:fontFamily="@font/glacialindifference_bold"
             android:text="MAKE A CHOICE"
             android:textAlignment="center"
-            android:textColor="#696969"
+            android:textColor="#FB4F5A"
             android:textSize="17sp" />
 
 
@@ -77,7 +77,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_weight="3">
+                android:layout_weight="2">
 
                 <RadioGroup
                     android:layout_width="match_parent"
@@ -88,6 +88,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
                         android:layout_weight="1"
                         android:button="@null"
                         android:background="@drawable/makeachoice" />
@@ -98,6 +99,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
                         android:button="@null"
                         android:background="@drawable/makeachoice"
     />
@@ -108,6 +110,7 @@
                         android:layout_weight="1"
                         android:button="@null"
                         android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
                         android:background="@drawable/makeachoice"
    />
                 </RadioGroup>
@@ -128,8 +131,8 @@
                 android:layout_gravity="center"
 
                 android:layout_marginBottom="10dp"
-
-                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:background="#F6DD67"
                 android:layout_weight="1"
                 android:fadeScrollbars="false"
                 android:fillViewport="true"
@@ -151,11 +154,11 @@
                         <Button
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            app:layout_constraintDimensionRatio="H,1:1"
-
-
                             android:background="@drawable/unnamed"
-                            />
+
+
+                            app:layout_constraintDimensionRatio="H,1:1"
+                            app:layout_constraintEnd_toEndOf="parent" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
                     <androidx.constraintlayout.widget.ConstraintLayout
@@ -403,12 +406,13 @@
 
                     android:layout_marginBottom="10dp"
 
-                    android:layout_marginLeft="10dp"
+
                     android:layout_weight="1"
                     android:fadeScrollbars="false"
                     android:fillViewport="true"
-
+                    android:background="@drawable/planshop_true"
                     android:scrollbarSize="15dp"
+                    android:padding="10dp"
                     >
 
                     <LinearLayout
@@ -677,7 +681,8 @@
 
                     android:layout_marginBottom="10dp"
 
-                    android:layout_marginLeft="10dp"
+                    android:background="#F6DD67"
+                    android:padding="10dp"
                     android:layout_weight="1"
                     android:fadeScrollbars="false"
                     android:fillViewport="true"
@@ -973,7 +978,7 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginRight="50dp"
+
                 >
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -997,23 +1002,25 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="RETURN"
+                android:textAlignment="textStart"
                 android:fontFamily="@font/glacialindifference_regular"
                 android:textColor="@color/black"
-                android:background="@color/white"
+                android:background="#FFFDEF"
                 />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="50dp"
+
                 >
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:id="@+id/choose1"
-                    android:background="@color/white"
+                    android:background="#FFFDEF"
                     android:textColor="@color/black"
+                    android:textAlignment="textEnd"
                     android:fontFamily="@font/glacialindifference_regular"
                     android:text="CHOOSE"/>
 
@@ -1030,7 +1037,7 @@
                         app:layout_constraintDimensionRatio="H,1:1"
                         android:id="@+id/choose2"
                         android:scaleX="-1"
-                        android:background="@drawable/ic_arrow"
+                        android:background="@drawable/ic_arrow_choose"
                         />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
