@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
     private ToggleButton togglegarlic;
     private ToggleButton togglefish;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -159,12 +160,17 @@ public class MainActivity extends AppCompatActivity {
                 DietController.getInstance().getDietTrue(dietsTrue,togglefish.isChecked(),togglefish.getText().toString());
 
 
+               ;
 
 
                 Log.i("taille :  ",dietsTrue.size()+ "");
                 for (int i = 0 ; i< dietsTrue.size();i++){
                     Log.i("Diet : ",dietsTrue.get(i).getId()+" || "+dietsTrue.get(i).getTitle() +"");
                     }
+                //intent.putExtra("dietsTrue",dietsTrue);
+                intent.putExtra("mealPerDay",mealPerDayText.getText().toString());
+                intent.putExtra("numberPeople", numberPeopleText.getText().toString());
+
                 startActivity(intent);
             }
         });

@@ -97,9 +97,9 @@ public class DietController {
                 indice =8;
             }else if(valueToggle.equals("BIG EATER")){
                 indice =9;
-            }else if(valueToggle.equals("MEDIUM EATER")){
+            }else if(valueToggle.equals("MEDIUM\nEATER")){
                 indice =10;
-            }else if(valueToggle.equals("LITTLE EATER")){
+            }else if(valueToggle.equals("LITTLE\nEATER")){
                 indice =11;
             }else if(valueToggle.equals("CHESSE")){
                 indice =12;
