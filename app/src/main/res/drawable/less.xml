@@ -6,6 +6,23 @@
             <size
                 android:width="20dp"
                 android:height="20dp"/>
+            <solid
+                android:color="#42000000"
+
+                />
+
+            <padding
+                android:bottom="1dp"
+                android:right="1dp"
+                />
+        </shape>
+    </item>
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+            <size
+                android:width="20dp"
+                android:height="20dp"/>
 
             <solid android:color="#FB4F5A"/>
         </shape>
