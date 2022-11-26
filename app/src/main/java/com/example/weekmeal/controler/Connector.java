@@ -35,11 +35,11 @@ public class Connector {
         dbEntity.get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
             @Override
             public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
+                int lastId = 0;
+                T entityToAdd = null;
                 if (!queryDocumentSnapshots.isEmpty()) {
                     List<DocumentSnapshot> listSnap = queryDocumentSnapshots.getDocuments();
                     List<T> entityList = new ArrayList<>();
-                    T entityToAdd = null;
-                    int lastId = 0;
                     switch (type){
                         case "Ingredient":
                             for (DocumentSnapshot docSnap : listSnap){
@@ -92,13 +92,16 @@ public class Connector {
                             entityToAdd =(T) new Recipe(lastId+1, ((Recipe) entity).getTitle(), ((Recipe) entity).getDirection(), ((Recipe) entity).getIngredients(), ((Recipe) entity).getDiets());
                             break;
                     }
-                    dbEntity.add(entityToAdd).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-                        @Override
-                        public void onSuccess(DocumentReference documentReference) {
-                            Toast.makeText(activity.getBaseContext(), type+" added with success", Toast.LENGTH_SHORT).show();
-                        }
-                    });
                 }
+                else {
+                    entityToAdd = entity;
+                }
+                dbEntity.add(entityToAdd).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                @Override
+                public void onSuccess(DocumentReference documentReference) {
+                    Toast.makeText(activity.getBaseContext(), type+" added with success", Toast.LENGTH_SHORT).show();
+                }
+                });
             }
         });
     }
