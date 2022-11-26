@@ -2,6 +2,7 @@ package com.example.weekmeal.controler;
 
 import android.app.Activity;
 
+import com.example.weekmeal.entity.Diet;
 import com.example.weekmeal.entity.Ingredient;
 import com.example.weekmeal.tools.JSONTool;
 import com.google.gson.internal.LinkedTreeMap;
@@ -49,6 +50,17 @@ public class IngredientController {
             ingredientList.add(new Ingredient(new Integer(((Double) ltm.get("id")).intValue()), (String) ltm.get("title"), (String) ltm.get("quantity")));
         }
     }
+
+    public Ingredient getIngredientByID(Activity activity, int i){
+        readLocalDB(activity);
+        for(Ingredient ingredient: ingredientList){
+            if (ingredient.getId() == i)
+                return ingredient;
+        }
+
+        return null;
+    }
+
     //Singleton:
     private static IngredientController instance;
 

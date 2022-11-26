@@ -32,7 +32,7 @@ public class Ingredient {
     //toString():
     public String toString(){
         String str = "";
-        str = str.concat(this.getId()+": "+this.getTitle()+"\n");
+        str = str.concat(this.getTitle()+"\n");
         return str;
     }
 

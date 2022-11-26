@@ -1,6 +1,7 @@
 package com.example.weekmeal.controler;
 
 import android.app.Activity;
+import android.util.Pair;
 
 import com.example.weekmeal.entity.Diet;
 import com.example.weekmeal.entity.Ingredient;
@@ -9,6 +10,7 @@ import com.example.weekmeal.tools.JSONTool;
 import com.google.gson.internal.LinkedTreeMap;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class RecipeController {
@@ -27,15 +29,8 @@ public class RecipeController {
     public String toString(){
         String str = new String();
         str = str.concat("Recipes :\n");
-        for(Recipe d : recipeList){
-            str = str.concat(d.getId()+": "+d.getTitle()+"\n");
-            str = str.concat("Diets:\n");
-            for(Diet diet: d.getDiets())
-                str = str.concat(diet.toString());
-            str = str.concat("Ingredients:\n");
-            for(Ingredient ingredient: d.getIngredients())
-                str = str.concat(ingredient.toString());
-            str = str.concat("Directions: "+d.getDirection()+"\n");
+        for(Recipe r : recipeList){
+            str.concat(r.toString());
         }
         str = str.concat("---");
         return str;
@@ -56,10 +51,10 @@ public class RecipeController {
         for(LinkedTreeMap ltm : RecipesLocal){
 //            Object[] keyset = ltm.keySet().toArray();
             //get every ingredients and diets:
-            List<Ingredient> ingredients = new ArrayList<>();
+            HashMap<String, Ingredient> ingredients = new HashMap<>();
             List<LinkedTreeMap> listLTM = (List<LinkedTreeMap>) ltm.get("ingredients");
             for (LinkedTreeMap ingredientLTM : listLTM){
-                ingredients.add(Ingredient.convertLTM(ingredientLTM));
+//                ingredients.put(Ingredient.convertLTM(ingredientLTM));
             }
             List<Diet> diets = new ArrayList<>();
             listLTM = (List<LinkedTreeMap>) ltm.get("diets");
