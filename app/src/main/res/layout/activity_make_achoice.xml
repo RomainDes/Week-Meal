@@ -1018,7 +1018,7 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:id="@+id/choose1"
+                    android:id="@+id/choiceChoose"
                     android:background="#FFFDEF"
                     android:textColor="@color/black"
                     android:textAlignment="textEnd"
