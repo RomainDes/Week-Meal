@@ -19,6 +19,13 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+            android:name=".yourchoice2"
+            android:exported="false" />
+        <activity
+            android:name=".yourchoice"
+            android:exported="false" />
+
         <activity
             android:name=".Planning"
             android:exported="false">
