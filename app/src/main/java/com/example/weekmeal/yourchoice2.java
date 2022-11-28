@@ -7,24 +7,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class yourchoice extends AppCompatActivity {
+public class yourchoice2 extends AppCompatActivity {
 
 
-    private Button buttonShopping;
+    private Button buttonPlanning;
     private Button buttonReturn1;
     private Button buttonReturn2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_yourchoice);
+        setContentView(R.layout.activity_yourchoice2);
 
-
-        /*buttonShopping = (Button) findViewById(R.id.planning);
-        buttonShopping.setOnClickListener(new View.OnClickListener() {
+        /*buttonPlanning = (Button) findViewById(R.id.shopping);
+        buttonPlanning.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
-                Intent intent = new Intent(yourchoice.this, yourchoice2.class);
+                Intent intent = new Intent(yourchoice2.this, yourchoice.class);
                 startActivity(intent);
 
             }
@@ -34,7 +33,7 @@ public class yourchoice extends AppCompatActivity {
         buttonReturn1.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
-                Intent intent = new Intent(yourchoice.this, MakeAChoice.class);
+                Intent intent = new Intent(yourchoice2.this, MakeAChoice.class);
                 startActivity(intent);
 
             }
@@ -44,7 +43,7 @@ public class yourchoice extends AppCompatActivity {
         buttonReturn2.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
-                Intent intent = new Intent(yourchoice.this, MakeAChoice.class);
+                Intent intent = new Intent(yourchoice2.this, MakeAChoice.class);
                 startActivity(intent);
 
             }

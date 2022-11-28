@@ -990,11 +990,11 @@
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    app:layout_constraintDimensionRatio="H,1:1"
-
-
                     android:background="@drawable/ic_arrow"
-                    />
+                    android:id="@id/buttonReturn2"
+
+                    app:layout_constraintDimensionRatio="H,1:1"
+                    app:layout_constraintStart_toStartOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -1002,6 +1002,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="RETURN"
+                android:id="@+id/buttonReturn2"
                 android:textAlignment="textStart"
                 android:fontFamily="@font/glacialindifference_regular"
                 android:textColor="@color/black"
