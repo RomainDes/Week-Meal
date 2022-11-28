@@ -56,17 +56,18 @@
             android:background="#303030" />
 
 
-            <TextView
+        <TextView
 
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:fontFamily="@font/glacialindifference_bold"
-                android:gravity="center"
-                android:text="YOUR CHOICE"
-                android:textAlignment="center"
-                android:textColor="#FB4F5A"
-                android:textSize="17sp" />
+            android:id="@+id/your_choice_textChoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/glacialindifference_bold"
+            android:gravity="center"
+            android:text="YOUR CHOICE"
+            android:textAlignment="center"
+            android:textColor="#FB4F5A"
+            android:textSize="17sp" />
 
 
         <LinearLayout
@@ -109,7 +110,6 @@
                 android:layout_height="wrap_content"
                 android:fadeScrollbars="false"
                 android:fillViewport="true"
-
                 android:padding="10dp"
                 android:scrollbarSize="15dp"
                 android:layout_weight="1"
@@ -134,58 +134,8 @@
                         android:text="LUNDI"
                         android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textSize="17sp" />
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_columnWeight="1"
-                        android:layout_rowWeight="1"
-                        >
-                        <Button
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            app:layout_constraintDimensionRatio="1:1"
-
-
-
-
-                            >
-
-                        </Button>
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_columnWeight="1"
-                        android:layout_rowWeight="1"
-                        >
-                        <Button
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            app:layout_constraintDimensionRatio="1:1"
-
-
-
-
-                            >
-
-                        </Button>
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    <TextView
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:fontFamily="@font/glacialindifference_regular"
-                        android:gravity="center"
-                        android:text="MARDI"
-                        android:textAlignment="center"
-                        android:textColor="@color/black"
                         android:textSize="17sp"
-                        android:layout_columnWeight="1"
-                        android:layout_rowWeight="1"
-                        android:layout_columnSpan="2"/>
+                        android:paddingRight="20dp"/>
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
@@ -193,10 +143,10 @@
                         android:layout_rowWeight="1"
                         >
                         <Button
-                            android:layout_width="match_parent"
+                            android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-
+                            android:background="@drawable/image1"
 
 
 
@@ -211,62 +161,10 @@
                         android:layout_rowWeight="1"
                         >
                         <Button
-                            android:layout_width="match_parent"
+                            android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-
-
-
-
-                            >
-
-                        </Button>
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    <TextView
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:fontFamily="@font/glacialindifference_regular"
-                        android:gravity="center"
-                        android:text="MERCREDI"
-                        android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textSize="17sp"
-                        android:layout_columnWeight="1"
-                        android:layout_rowWeight="1"
-                        android:layout_columnSpan="2"/>
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_columnWeight="1"
-                        android:layout_rowWeight="1"
-                        >
-                        <Button
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            app:layout_constraintDimensionRatio="1:1"
-
-
-
-
-
-                            >
-
-                        </Button>
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_columnWeight="1"
-                        android:layout_rowWeight="1"
-                        >
-                        <Button
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            app:layout_constraintDimensionRatio="1:1"
-
+                            android:background="@drawable/image3"
 
 
 
@@ -285,10 +183,11 @@
                         android:layout_columnWeight="1"
                         android:fontFamily="@font/glacialindifference_regular"
                         android:gravity="center"
-                        android:text="JEUDI"
+                        android:text="MARDI"
                         android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textSize="17sp" />
+                        android:textSize="17sp"
+                        android:paddingRight="20dp"/>
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
@@ -296,10 +195,10 @@
                         android:layout_rowWeight="1"
                         >
                         <Button
-                            android:layout_width="match_parent"
+                            android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-
+                            android:background="@drawable/image4"
 
 
 
@@ -314,10 +213,10 @@
                         android:layout_rowWeight="1"
                         >
                         <Button
-                            android:layout_width="match_parent"
+                            android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-
+                            android:background="@drawable/image5"
 
 
 
@@ -331,15 +230,120 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
 
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
+                        android:fontFamily="@font/glacialindifference_regular"
+                        android:gravity="center"
+                        android:text="MERCREDI"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:paddingRight="20dp"/>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image6"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+
+                            android:background="@drawable/image7"
+
+                            app:layout_constraintDimensionRatio="1:1">
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
+                        android:fontFamily="@font/glacialindifference_regular"
+                        android:gravity="center"
+                        android:text="JEUDI"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:paddingRight="20dp"/>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image8"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image9"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
                         android:fontFamily="@font/glacialindifference_regular"
                         android:gravity="center"
                         android:text="VENDREDI"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="17sp"
-                        android:layout_columnWeight="1"
-                        android:layout_rowWeight="1"
-                        android:layout_columnSpan="2"/>
+                        android:paddingRight="20dp"/>
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
@@ -347,10 +351,10 @@
                         android:layout_rowWeight="1"
                         >
                         <Button
-                            android:layout_width="match_parent"
+                            android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-
+                            android:background="@drawable/image10"
 
 
 
@@ -365,10 +369,10 @@
                         android:layout_rowWeight="1"
                         >
                         <Button
-                            android:layout_width="match_parent"
+                            android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-
+                            android:background="@drawable/image11"
 
 
 
@@ -382,15 +386,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
 
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
                         android:fontFamily="@font/glacialindifference_regular"
                         android:gravity="center"
                         android:text="SAMEDI"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="17sp"
-                        android:layout_columnWeight="1"
-                        android:layout_rowWeight="1"
-                        android:layout_columnSpan="2"/>
+                        android:paddingRight="20dp"/>
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
@@ -398,10 +403,10 @@
                         android:layout_rowWeight="1"
                         >
                         <Button
-                            android:layout_width="match_parent"
+                            android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-
+                            android:background="@drawable/image12"
 
 
 
@@ -416,10 +421,10 @@
                         android:layout_rowWeight="1"
                         >
                         <Button
-                            android:layout_width="match_parent"
+                            android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-
+                            android:background="@drawable/image13"
 
 
 
@@ -433,15 +438,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
 
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
                         android:fontFamily="@font/glacialindifference_regular"
                         android:gravity="center"
                         android:text="DIMANCHE"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="17sp"
-                        android:layout_columnWeight="1"
-                        android:layout_rowWeight="1"
-                        android:layout_columnSpan="2"/>
+                        android:paddingRight="20dp"/>
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
@@ -449,10 +455,10 @@
                         android:layout_rowWeight="1"
                         >
                         <Button
-                            android:layout_width="match_parent"
+                            android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-
+                            android:background="@drawable/image14"
 
 
 
@@ -467,10 +473,10 @@
                         android:layout_rowWeight="1"
                         >
                         <Button
-                            android:layout_width="match_parent"
+                            android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-
+                            android:background="@drawable/image15"
 
 
 
@@ -478,9 +484,6 @@
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
 
                 </GridLayout>
             </ScrollView>
@@ -510,25 +513,29 @@
 
 
                     <Button
+                        android:id="@+id/your_choice_buttonReturn1"
+                        
+                        
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        app:layout_constraintDimensionRatio="H,1:1"
-
-
                         android:background="@drawable/ic_arrow"
-                        />
+
+                        app:layout_constraintDimensionRatio="H,1:1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <Button
+
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="RETURN"
-                    android:textAlignment="textStart"
-                    android:fontFamily="@font/glacialindifference_regular"
-                    android:textColor="@color/black"
                     android:background="#FFFDEF"
-                    />
+                    android:fontFamily="@font/glacialindifference_regular"
+                    android:text="RETURN"
+                    android:id="@+id/your_choice_buttonReturn"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -537,13 +544,14 @@
                 >
 
                 <Button
+                    android:id="@+id/your_choice_buttonShare"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:background="#FFFDEF"
-                    android:textAlignment="textEnd"
-                    android:textColor="@color/black"
                     android:fontFamily="@font/glacialindifference_regular"
-                    android:text="SHARE"/>
+                    android:text="SHARE"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="wrap_content"
@@ -553,13 +561,13 @@
 
 
                     <Button
+                        android:id="@+id/your_choice_buttonShare1"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        app:layout_constraintDimensionRatio="H,1:1"
 
-                        android:scaleX="-1"
                         android:background="@drawable/ic_baseline_share_24"
-                        />
+                        android:scaleX="-1"
+                        app:layout_constraintDimensionRatio="H,1:1" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
