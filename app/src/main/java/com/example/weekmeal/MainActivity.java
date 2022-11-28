@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
@@ -21,6 +22,8 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     private int numberPeople = 0;
     private int mealPerDay = 0;
+
+    private EditText planningName;
 
     private TextView mealPerDayText;
     private TextView numberPeopleText;
@@ -119,6 +122,13 @@ public class MainActivity extends AppCompatActivity {
         //récupérer tous les textes lors du lancement de l'application
         mealPerDayText = (TextView) findViewById(R.id.mealPerDay);
         numberPeopleText = (TextView) findViewById(R.id.numberOfPeople);
+
+        planningName =  (EditText)  findViewById(R.id.planningName);
+        String name = getIntent().getStringExtra("planningName");
+        if(name != null){
+            planningName.setText(name);
+        }
+
         if(getIntent().getStringExtra("mealPerDay")!= null ){
             mealPerDayText.setText(getIntent().getStringExtra("mealPerDay"));
         }
@@ -247,14 +257,19 @@ public class MainActivity extends AppCompatActivity {
                    intent.putExtra("toggleList",toggleList);
                 }
 
-                Log.i("taille :  ",dietsTrue.size()+ "");
+               if (planningName.getText().toString().equals("") ==false){
+                   intent.putExtra("planningName", planningName.getText().toString());
+               }else{
+                   intent.putExtra("planningName", "planning");
+               }
+
+               /*Log.i("taille :  ",dietsTrue.size()+ "");
                 for (int i = 0 ; i< dietsTrue.size();i++){
                     Log.i("Diet : ",dietsTrue.get(i).getId()+" || "+dietsTrue.get(i).getTitle() +"");
-                    }
+                    }*/
 
                 //Log.i("taille liste toggle  :",toggleList.size()+ "");
                 intent.putExtra("dietsTrue", dietsTrue);
-
                 intent.putExtra("mealPerDay",mealPerDayText.getText().toString());
                 intent.putExtra("numberPeople", numberPeopleText.getText().toString());
 

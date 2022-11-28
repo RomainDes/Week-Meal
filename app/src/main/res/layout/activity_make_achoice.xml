@@ -1036,7 +1036,7 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         app:layout_constraintDimensionRatio="H,1:1"
-                        android:id="@+id/choose2"
+                        android:id="@+id/choose1"
                         android:scaleX="-1"
                         android:background="@drawable/ic_arrow_choose"
                         />
