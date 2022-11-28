@@ -56,6 +56,7 @@
             android:background="#303030" />
 
         <TextView
+            android:id="@+id/make_choice_makeachoice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -80,6 +81,7 @@
                 android:layout_weight="2">
 
                 <RadioGroup
+                    android:id="@+id/make_choice_radio"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
@@ -87,32 +89,31 @@
                         android:id="@+id/choice1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
                         android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
                         android:layout_weight="1"
-                        android:button="@null"
-                        android:background="@drawable/makeachoice" />
+                        android:background="@drawable/makeachoice"
+                        android:button="@null" />
 
                     <RadioButton
                         android:id="@+id/choice2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:layout_marginBottom="10dp"
                         android:layout_marginRight="10dp"
-                        android:button="@null"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
                         android:background="@drawable/makeachoice"
-    />
+                        android:button="@null" />
+
                     <RadioButton
                         android:id="@+id/choice3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:button="@null"
-                        android:layout_marginBottom="10dp"
                         android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
                         android:background="@drawable/makeachoice"
-   />
+                        android:button="@null" />
                 </RadioGroup>
 
             </LinearLayout>
@@ -140,262 +141,250 @@
                 android:scrollbarSize="15dp"
                 >
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:id="@+id/make_choice_linear1"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginRight="10dp"
-                        >
+                        android:orientation="horizontal">
 
-
-                        <Button
-                            android:layout_width="0dp"
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:background="@drawable/unnamed"
+                            android:layout_marginRight="10dp">
 
 
-                            app:layout_constraintDimensionRatio="H,1:1"
-                            app:layout_constraintEnd_toEndOf="parent" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        >
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/unnamed"
 
 
-                        <Button
-                            android:layout_width="0dp"
+                                app:layout_constraintDimensionRatio="H,1:1"
+                                app:layout_constraintEnd_toEndOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            app:layout_constraintDimensionRatio="H,1:1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
 
 
-                            android:background="@drawable/unnamed"
-                            />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        >
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/unnamed"
 
 
-                        <Button
-                            android:layout_width="0dp"
+                                app:layout_constraintDimensionRatio="H,1:1" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            app:layout_constraintDimensionRatio="H,1:1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
 
 
-                            android:background="@drawable/unnamed"
-                            />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        >
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/unnamed"
 
 
-                        <Button
-                            android:layout_width="0dp"
+                                app:layout_constraintDimensionRatio="H,1:1" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            app:layout_constraintDimensionRatio="H,1:1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
 
 
-                            android:background="@drawable/unnamed"
-                            />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        >
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/unnamed"
 
 
-                        <Button
-                            android:layout_width="0dp"
+                                app:layout_constraintDimensionRatio="H,1:1" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            app:layout_constraintDimensionRatio="H,1:1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
 
 
-                            android:background="@drawable/unnamed"
-                            />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    >
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/unnamed"
 
 
-                    <Button
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        app:layout_constraintDimensionRatio="H,1:1"
+                                app:layout_constraintDimensionRatio="H,1:1" />
 
+                        </androidx.constraintlayout.widget.ConstraintLayout>
 
-                        android:background="@drawable/unnamed"
-                        />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    >
-
-
-                    <Button
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        app:layout_constraintDimensionRatio="H,1:1"
-
-
-                        android:background="@drawable/unnamed"
-                        />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    >
-
-
-                    <Button
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        app:layout_constraintDimensionRatio="H,1:1"
-
-
-                        android:background="@drawable/unnamed"
-                        />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    >
-
-
-                    <Button
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        app:layout_constraintDimensionRatio="H,1:1"
-
-
-                        android:background="@drawable/unnamed"
-                        />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        >
-
-
-                        <Button
-                            android:layout_width="0dp"
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            app:layout_constraintDimensionRatio="H,1:1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
 
 
-                            android:background="@drawable/unnamed"
-                            />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        >
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/unnamed"
 
 
-                        <Button
-                            android:layout_width="0dp"
+                                app:layout_constraintDimensionRatio="H,1:1" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            app:layout_constraintDimensionRatio="H,1:1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
 
 
-                            android:background="@drawable/unnamed"
-                            />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        >
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/unnamed"
 
 
-                        <Button
-                            android:layout_width="0dp"
+                                app:layout_constraintDimensionRatio="H,1:1" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            app:layout_constraintDimensionRatio="H,1:1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
 
 
-                            android:background="@drawable/unnamed"
-                            />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        >
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/unnamed"
 
 
-                        <Button
-                            android:layout_width="0dp"
+                                app:layout_constraintDimensionRatio="H,1:1" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            app:layout_constraintDimensionRatio="H,1:1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
 
 
-                            android:background="@drawable/unnamed"
-                            />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        >
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/unnamed"
 
 
-                        <Button
-                            android:layout_width="0dp"
+                                app:layout_constraintDimensionRatio="H,1:1" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            app:layout_constraintDimensionRatio="H,1:1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
 
 
-                            android:background="@drawable/unnamed"
-                            />
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/unnamed"
 
-                    </androidx.constraintlayout.widget.ConstraintLayout>
 
-                </LinearLayout>
+                                app:layout_constraintDimensionRatio="H,1:1" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
+
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/unnamed"
+
+
+                                app:layout_constraintDimensionRatio="H,1:1" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
+
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/unnamed"
+
+
+                                app:layout_constraintDimensionRatio="H,1:1" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
+
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/unnamed"
+
+
+                                app:layout_constraintDimensionRatio="H,1:1" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp">
+
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/unnamed"
+
+
+                                app:layout_constraintDimensionRatio="H,1:1" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
 
 
             </HorizontalScrollView>
@@ -988,13 +977,13 @@
 
 
                 <Button
+                    android:id="@+id/return1"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    app:layout_constraintDimensionRatio="H,1:1"
 
 
                     android:background="@drawable/ic_arrow"
-                    />
+                    app:layout_constraintDimensionRatio="H,1:1" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
