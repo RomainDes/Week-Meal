@@ -1,19 +1,14 @@
 package com.example.weekmeal;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.constraintlayout.widget.ConstraintSet;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.example.weekmeal.entity.Diet;
@@ -45,10 +40,10 @@ public class MakeAChoice extends AppCompatActivity {
         setContentView(R.layout.activity_make_achoice);
 
         name = (TextView) findViewById(R.id.make_choice_makeachoice);
-        buttonReturn = (Button) findViewById(R.id.choiceReturn);
+        buttonReturn = (Button) findViewById(R.id.your_choice_buttonReturn);
         buttonChoose = (Button) findViewById(R.id.choiceChoose);
         // partie de Romain avec les boutons
-        buttonChoose1 = (Button) findViewById(R.id.choose1);
+        buttonChoose1 = (Button) findViewById(R.id.choiceChoose1);
         buttonReturn1 = (Button) findViewById(R.id.return1);
         radioGroup = (RadioGroup) findViewById(R.id.make_choice_radio);
         radioButton1 = (RadioButton) findViewById(R.id.choice1);

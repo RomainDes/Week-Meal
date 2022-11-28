@@ -17,6 +17,7 @@ public class yourchoice extends AppCompatActivity {
     private Button buttonShare;
     private Button buttonShare1;
     private TextView yourChoice;
+    private Button buttonShopping;
 
 
     private ArrayList<Boolean> toggleList = new ArrayList<>();
@@ -34,6 +35,15 @@ public class yourchoice extends AppCompatActivity {
         buttonShare1 = (Button) findViewById(R.id.your_choice_buttonShare1);
         yourChoice  = (TextView) findViewById(R.id.your_choice_textChoice);
 
+        buttonShopping = (Button) findViewById(R.id.shopping);
+        buttonShopping.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View view) {
+                Intent intent = new Intent(yourchoice.this, yourchoice2.class);
+                startActivity(intent);
+
+            }
+        });
 
 
         Bundle extras = getIntent().getExtras();

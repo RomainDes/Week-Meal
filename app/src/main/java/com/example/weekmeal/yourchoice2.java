@@ -39,7 +39,7 @@ public class yourchoice2 extends AppCompatActivity {
             }
         });
 
-        buttonReturn2 = (Button) findViewById(R.id.return2);
+        buttonReturn2 = (Button) findViewById(R.id.your_choice_buttonReturn);
         buttonReturn2.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {

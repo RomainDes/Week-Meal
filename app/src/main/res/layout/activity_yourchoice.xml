@@ -269,7 +269,7 @@
                         <Button
                             android:layout_width="150dp"
                             android:layout_height="0dp"
-                            app:layout_constraintDimensionRatio="1:1"
+
                             android:background="@drawable/image7"
 
                             app:layout_constraintDimensionRatio="1:1">
@@ -528,13 +528,13 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <Button
-                    android:id="@+id/your_choice_buttonReturn"
+
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:background="#FFFDEF"
                     android:fontFamily="@font/glacialindifference_regular"
                     android:text="RETURN"
-                    android:id="@+id/return2"
+                    android:id="@+id/your_choice_buttonReturn"
                     android:textAlignment="textStart"
                     android:textColor="@color/black" />
             </LinearLayout>
@@ -545,13 +545,14 @@
                 >
 
                 <Button
+                    android:id="@+id/your_choice_buttonShare"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:background="#FFFDEF"
-                    android:textAlignment="textEnd"
-                    android:textColor="@color/black"
                     android:fontFamily="@font/glacialindifference_regular"
-                    android:text="SHARE"/>
+                    android:text="SHARE"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="wrap_content"

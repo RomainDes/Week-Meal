@@ -11,7 +11,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.WeekMeal"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:targetApi="31">
         <activity
             android:name=".Recette"
@@ -48,8 +48,7 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        android:theme="@style/Theme.AppCompat.NoActionBar"
-        tools:targetApi="31">
+
         <activity
             android:name=".yourchoice2"
             android:exported="false" />
