@@ -91,7 +91,12 @@
                         android:layout_marginRight="10dp"
                         android:layout_weight="1"
                         android:button="@null"
-                        android:background="@drawable/makeachoice" />
+                        android:text="\nC\nH\nO\nI\nX\n\n1\n"
+                        android:fontFamily="@font/glacialindifference_bold"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:background="@drawable/makeachoice"
+                        android:textSize="10dp"/>
 
                     <RadioButton
                         android:id="@+id/choice2"
@@ -101,7 +106,12 @@
                         android:layout_marginBottom="10dp"
                         android:layout_marginRight="10dp"
                         android:button="@null"
+                        android:text="\nC\nH\nO\nI\nX\n\n2\n"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/glacialindifference_bold"
                         android:background="@drawable/makeachoice"
+                        android:textSize="10dp"
     />
                     <RadioButton
                         android:id="@+id/choice3"
@@ -112,6 +122,12 @@
                         android:layout_marginBottom="10dp"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/makeachoice"
+                        android:text="\nC\nH\nO\nI\nX\n\n3\n"
+                        android:fontFamily="@font/glacialindifference_bold"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:textSize="10dp"
+
    />
                 </RadioGroup>
 
@@ -153,8 +169,8 @@
 
                         <Button
                             android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/unnamed"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/image1"
 
 
                             app:layout_constraintDimensionRatio="H,1:1"
@@ -175,7 +191,7 @@
                             app:layout_constraintDimensionRatio="H,1:1"
 
 
-                            android:background="@drawable/unnamed"
+                            android:background="@drawable/image3"
                             />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -193,7 +209,7 @@
                             app:layout_constraintDimensionRatio="H,1:1"
 
 
-                            android:background="@drawable/unnamed"
+                            android:background="@drawable/image4"
                             />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -211,7 +227,7 @@
                             app:layout_constraintDimensionRatio="H,1:1"
 
 
-                            android:background="@drawable/unnamed"
+                            android:background="@drawable/image5"
                             />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -229,7 +245,7 @@
                             app:layout_constraintDimensionRatio="H,1:1"
 
 
-                            android:background="@drawable/unnamed"
+                            android:background="@drawable/image6"
                             />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -247,7 +263,7 @@
                         app:layout_constraintDimensionRatio="H,1:1"
 
 
-                        android:background="@drawable/unnamed"
+                        android:background="@drawable/image7"
                         />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -265,7 +281,7 @@
                         app:layout_constraintDimensionRatio="H,1:1"
 
 
-                        android:background="@drawable/unnamed"
+                        android:background="@drawable/image8"
                         />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -283,7 +299,7 @@
                         app:layout_constraintDimensionRatio="H,1:1"
 
 
-                        android:background="@drawable/unnamed"
+                        android:background="@drawable/image9"
                         />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -301,7 +317,7 @@
                         app:layout_constraintDimensionRatio="H,1:1"
 
 
-                        android:background="@drawable/unnamed"
+                        android:background="@drawable/image10"
                         />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -319,7 +335,7 @@
                             app:layout_constraintDimensionRatio="H,1:1"
 
 
-                            android:background="@drawable/unnamed"
+                            android:background="@drawable/image11"
                             />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -337,7 +353,7 @@
                             app:layout_constraintDimensionRatio="H,1:1"
 
 
-                            android:background="@drawable/unnamed"
+                            android:background="@drawable/image12"
                             />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -355,7 +371,7 @@
                             app:layout_constraintDimensionRatio="H,1:1"
 
 
-                            android:background="@drawable/unnamed"
+                            android:background="@drawable/image13"
                             />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -373,7 +389,7 @@
                             app:layout_constraintDimensionRatio="H,1:1"
 
 
-                            android:background="@drawable/unnamed"
+                            android:background="@drawable/image14"
                             />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -390,7 +406,7 @@
                             app:layout_constraintDimensionRatio="H,1:1"
 
 
-                            android:background="@drawable/unnamed"
+                            android:background="@drawable/image15"
                             />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -405,14 +421,13 @@
                     android:layout_gravity="center"
 
                     android:layout_marginBottom="10dp"
-
-
+                    android:padding="10dp"
+                    android:background="@drawable/planshop_true"
                     android:layout_weight="1"
                     android:fadeScrollbars="false"
                     android:fillViewport="true"
-                    android:background="@drawable/planshop_true"
+
                     android:scrollbarSize="15dp"
-                    android:padding="10dp"
                     >
 
                     <LinearLayout
@@ -428,11 +443,29 @@
 
                             <Button
                                 android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/image1"
+
+
+                                app:layout_constraintDimensionRatio="H,1:1"
+                                app:layout_constraintEnd_toEndOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            >
+
+
+                            <Button
+                                android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 app:layout_constraintDimensionRatio="H,1:1"
 
 
-                                android:background="@drawable/unnamed"
+                                android:background="@drawable/image3"
                                 />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -450,7 +483,7 @@
                                 app:layout_constraintDimensionRatio="H,1:1"
 
 
-                                android:background="@drawable/unnamed"
+                                android:background="@drawable/image4"
                                 />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -468,7 +501,7 @@
                                 app:layout_constraintDimensionRatio="H,1:1"
 
 
-                                android:background="@drawable/unnamed"
+                                android:background="@drawable/image5"
                                 />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -486,7 +519,7 @@
                                 app:layout_constraintDimensionRatio="H,1:1"
 
 
-                                android:background="@drawable/unnamed"
+                                android:background="@drawable/image6"
                                 />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -504,7 +537,7 @@
                                 app:layout_constraintDimensionRatio="H,1:1"
 
 
-                                android:background="@drawable/unnamed"
+                                android:background="@drawable/image7"
                                 />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -522,7 +555,7 @@
                                 app:layout_constraintDimensionRatio="H,1:1"
 
 
-                                android:background="@drawable/unnamed"
+                                android:background="@drawable/image8"
                                 />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -540,7 +573,7 @@
                                 app:layout_constraintDimensionRatio="H,1:1"
 
 
-                                android:background="@drawable/unnamed"
+                                android:background="@drawable/image9"
                                 />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -558,7 +591,7 @@
                                 app:layout_constraintDimensionRatio="H,1:1"
 
 
-                                android:background="@drawable/unnamed"
+                                android:background="@drawable/image10"
                                 />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -576,7 +609,7 @@
                                 app:layout_constraintDimensionRatio="H,1:1"
 
 
-                                android:background="@drawable/unnamed"
+                                android:background="@drawable/image11"
                                 />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -594,7 +627,7 @@
                                 app:layout_constraintDimensionRatio="H,1:1"
 
 
-                                android:background="@drawable/unnamed"
+                                android:background="@drawable/image12"
                                 />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -612,7 +645,7 @@
                                 app:layout_constraintDimensionRatio="H,1:1"
 
 
-                                android:background="@drawable/unnamed"
+                                android:background="@drawable/image13"
                                 />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -630,25 +663,7 @@
                                 app:layout_constraintDimensionRatio="H,1:1"
 
 
-                                android:background="@drawable/unnamed"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            >
-
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                app:layout_constraintDimensionRatio="H,1:1"
-
-
-                                android:background="@drawable/unnamed"
+                                android:background="@drawable/image14"
                                 />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -665,7 +680,7 @@
                                 app:layout_constraintDimensionRatio="H,1:1"
 
 
-                                android:background="@drawable/unnamed"
+                                android:background="@drawable/image15"
                                 />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -680,9 +695,8 @@
                     android:layout_gravity="center"
 
                     android:layout_marginBottom="10dp"
-
-                    android:background="@drawable/planshop_true"
                     android:padding="10dp"
+                    android:background="@drawable/planshop_true"
                     android:layout_weight="1"
                     android:fadeScrollbars="false"
                     android:fillViewport="true"
@@ -703,11 +717,29 @@
 
                             <Button
                                 android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/image1"
+
+
+                                app:layout_constraintDimensionRatio="H,1:1"
+                                app:layout_constraintEnd_toEndOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            >
+
+
+                            <Button
+                                android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 app:layout_constraintDimensionRatio="H,1:1"
 
 
-                                android:background="@drawable/unnamed"
+                                android:background="@drawable/image3"
                                 />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -725,7 +757,7 @@
                                 app:layout_constraintDimensionRatio="H,1:1"
 
 
-                                android:background="@drawable/unnamed"
+                                android:background="@drawable/image4"
                                 />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -743,7 +775,7 @@
                                 app:layout_constraintDimensionRatio="H,1:1"
 
 
-                                android:background="@drawable/unnamed"
+                                android:background="@drawable/image5"
                                 />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -761,7 +793,7 @@
                                 app:layout_constraintDimensionRatio="H,1:1"
 
 
-                                android:background="@drawable/unnamed"
+                                android:background="@drawable/image6"
                                 />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -779,7 +811,7 @@
                                 app:layout_constraintDimensionRatio="H,1:1"
 
 
-                                android:background="@drawable/unnamed"
+                                android:background="@drawable/image7"
                                 />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -797,7 +829,7 @@
                                 app:layout_constraintDimensionRatio="H,1:1"
 
 
-                                android:background="@drawable/unnamed"
+                                android:background="@drawable/image8"
                                 />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -815,7 +847,7 @@
                                 app:layout_constraintDimensionRatio="H,1:1"
 
 
-                                android:background="@drawable/unnamed"
+                                android:background="@drawable/image9"
                                 />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -833,7 +865,7 @@
                                 app:layout_constraintDimensionRatio="H,1:1"
 
 
-                                android:background="@drawable/unnamed"
+                                android:background="@drawable/image10"
                                 />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -851,7 +883,7 @@
                                 app:layout_constraintDimensionRatio="H,1:1"
 
 
-                                android:background="@drawable/unnamed"
+                                android:background="@drawable/image11"
                                 />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -869,7 +901,7 @@
                                 app:layout_constraintDimensionRatio="H,1:1"
 
 
-                                android:background="@drawable/unnamed"
+                                android:background="@drawable/image12"
                                 />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -887,7 +919,7 @@
                                 app:layout_constraintDimensionRatio="H,1:1"
 
 
-                                android:background="@drawable/unnamed"
+                                android:background="@drawable/image13"
                                 />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -905,25 +937,7 @@
                                 app:layout_constraintDimensionRatio="H,1:1"
 
 
-                                android:background="@drawable/unnamed"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            >
-
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                app:layout_constraintDimensionRatio="H,1:1"
-
-
-                                android:background="@drawable/unnamed"
+                                android:background="@drawable/image14"
                                 />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -940,7 +954,7 @@
                                 app:layout_constraintDimensionRatio="H,1:1"
 
 
-                                android:background="@drawable/unnamed"
+                                android:background="@drawable/image15"
                                 />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -949,6 +963,8 @@
 
 
                 </HorizontalScrollView>
+
+
 
 
 
@@ -991,7 +1007,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/ic_arrow"
-                    android:id="@id/buttonReturn2"
+                    android:id="@+id/return1"
 
                     app:layout_constraintDimensionRatio="H,1:1"
                     app:layout_constraintStart_toStartOf="parent" />
@@ -999,10 +1015,11 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <Button
+                android:id="@+id/return2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="RETURN"
-                android:id="@+id/buttonReturn2"
+
                 android:textAlignment="textStart"
                 android:fontFamily="@font/glacialindifference_regular"
                 android:textColor="@color/black"

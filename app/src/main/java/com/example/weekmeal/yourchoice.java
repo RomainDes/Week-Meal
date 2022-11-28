@@ -20,7 +20,7 @@ public class yourchoice extends AppCompatActivity {
         setContentView(R.layout.activity_yourchoice);
 
 
-        /*buttonShopping = (Button) findViewById(R.id.planning);
+        buttonShopping = (Button) findViewById(R.id.shopping);
         buttonShopping.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
@@ -30,7 +30,7 @@ public class yourchoice extends AppCompatActivity {
             }
         });
 
-        buttonReturn1 = (Button) findViewById(R.id.buttonReturn1);
+        buttonReturn1 = (Button) findViewById(R.id.return1);
         buttonReturn1.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
@@ -40,7 +40,7 @@ public class yourchoice extends AppCompatActivity {
             }
         });
 
-        buttonReturn2 = (Button) findViewById(R.id.buttonReturn2);
+        buttonReturn2 = (Button) findViewById(R.id.return2);
         buttonReturn2.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
@@ -48,6 +48,6 @@ public class yourchoice extends AppCompatActivity {
                 startActivity(intent);
 
             }
-        });*/
+        });
     }
 }

@@ -104,18 +104,104 @@
                     android:background="@drawable/planshop_true"
                     />
             </LinearLayout>
-
-            <TextView
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:textColor="@color/black"
-                android:fontFamily="@font/glacialindifference_regular"
-                android:textSize="16dp"
-                android:textAlignment="textStart"
-                android:text="fefafze"
-                android:layout_margin="10dp"/>
+                android:layout_height="wrap_content"
+                android:fadeScrollbars="false"
+                android:fillViewport="true"
 
+                android:padding="10dp"
+                android:scrollbarSize="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/planshop_true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/glacialindifference_regular"
+                    android:textSize="16dp"
+                    android:textAlignment="textStart"
+                    android:text="
+4 Yaourts à la GrecqueUne semaine de menus\n
+4 Yaourts au lait de brebis\n
+Deux poignées de myrtilles\n
+250g de framboises\n
+1 verre d’eau de coco\n
+150g de flocons de riz\n
+150g de flocons de sarrasin\n
+70g de noisettes\n
+1 sachet d’amandes entières\n
+20g de graines de courge\n
+7 càs de sirop d’agave\n
+4 càs d’huile de coco\n
+1 sachet de bananes séchéesUne semaine de menus\n
+1 sachet de cranberries séchées\n
+1 sachet de baies de goji\n
+1 sachet de laitue épluchée\n
+250g de farine complète\n
+100g de sucre complet\n
+30g de farine de coco\n
+245g de farine de blé\n
+100g de poudre d’amandes\n
+30g de poudre de noisettes\n
+170g de beurre\n
+9 œufs\n
+1 càs de graines de pavot\n
+3 càs de persil et ciboulette hachés\n
+2 courgettes\n
+5 carottes\n
+1 L de lait\n
+2 poires muresUne semaine de menus\n
+3 pommes d’une variété juteuse (type Elstar)\n
+1 càc de cannelle\n
+2 filets de canard\n
+2 bananes plantain\n
+2 patates douces\n
+1 càs de miel\n
+Huile de sésame\n
+Sel\n
+Poivre\n
+Piment doux\n
+8 pavés de saumon\n
+1 courge butternut\n
+5 càs d’huile d’olive\n
+1 càs d’ail en poudreUne semaine de menus\n
+persil frais haché\n
+1 jus de citron\n
+400 gr de panais\n
+3 oignons\n
+520 ml de crème à fouetter\n
+¼ c a café de noix de muscade\n
+du thym\n
+1 sachet de parmesan\n
+4 blancs de dinde\n
+8-10 mini-poivrons\n
+2 chèvre frais (250g environ)\n
+1/2 botte bien garnie de ciboulette ou des herbes de Provence selon les goût\n
+6 belles tomates séchées ou confites\n
+2 steaks hachés\n
+1 ananas épluché et taillé en tranches\n
+4 pitas\n
+4 tranches de saumon fuméUne semaine de menus\n
+1 avocat\n
+1 concombre\n
+100g de Saint-Morêt ou Philadelphia\n
+245g de sucre\n
+1 càc de bicarbonate de soude\n
+1 càc d’extrait de vanille\n
+50g de noix de pécan\n
+2 à 3 bananes bien mûres\n
+2 pommes\n
+30g d’abricots secs coupés en petits morceaux\n
+100g de riz rouge\n
+500mL de bouillon de légumes\n
+25g de pignons de pins\n
+1 mangue découpée en cubes\n
+"
+                    android:layout_margin="10dp"/>
+            </ScrollView>
 
         </LinearLayout>
 
@@ -144,7 +230,7 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         app:layout_constraintDimensionRatio="H,1:1"
-                        android:id="@+id/buttonReturn2"
+                        android:id="@+id/return2"
 
                         android:background="@drawable/ic_arrow"
                         />
@@ -155,7 +241,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="RETURN"
-                    android:id="@+id/buttonReturn1"
+                    android:id="@+id/return1"
                     android:textAlignment="textStart"
                     android:fontFamily="@font/glacialindifference_regular"
                     android:textColor="@color/black"

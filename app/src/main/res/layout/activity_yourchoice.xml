@@ -109,7 +109,6 @@
                 android:layout_height="wrap_content"
                 android:fadeScrollbars="false"
                 android:fillViewport="true"
-
                 android:padding="10dp"
                 android:scrollbarSize="15dp"
                 android:layout_weight="1"
@@ -134,7 +133,8 @@
                         android:text="LUNDI"
                         android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textSize="17sp" />
+                        android:textSize="17sp"
+                        android:paddingRight="20dp"/>
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
@@ -142,10 +142,10 @@
                         android:layout_rowWeight="1"
                         >
                         <Button
-                            android:layout_width="match_parent"
+                            android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-
+                            android:background="@drawable/image1"
 
 
 
@@ -160,10 +160,10 @@
                         android:layout_rowWeight="1"
                         >
                         <Button
-                            android:layout_width="match_parent"
+                            android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-
+                            android:background="@drawable/image3"
 
 
 
@@ -177,15 +177,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
 
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
                         android:fontFamily="@font/glacialindifference_regular"
                         android:gravity="center"
                         android:text="MARDI"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="17sp"
-                        android:layout_columnWeight="1"
-                        android:layout_rowWeight="1"
-                        android:layout_columnSpan="2"/>
+                        android:paddingRight="20dp"/>
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
@@ -193,10 +194,10 @@
                         android:layout_rowWeight="1"
                         >
                         <Button
-                            android:layout_width="match_parent"
+                            android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-
+                            android:background="@drawable/image4"
 
 
 
@@ -211,10 +212,10 @@
                         android:layout_rowWeight="1"
                         >
                         <Button
-                            android:layout_width="match_parent"
+                            android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-
+                            android:background="@drawable/image5"
 
 
 
@@ -228,15 +229,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
 
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
                         android:fontFamily="@font/glacialindifference_regular"
                         android:gravity="center"
                         android:text="MERCREDI"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="17sp"
-                        android:layout_columnWeight="1"
-                        android:layout_rowWeight="1"
-                        android:layout_columnSpan="2"/>
+                        android:paddingRight="20dp"/>
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
@@ -244,11 +246,10 @@
                         android:layout_rowWeight="1"
                         >
                         <Button
-                            android:layout_width="match_parent"
+                            android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:id="@+id/buttonReturn2"
-
+                            android:background="@drawable/image6"
 
 
 
@@ -263,10 +264,10 @@
                         android:layout_rowWeight="1"
                         >
                         <Button
-                            android:layout_width="match_parent"
+                            android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-
+                            android:background="@drawable/image7"
 
 
 
@@ -288,7 +289,8 @@
                         android:text="JEUDI"
                         android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textSize="17sp" />
+                        android:textSize="17sp"
+                        android:paddingRight="20dp"/>
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
@@ -296,10 +298,10 @@
                         android:layout_rowWeight="1"
                         >
                         <Button
-                            android:layout_width="match_parent"
+                            android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-
+                            android:background="@drawable/image8"
 
 
 
@@ -314,10 +316,10 @@
                         android:layout_rowWeight="1"
                         >
                         <Button
-                            android:layout_width="match_parent"
+                            android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-
+                            android:background="@drawable/image9"
 
 
 
@@ -325,21 +327,23 @@
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
                     <TextView
 
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
 
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
                         android:fontFamily="@font/glacialindifference_regular"
                         android:gravity="center"
                         android:text="VENDREDI"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="17sp"
-                        android:layout_columnWeight="1"
-                        android:layout_rowWeight="1"
-                        android:layout_columnSpan="2"/>
+                        android:paddingRight="20dp"/>
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
@@ -347,10 +351,10 @@
                         android:layout_rowWeight="1"
                         >
                         <Button
-                            android:layout_width="match_parent"
+                            android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-
+                            android:background="@drawable/image10"
 
 
 
@@ -365,10 +369,10 @@
                         android:layout_rowWeight="1"
                         >
                         <Button
-                            android:layout_width="match_parent"
+                            android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-
+                            android:background="@drawable/image11"
 
 
 
@@ -382,15 +386,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
 
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
                         android:fontFamily="@font/glacialindifference_regular"
                         android:gravity="center"
                         android:text="SAMEDI"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="17sp"
-                        android:layout_columnWeight="1"
-                        android:layout_rowWeight="1"
-                        android:layout_columnSpan="2"/>
+                        android:paddingRight="20dp"/>
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
@@ -398,10 +403,10 @@
                         android:layout_rowWeight="1"
                         >
                         <Button
-                            android:layout_width="match_parent"
+                            android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-
+                            android:background="@drawable/image12"
 
 
 
@@ -416,10 +421,10 @@
                         android:layout_rowWeight="1"
                         >
                         <Button
-                            android:layout_width="match_parent"
+                            android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-
+                            android:background="@drawable/image13"
 
 
 
@@ -433,15 +438,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
 
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
                         android:fontFamily="@font/glacialindifference_regular"
                         android:gravity="center"
                         android:text="DIMANCHE"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="17sp"
-                        android:layout_columnWeight="1"
-                        android:layout_rowWeight="1"
-                        android:layout_columnSpan="2"/>
+                        android:paddingRight="20dp"/>
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
@@ -449,10 +455,10 @@
                         android:layout_rowWeight="1"
                         >
                         <Button
-                            android:layout_width="match_parent"
+                            android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-
+                            android:background="@drawable/image14"
 
 
 
@@ -467,10 +473,10 @@
                         android:layout_rowWeight="1"
                         >
                         <Button
-                            android:layout_width="match_parent"
+                            android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-
+                            android:background="@drawable/image15"
 
 
 
@@ -478,9 +484,6 @@
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
 
                 </GridLayout>
             </ScrollView>
@@ -510,13 +513,14 @@
 
 
                     <Button
+                        android:id="@+id/return1"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        app:layout_constraintDimensionRatio="H,1:1"
-
-
                         android:background="@drawable/ic_arrow"
-                        />
+
+                        app:layout_constraintDimensionRatio="H,1:1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -524,7 +528,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="RETURN"
-                    android:id="@+id/buttonReturn1"
+                    android:id="@+id/return2"
                     android:textAlignment="textStart"
                     android:fontFamily="@font/glacialindifference_regular"
                     android:textColor="@color/black"

@@ -19,7 +19,7 @@ public class yourchoice2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_yourchoice2);
 
-        /*buttonPlanning = (Button) findViewById(R.id.shopping);
+        buttonPlanning = (Button) findViewById(R.id.planning);
         buttonPlanning.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
@@ -29,7 +29,7 @@ public class yourchoice2 extends AppCompatActivity {
             }
         });
 
-        buttonReturn1 = (Button) findViewById(R.id.buttonReturn1);
+        buttonReturn1 = (Button) findViewById(R.id.return1);
         buttonReturn1.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
@@ -39,7 +39,7 @@ public class yourchoice2 extends AppCompatActivity {
             }
         });
 
-        buttonReturn2 = (Button) findViewById(R.id.buttonReturn2);
+        buttonReturn2 = (Button) findViewById(R.id.return2);
         buttonReturn2.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
@@ -47,6 +47,6 @@ public class yourchoice2 extends AppCompatActivity {
                 startActivity(intent);
 
             }
-        });*/
+        });
     }
 }

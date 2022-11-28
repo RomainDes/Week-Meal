@@ -38,25 +38,25 @@ public class MakeAChoice extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter = new MyRecyclerViewAdapter(this, );
         recyclerView.setAdapter(adapter);*/
-        /*buttonReturn1 = (Button) findViewById(R.id.buttonReturn1);
+        buttonReturn1 = (Button) findViewById(R.id.return1);
         buttonReturn1.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
-                Intent intent = new Intent(MakeAChoice.this, MakeAChoice.class);
+                Intent intent = new Intent(MakeAChoice.this, MainActivity.class);
                 startActivity(intent);
 
             }
         });
 
-        buttonReturn2 = (Button) findViewById(R.id.buttonReturn2);
+        buttonReturn2 = (Button) findViewById(R.id.return2);
         buttonReturn2.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
-                Intent intent = new Intent(MakeAChoice.this, MakeAChoice.class);
+                Intent intent = new Intent(MakeAChoice.this, MainActivity.class);
                 startActivity(intent);
 
             }
-        });*/
+        });
 
         buttonChoose1 = (Button) findViewById(R.id.choose1);
         buttonChoose1.setOnClickListener(new View.OnClickListener() {
