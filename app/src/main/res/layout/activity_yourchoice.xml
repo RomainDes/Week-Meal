@@ -329,7 +329,6 @@
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
                     <TextView
 
                         android:layout_width="wrap_content"
