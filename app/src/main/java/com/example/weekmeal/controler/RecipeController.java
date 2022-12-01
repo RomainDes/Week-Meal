@@ -49,17 +49,16 @@ public class RecipeController {
     public void readLocalDB(Activity activity){
         ArrayList<LinkedTreeMap> RecipesLocal = (ArrayList<LinkedTreeMap>) JSONTool.getInstance().loadJSONFromAsset(activity, recipeList, "Recipe");
         for(LinkedTreeMap ltm : RecipesLocal){
-//            Object[] keyset = ltm.keySet().toArray();
             //get every ingredients and diets:
-            HashMap<String, Ingredient> ingredients = new HashMap<>();
-            List<LinkedTreeMap> listLTM = (List<LinkedTreeMap>) ltm.get("ingredients");
-            for (LinkedTreeMap ingredientLTM : listLTM){
-//                ingredients.put(Ingredient.convertLTM(ingredientLTM));
+            HashMap<String, Integer> ingredients = new HashMap<>();
+            LinkedTreeMap ingredientListLTM = (LinkedTreeMap) ltm.get("ingredients");
+            for (Object keyLTM : ingredientListLTM.keySet()){
+                ingredients.put((String) keyLTM, ((Double) ingredientListLTM.get(keyLTM)).intValue());
             }
-            List<Diet> diets = new ArrayList<>();
-            listLTM = (List<LinkedTreeMap>) ltm.get("diets");
-            for (LinkedTreeMap dietLTM : listLTM){
-                diets.add(Diet.convertLTM(dietLTM));
+            List<Integer> diets = new ArrayList<>();
+            List<Double> dietsListLTM = (ArrayList) ltm.get("diets");
+            for (Double i : dietsListLTM){
+                diets.add(i.intValue());
             }
             recipeList.add(new Recipe(
             new Integer(((Double) ltm.get("id")).intValue()),
@@ -68,11 +67,7 @@ public class RecipeController {
                     ingredients,
                     diets
             ));
-//            (List<Ingredient>) ltm.get("ingredients"),
-//                    (List<Diet>) ltm.get("diets")
         }
-
-        int i = 0;
     }
     //Singleton:
     private static RecipeController instance;
