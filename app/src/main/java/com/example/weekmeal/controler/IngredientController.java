@@ -51,8 +51,7 @@ public class IngredientController {
         }
     }
 
-    public Ingredient getIngredientByID(Activity activity, int i){
-        readLocalDB(activity);
+    public Ingredient getIngredientByID(int i){
         for(Ingredient ingredient: ingredientList){
             if (ingredient.getId() == i)
                 return ingredient;
