@@ -8,7 +8,7 @@
                 android:color="#42000000"
 
                 />
-            <corners android:radius="200dp" />
+            <corners android:radius="5dp" />
             <padding
                 android:bottom="3dp"
                 android:right="3dp"
@@ -19,15 +19,13 @@
         <shape xmlns:android="http://schemas.android.com/apk/res/android"
             android:shape="rectangle">
 
-            <solid android:color="#F6DD67"></solid>
+            <solid android:color="#d9d9d9"></solid>
             <size
                 android:width="100dp"
-                android:height="35dp"/>
-            <corners android:radius="200dp"></corners>
-
+                android:height="100dp"/>
+            <corners android:radius="5dp"></corners>
 
 
         </shape>
     </item>
-
 </layer-list>
