@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "39238441867",
+    "project_id": "week-meal-f4ebe",
+    "storage_bucket": "week-meal-f4ebe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:39238441867:android:bf5dc4a86963ddb77aed8e",
+        "android_client_info": {
+          "package_name": "com.example.weekmeal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "39238441867-clc7rhpichd4ugclfs5q6oelch2kf89j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK8lxiHnZiejjgQPNsGYFL62OwsT1NW1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "39238441867-clc7rhpichd4ugclfs5q6oelch2kf89j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
