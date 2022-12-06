@@ -5,18 +5,20 @@ import java.util.List;
 
 public class Planning {
 
+    private Integer id;
+
     //Format = {"Lundi-D" : Receip{Poulet}}  for lundi déjeuner
     private HashMap<String, List<Recipe>> mealsMenu;
 
-    private Integer id;
 
-    public Planning(HashMap<String, List<Recipe>> mealsMenu, Integer id) {
-        this.mealsMenu = mealsMenu;
+    public Planning(Integer id, HashMap<String, List<Recipe>> mealsMenu) {
         this.id = id;
+        this.mealsMenu = mealsMenu;
     }
 
     public Planning(){
-
+        this.id = 0;
+        this.mealsMenu = new HashMap<>();
     }
 
     public List<Recipe> getMealMenu(String menuDate) {
@@ -30,5 +32,9 @@ public class Planning {
 
     public Integer getId() {
         return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 }

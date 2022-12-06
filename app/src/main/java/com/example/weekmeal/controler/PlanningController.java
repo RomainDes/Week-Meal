@@ -3,9 +3,12 @@ package com.example.weekmeal.controler;
 import android.app.Activity;
 
 import com.example.weekmeal.entity.Planning;
+import com.example.weekmeal.entity.Recipe;
 import com.example.weekmeal.tools.JSONTool;
+import com.google.gson.internal.LinkedTreeMap;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class PlanningController {
@@ -17,11 +20,32 @@ public class PlanningController {
     }
 
     public PlanningController(){
-        this.planningList = new ArrayList<>();
+        this.planningList = new ArrayList<Planning>();
     }
 
     public void addPlannings(Planning planning, Activity activity){
-        JSONTool.getInstance().writeJSON(activity, planning, "planning");
+        readLocalBD(activity);
+        planning.setId(planningList.size());
+        this.planningList.add(planning);
+        JSONTool.getInstance().writeJSON(activity, planningList, "Planning");
+    }
+
+    public void readLocalBD(Activity activity){
+        planningList = new ArrayList<>();
+        ArrayList<LinkedTreeMap> planningsLocal = (ArrayList<LinkedTreeMap>)  JSONTool.getInstance().loadJSONFromAsset(activity, planningList, "Planning");
+        for (LinkedTreeMap ltm : planningsLocal){
+            //get every Recipes :
+            HashMap<String, List<Recipe>> mealsMenu = new HashMap<>();
+            LinkedTreeMap recipeListLTM = (LinkedTreeMap) ltm.get("mealsMenu");
+            for (Object keyLtm: recipeListLTM.keySet()){
+                mealsMenu.put((String) keyLtm, (List<Recipe>) recipeListLTM.get(keyLtm));
+            }
+
+            planningList.add(new Planning(
+                    ((Double)ltm.get("id")).intValue(),
+                    mealsMenu
+            ));
+        }
     }
 
     //Singleton:
