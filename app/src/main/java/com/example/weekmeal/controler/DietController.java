@@ -66,8 +66,7 @@ public class DietController {
     }
 
 
-    public Diet getDietByID(Activity activity, int i){
-        readLocalDB(activity);
+    public Diet getDietByID(int i){
         for(Diet diet: dietList){
             if (diet.getId() == i)
                 return diet;
