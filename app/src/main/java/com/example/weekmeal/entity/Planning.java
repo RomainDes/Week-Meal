@@ -7,7 +7,7 @@ public class Planning {
 
     private Integer id;
 
-    //Format = {"Lundi-D" : Receip{Poulet}}  for lundi déjeuner
+    //Format = {"LundiR1" : Recipe{Poulet}}  for lundi déjeuner
     private HashMap<String, List<Recipe>> mealsMenu;
 
 
@@ -25,7 +25,7 @@ public class Planning {
         return mealsMenu.get(menuDate);
     }
 
-    public void setMeal(String menuDate, List<Recipe> meal){
+    public void addMeal(String menuDate, List<Recipe> meal){
         mealsMenu.put(menuDate, meal);
     }
 
