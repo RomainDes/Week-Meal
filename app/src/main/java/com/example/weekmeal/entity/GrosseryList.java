@@ -9,6 +9,7 @@ import java.util.List;
 
 public class GrosseryList {
 
+    private Integer id;
     private List<Pair<String, Ingredient>> ingredientList;
     private Date grosseryDate;
 
@@ -32,5 +33,13 @@ public class GrosseryList {
 
     public void AddIngredientToGrossery(Ingredient ingredient, String quantity){
 
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 }
