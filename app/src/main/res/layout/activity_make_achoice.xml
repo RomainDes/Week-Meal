@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFDEF"
+    android:background="@drawable/fond"
     android:orientation="vertical"
     tools:context=".MakeAChoice">
 
@@ -20,28 +20,33 @@
         tools:ignore="MissingConstraints">
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10sp"
 
             android:fontFamily="@font/luthier_bold"
             android:text="WEEK"
+            android:background="@color/white"
             android:textAlignment="center"
-            android:textColor="#FB4F5A"
+            android:textColor="@color/black"
+            android:textStyle="bold"
             android:textSize="40sp"
 
 
             />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="-10dp"
             android:layout_marginBottom="10sp"
             android:fontFamily="@font/luthier_regular"
             android:text="meal"
             android:textAlignment="center"
-            android:textColor="#F6DD67"
+            android:textColor="@color/black"
+            android:background="@color/white"
             android:textSize="40sp"
 
 
@@ -53,26 +58,32 @@
             android:layout_height="2dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:background="#303030" />
+            android:background="@color/black" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:fontFamily="@font/glacialindifference_bold"
             android:text="MAKE A CHOICE"
             android:textAlignment="center"
-            android:textColor="#FB4F5A"
+            android:textColor="@color/black"
+            android:background="@color/white"
+
+
             android:textSize="17sp" />
 
 
         <LinearLayout
+            android:id="@+id/makeachoice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:layout_weight="7">
+            android:layout_weight="7"
+            android:visibility="visible">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -87,11 +98,10 @@
                         android:id="@+id/choice1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:layout_marginRight="10dp"
+                        android:layout_margin="10dp"
                         android:layout_weight="1"
-                        android:button="@null"
-                        android:text="\nC\nH\nO\nI\nX\n\n1\n"
+
+                        android:text="CHOIX N°1\n'double-clique pour plus d'information'"
                         android:fontFamily="@font/glacialindifference_bold"
                         android:textColor="@color/black"
                         android:textAlignment="center"
@@ -103,10 +113,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:layout_marginBottom="10dp"
-                        android:layout_marginRight="10dp"
-                        android:button="@null"
-                        android:text="\nC\nH\nO\nI\nX\n\n2\n"
+                        android:layout_margin="10dp"
+
+                        android:text="CHOIX N°2\n'double-clique pour plus d'information'"
                         android:textColor="@color/black"
                         android:textAlignment="center"
                         android:fontFamily="@font/glacialindifference_bold"
@@ -118,11 +127,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:button="@null"
-                        android:layout_marginBottom="10dp"
-                        android:layout_marginRight="10dp"
+
+
+                        android:layout_margin="10dp"
                         android:background="@drawable/makeachoice"
-                        android:text="\nC\nH\nO\nI\nX\n\n3\n"
+                        android:text="CHOIX N°3\n'double-clique pour plus d'information'"
                         android:fontFamily="@font/glacialindifference_bold"
                         android:textColor="@color/black"
                         android:textAlignment="center"
@@ -133,851 +142,1306 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_weight="1"
-                >
 
-
-                <HorizontalScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-
-                android:layout_marginBottom="10dp"
-                android:padding="10dp"
-                android:background="@drawable/planshop_true"
-                android:layout_weight="1"
-                android:fadeScrollbars="false"
-                android:fillViewport="true"
-
-                android:scrollbarSize="15dp"
-                >
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginRight="10dp"
-                        >
-
-
-                        <Button
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/image1"
-
-
-                            app:layout_constraintDimensionRatio="H,1:1"
-                            app:layout_constraintEnd_toEndOf="parent" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        >
-
-
-                        <Button
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            app:layout_constraintDimensionRatio="H,1:1"
-
-
-                            android:background="@drawable/image3"
-                            />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        >
-
-
-                        <Button
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            app:layout_constraintDimensionRatio="H,1:1"
-
-
-                            android:background="@drawable/image4"
-                            />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        >
-
-
-                        <Button
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            app:layout_constraintDimensionRatio="H,1:1"
-
-
-                            android:background="@drawable/image5"
-                            />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        >
-
-
-                        <Button
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            app:layout_constraintDimensionRatio="H,1:1"
-
-
-                            android:background="@drawable/image6"
-                            />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    >
-
-
-                    <Button
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        app:layout_constraintDimensionRatio="H,1:1"
-
-
-                        android:background="@drawable/image7"
-                        />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    >
-
-
-                    <Button
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        app:layout_constraintDimensionRatio="H,1:1"
-
-
-                        android:background="@drawable/image8"
-                        />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    >
-
-
-                    <Button
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        app:layout_constraintDimensionRatio="H,1:1"
-
-
-                        android:background="@drawable/image9"
-                        />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    >
-
-
-                    <Button
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        app:layout_constraintDimensionRatio="H,1:1"
-
-
-                        android:background="@drawable/image10"
-                        />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        >
-
-
-                        <Button
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            app:layout_constraintDimensionRatio="H,1:1"
-
-
-                            android:background="@drawable/image11"
-                            />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        >
-
-
-                        <Button
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            app:layout_constraintDimensionRatio="H,1:1"
-
-
-                            android:background="@drawable/image12"
-                            />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        >
-
-
-                        <Button
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            app:layout_constraintDimensionRatio="H,1:1"
-
-
-                            android:background="@drawable/image13"
-                            />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        >
-
-
-                        <Button
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            app:layout_constraintDimensionRatio="H,1:1"
-
-
-                            android:background="@drawable/image14"
-                            />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        >
-
-
-                        <Button
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            app:layout_constraintDimensionRatio="H,1:1"
-
-
-                            android:background="@drawable/image15"
-                            />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                </LinearLayout>
-
-
-            </HorizontalScrollView>
-                <HorizontalScrollView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-
-                    android:layout_marginBottom="10dp"
-                    android:padding="10dp"
-                    android:background="@drawable/planshop_true"
-                    android:layout_weight="1"
-                    android:fadeScrollbars="false"
-                    android:fillViewport="true"
-
-                    android:scrollbarSize="15dp"
-                    >
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginRight="10dp"
-                            >
-
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/image1"
-
-
-                                app:layout_constraintDimensionRatio="H,1:1"
-                                app:layout_constraintEnd_toEndOf="parent" />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            >
-
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                app:layout_constraintDimensionRatio="H,1:1"
-
-
-                                android:background="@drawable/image3"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            >
-
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                app:layout_constraintDimensionRatio="H,1:1"
-
-
-                                android:background="@drawable/image4"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            >
-
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                app:layout_constraintDimensionRatio="H,1:1"
-
-
-                                android:background="@drawable/image5"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            >
-
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                app:layout_constraintDimensionRatio="H,1:1"
-
-
-                                android:background="@drawable/image6"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            >
-
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                app:layout_constraintDimensionRatio="H,1:1"
-
-
-                                android:background="@drawable/image7"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            >
-
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                app:layout_constraintDimensionRatio="H,1:1"
-
-
-                                android:background="@drawable/image8"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            >
-
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                app:layout_constraintDimensionRatio="H,1:1"
-
-
-                                android:background="@drawable/image9"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            >
-
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                app:layout_constraintDimensionRatio="H,1:1"
-
-
-                                android:background="@drawable/image10"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            >
-
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                app:layout_constraintDimensionRatio="H,1:1"
-
-
-                                android:background="@drawable/image11"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            >
-
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                app:layout_constraintDimensionRatio="H,1:1"
-
-
-                                android:background="@drawable/image12"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            >
-
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                app:layout_constraintDimensionRatio="H,1:1"
-
-
-                                android:background="@drawable/image13"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            >
-
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                app:layout_constraintDimensionRatio="H,1:1"
-
-
-                                android:background="@drawable/image14"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            >
-
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                app:layout_constraintDimensionRatio="H,1:1"
-
-
-                                android:background="@drawable/image15"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    </LinearLayout>
-
-
-                </HorizontalScrollView>
-                <HorizontalScrollView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-
-                    android:layout_marginBottom="10dp"
-                    android:padding="10dp"
-                    android:background="@drawable/planshop_true"
-                    android:layout_weight="1"
-                    android:fadeScrollbars="false"
-                    android:fillViewport="true"
-
-                    android:scrollbarSize="15dp"
-                    >
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginRight="10dp"
-                            >
-
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/image1"
-
-
-                                app:layout_constraintDimensionRatio="H,1:1"
-                                app:layout_constraintEnd_toEndOf="parent" />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            >
-
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                app:layout_constraintDimensionRatio="H,1:1"
-
-
-                                android:background="@drawable/image3"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            >
-
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                app:layout_constraintDimensionRatio="H,1:1"
-
-
-                                android:background="@drawable/image4"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            >
-
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                app:layout_constraintDimensionRatio="H,1:1"
-
-
-                                android:background="@drawable/image5"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            >
-
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                app:layout_constraintDimensionRatio="H,1:1"
-
-
-                                android:background="@drawable/image6"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            >
-
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                app:layout_constraintDimensionRatio="H,1:1"
-
-
-                                android:background="@drawable/image7"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            >
-
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                app:layout_constraintDimensionRatio="H,1:1"
-
-
-                                android:background="@drawable/image8"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            >
-
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                app:layout_constraintDimensionRatio="H,1:1"
-
-
-                                android:background="@drawable/image9"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            >
-
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                app:layout_constraintDimensionRatio="H,1:1"
-
-
-                                android:background="@drawable/image10"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            >
-
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                app:layout_constraintDimensionRatio="H,1:1"
-
-
-                                android:background="@drawable/image11"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            >
-
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                app:layout_constraintDimensionRatio="H,1:1"
-
-
-                                android:background="@drawable/image12"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            >
-
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                app:layout_constraintDimensionRatio="H,1:1"
-
-
-                                android:background="@drawable/image13"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            >
-
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                app:layout_constraintDimensionRatio="H,1:1"
-
-
-                                android:background="@drawable/image14"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            >
-
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                app:layout_constraintDimensionRatio="H,1:1"
-
-
-                                android:background="@drawable/image15"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    </LinearLayout>
-
-
-                </HorizontalScrollView>
-
-
-
-
-
-
-
-
-
-
-            </LinearLayout>
         </LinearLayout>
 
 
+        <LinearLayout
+            android:id="@+id/choice1Planning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="7"
+            android:background="@drawable/planshop_true"
+            android:visibility="gone"
+            >
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/glacialindifference_bold"
+                    android:gravity="center"
+                    android:text="CHOICE 1"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/back1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_baseline_cancel_24"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+
+
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+
+                android:background="@color/black" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fadeScrollbars="false"
+                android:fillViewport="true"
+                android:padding="10dp"
+                android:scrollbarSize="15dp"
+                android:layout_weight="1"
+                >
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:rowCount="14"
+                    android:columnCount="2"
+                    >
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
+                        android:fontFamily="@font/glacialindifference_regular"
+                        android:gravity="center"
+                        android:text="LUNDI"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:paddingRight="20dp"/>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image1"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image3"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
+                        android:fontFamily="@font/glacialindifference_regular"
+                        android:gravity="center"
+                        android:text="MARDI"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:paddingRight="20dp"/>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image4"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image5"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
+                        android:fontFamily="@font/glacialindifference_regular"
+                        android:gravity="center"
+                        android:text="MERCREDI"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:paddingRight="20dp"/>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image6"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image7"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
+                        android:fontFamily="@font/glacialindifference_regular"
+                        android:gravity="center"
+                        android:text="JEUDI"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:paddingRight="20dp"/>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image8"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image9"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
+                        android:fontFamily="@font/glacialindifference_regular"
+                        android:gravity="center"
+                        android:text="VENDREDI"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:paddingRight="20dp"/>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image10"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image11"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
+                        android:fontFamily="@font/glacialindifference_regular"
+                        android:gravity="center"
+                        android:text="SAMEDI"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:paddingRight="20dp"/>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image12"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image13"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
+                        android:fontFamily="@font/glacialindifference_regular"
+                        android:gravity="center"
+                        android:text="DIMANCHE"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:paddingRight="20dp"/>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image14"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image15"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </GridLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/choice2Planning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="7"
+            android:background="@drawable/planshop_true"
+            android:visibility="gone"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/glacialindifference_bold"
+                    android:gravity="center"
+                    android:text="CHOICE 2"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/back2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_baseline_cancel_24"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+
+
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+
+                android:background="@color/black" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fadeScrollbars="false"
+                android:fillViewport="true"
+                android:padding="10dp"
+                android:scrollbarSize="15dp"
+                android:layout_weight="1"
+                >
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:rowCount="14"
+                    android:columnCount="2"
+                    >
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
+                        android:fontFamily="@font/glacialindifference_regular"
+                        android:gravity="center"
+                        android:text="LUNDI"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:paddingRight="20dp"/>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image1"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image3"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
+                        android:fontFamily="@font/glacialindifference_regular"
+                        android:gravity="center"
+                        android:text="MARDI"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:paddingRight="20dp"/>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image4"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image5"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
+                        android:fontFamily="@font/glacialindifference_regular"
+                        android:gravity="center"
+                        android:text="MERCREDI"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:paddingRight="20dp"/>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image6"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image7"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
+                        android:fontFamily="@font/glacialindifference_regular"
+                        android:gravity="center"
+                        android:text="JEUDI"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:paddingRight="20dp"/>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image8"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image9"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
+                        android:fontFamily="@font/glacialindifference_regular"
+                        android:gravity="center"
+                        android:text="VENDREDI"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:paddingRight="20dp"/>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image10"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image11"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
+                        android:fontFamily="@font/glacialindifference_regular"
+                        android:gravity="center"
+                        android:text="SAMEDI"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:paddingRight="20dp"/>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image12"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image13"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
+                        android:fontFamily="@font/glacialindifference_regular"
+                        android:gravity="center"
+                        android:text="DIMANCHE"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:paddingRight="20dp"/>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image14"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image15"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </GridLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/choice3Planning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="7"
+            android:background="@drawable/planshop_true"
+            android:visibility="gone"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/glacialindifference_bold"
+                    android:gravity="center"
+                    android:text="CHOICE 3"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/back3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_baseline_cancel_24"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+
+
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+
+                android:background="@color/black" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fadeScrollbars="false"
+                android:fillViewport="true"
+                android:padding="10dp"
+                android:scrollbarSize="15dp"
+                android:layout_weight="1"
+                >
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:rowCount="14"
+                    android:columnCount="2"
+                    >
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
+                        android:fontFamily="@font/glacialindifference_regular"
+                        android:gravity="center"
+                        android:text="LUNDI"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:paddingRight="20dp"/>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image1"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image3"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
+                        android:fontFamily="@font/glacialindifference_regular"
+                        android:gravity="center"
+                        android:text="MARDI"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:paddingRight="20dp"/>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image4"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image5"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
+                        android:fontFamily="@font/glacialindifference_regular"
+                        android:gravity="center"
+                        android:text="MERCREDI"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:paddingRight="20dp"/>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image6"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image7"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
+                        android:fontFamily="@font/glacialindifference_regular"
+                        android:gravity="center"
+                        android:text="JEUDI"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:paddingRight="20dp"/>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image8"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image9"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
+                        android:fontFamily="@font/glacialindifference_regular"
+                        android:gravity="center"
+                        android:text="VENDREDI"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:paddingRight="20dp"/>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image10"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image11"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
+                        android:fontFamily="@font/glacialindifference_regular"
+                        android:gravity="center"
+                        android:text="SAMEDI"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:paddingRight="20dp"/>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image12"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image13"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
+                        android:fontFamily="@font/glacialindifference_regular"
+                        android:gravity="center"
+                        android:text="DIMANCHE"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:paddingRight="20dp"/>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image14"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            android:background="@drawable/image15"
+
+
+
+                            >
+
+                        </Button>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </GridLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
 
 
 
@@ -1019,11 +1483,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="RETURN"
-
+                android:layout_marginRight="50dp"
                 android:textAlignment="textStart"
-                android:fontFamily="@font/glacialindifference_regular"
+                android:fontFamily="@font/glacialindifference_bold"
                 android:textColor="@color/black"
-                android:background="#FFFDEF"
+                android:background="@null"
                 />
             </LinearLayout>
             <LinearLayout
@@ -1036,11 +1500,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:id="@+id/choose1"
-                    android:background="#FFFDEF"
+                    android:background="@null"
                     android:textColor="@color/black"
                     android:textAlignment="textEnd"
-                    android:fontFamily="@font/glacialindifference_regular"
-                    android:text="CHOOSE"/>
+                    android:fontFamily="@font/glacialindifference_bold"
+                    android:text="CHOOSE"
+                    android:layout_marginLeft="50dp"/>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="wrap_content"
@@ -1050,13 +1515,13 @@
 
 
                     <Button
+                        android:id="@+id/choose2"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        app:layout_constraintDimensionRatio="H,1:1"
-                        android:id="@+id/choose2"
-                        android:scaleX="-1"
                         android:background="@drawable/ic_arrow_choose"
-                        />
+                        android:scaleX="-1"
+                        app:layout_constraintDimensionRatio="H,1:1"
+                        app:layout_constraintEnd_toEndOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
