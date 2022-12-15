@@ -24,7 +24,7 @@
                 android:width="20dp"
                 android:height="20dp"/>
 
-            <solid android:color="#FB4F5A"/>
+            <solid android:color="@color/white"/>
         </shape>
     </item>
     <item android:top="9dp" android:left="3dp" android:right="3dp" android:bottom="9dp">
