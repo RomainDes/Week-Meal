@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +19,7 @@ import com.example.weekmeal.entity.Diet;
 import com.example.weekmeal.entity.Recipe;
 import com.example.weekmeal.entity.Planning;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -101,124 +103,151 @@ public class MakeAChoice extends AppCompatActivity {
                 recettesUtilesFinales.add(recipe);
             }
         }
-
-/*
         Log.i("taille listeUtile :  ",recettesUtilesFinales.size()+ "");
-        for (int i =0 ; i< recettesUtilesFinales.size();i++){
+         if(recettesUtilesFinales.size() != meals){
+             Collections.shuffle(recettes);
+             int repasManquants = meals - recettesUtilesFinales.size();
+             for(int i=0; i<repasManquants; i++){
+                 recettesUtilesFinales.add(recettes.get(i));
+                 if (i == recettes.size()- 1){
+                    i = 0;
+                 }
+                 if(meals == recettesUtilesFinales.size()){
+                     break;
+                 }
+             }
+         }
+
+
+
+        Log.i("taille listeUtile :  ",recettesUtilesFinales.size()+ "");
+ /*       for (int i =0 ; i< recettesUtilesFinales.size();i++){
             Log.i("liste utile :  ",recettesUtilesFinales.get(i).getTitle()+ "");
         }
 */
 
 
-        Planning planning1 = new Planning(); // correspond au choix 1
-        planning1.setId(1);
-        for (int i = 0;  i <meals;i++){
-            try {
-                int compteur = 1;
-                List<Recipe> recipePass =  new ArrayList<>();
-                if (i < mealPerDay%meals ){
-                    recipePass.add(recettesUtilesFinales.get(i));
-                    planning1.addMeal("LundiR"+compteur,recipePass);
-                }else if (i < (mealPerDay%meals)*2){
-                    recipePass.add(recettesUtilesFinales.get(i));
-                    planning1.addMeal("MardiR"+compteur,recipePass);
-                }else if (i < (mealPerDay%meals)*3){
-                    recipePass.add(recettesUtilesFinales.get(i));
-                    planning1.addMeal("MercrediR"+compteur,recipePass);
-                }else if (i < (mealPerDay%meals)*4){
-                    recipePass.add(recettesUtilesFinales.get(i));
-                    planning1.addMeal("JeudiR"+compteur,recipePass);
-                }else if (i < (mealPerDay%meals)*5){
-                    recipePass.add(recettesUtilesFinales.get(i));
-                    planning1.addMeal("VendrediR"+compteur,recipePass);
-                }else if (i < (mealPerDay%meals)*6){
-                    recipePass.add(recettesUtilesFinales.get(i));
-                    planning1.addMeal("SamediR"+compteur,recipePass);
-                }else if (i < (mealPerDay%meals)*7){
-                    recipePass.add(recettesUtilesFinales.get(i));
-                    planning1.addMeal("DimancheR"+compteur,recipePass);
+        Planning planning1 =  getIntent().getParcelableExtra("planning1"); // correspond au choix 1
+        if (planning1 == null){
+            planning1 = new Planning();
+            planning1.setId(1);
+            for (int i = 0;  i <meals;i++){
+                try {
+                    int compteur = 1;
+                    List<Recipe> recipePass =  new ArrayList<>();
+                    if (i < mealPerDay%meals ){
+                        recipePass.add(recettesUtilesFinales.get(i));
+                        planning1.addMeal("LundiR"+compteur,recipePass);
+                    }else if (i < (mealPerDay%meals)*2){
+                        recipePass.add(recettesUtilesFinales.get(i));
+                        planning1.addMeal("MardiR"+compteur,recipePass);
+                    }else if (i < (mealPerDay%meals)*3){
+                        recipePass.add(recettesUtilesFinales.get(i));
+                        planning1.addMeal("MercrediR"+compteur,recipePass);
+                    }else if (i < (mealPerDay%meals)*4){
+                        recipePass.add(recettesUtilesFinales.get(i));
+                        planning1.addMeal("JeudiR"+compteur,recipePass);
+                    }else if (i < (mealPerDay%meals)*5){
+                        recipePass.add(recettesUtilesFinales.get(i));
+                        planning1.addMeal("VendrediR"+compteur,recipePass);
+                    }else if (i < (mealPerDay%meals)*6){
+                        recipePass.add(recettesUtilesFinales.get(i));
+                        planning1.addMeal("SamediR"+compteur,recipePass);
+                    }else if (i < (mealPerDay%meals)*7){
+                        recipePass.add(recettesUtilesFinales.get(i));
+                        planning1.addMeal("DimancheR"+compteur,recipePass);
+                    }
+                    if (compteur == mealPerDay){
+                        compteur =1;
+                    }
+                }catch(Exception e){
+                    break;
                 }
-                if (compteur == mealPerDay){
-                    compteur =1;
-                }
-            }catch(Exception e){
-                break;
             }
         }
 
-        Collections.shuffle(recettesUtilesFinales);
-        Planning planning2 = new Planning(); // correspond au choix 2
-        planning2.setId(2);
-        for (int i = 0;  i <meals;i++){
-            try {
-                int compteur = 1;
-                List<Recipe> recipePass =  new ArrayList<>();
-                if (i < mealPerDay%meals ){
-                    recipePass.add(recettesUtilesFinales.get(i));
-                    planning2.addMeal("LundiR"+compteur,recipePass);
-                }else if (i < (mealPerDay%meals)*2){
-                    recipePass.add(recettesUtilesFinales.get(i));
-                    planning2.addMeal("MardiR"+compteur,recipePass);
-                }else if (i < (mealPerDay%meals)*3){
-                    recipePass.add(recettesUtilesFinales.get(i));
-                    planning2.addMeal("MercrediR"+compteur,recipePass);
-                }else if (i < (mealPerDay%meals)*4){
-                    recipePass.add(recettesUtilesFinales.get(i));
-                    planning2.addMeal("JeudiR"+compteur,recipePass);
-                }else if (i < (mealPerDay%meals)*5){
-                    recipePass.add(recettesUtilesFinales.get(i));
-                    planning2.addMeal("VendrediR"+compteur,recipePass);
-                }else if (i < (mealPerDay%meals)*6){
-                    recipePass.add(recettesUtilesFinales.get(i));
-                    planning2.addMeal("SamediR"+compteur,recipePass);
-                }else if (i < (mealPerDay%meals)*7){
-                    recipePass.add(recettesUtilesFinales.get(i));
-                    planning2.addMeal("DimancheR"+compteur,recipePass);
+        Planning planning2 = getIntent().getParcelableExtra("planning2"); // correspond au choix 2
+        if (planning2 == null){
+            Collections.shuffle(recettesUtilesFinales);
+            planning2 = new Planning();
+            planning2.setId(2);
+            for (int i = 0;  i <meals;i++){
+                try {
+                    int compteur = 1;
+                    List<Recipe> recipePass =  new ArrayList<>();
+                    if (i < mealPerDay%meals ){
+                        recipePass.add(recettesUtilesFinales.get(i));
+                        planning2.addMeal("LundiR"+compteur,recipePass);
+                    }else if (i < (mealPerDay%meals)*2){
+                        recipePass.add(recettesUtilesFinales.get(i));
+                        planning2.addMeal("MardiR"+compteur,recipePass);
+                    }else if (i < (mealPerDay%meals)*3){
+                        recipePass.add(recettesUtilesFinales.get(i));
+                        planning2.addMeal("MercrediR"+compteur,recipePass);
+                    }else if (i < (mealPerDay%meals)*4){
+                        recipePass.add(recettesUtilesFinales.get(i));
+                        planning2.addMeal("JeudiR"+compteur,recipePass);
+                    }else if (i < (mealPerDay%meals)*5){
+                        recipePass.add(recettesUtilesFinales.get(i));
+                        planning2.addMeal("VendrediR"+compteur,recipePass);
+                    }else if (i < (mealPerDay%meals)*6){
+                        recipePass.add(recettesUtilesFinales.get(i));
+                        planning2.addMeal("SamediR"+compteur,recipePass);
+                    }else if (i < (mealPerDay%meals)*7){
+                        recipePass.add(recettesUtilesFinales.get(i));
+                        planning2.addMeal("DimancheR"+compteur,recipePass);
+                    }
+                    if (compteur == mealPerDay){
+                        compteur =1;
+                    }
+                }catch(Exception e){
+                    break;
                 }
-                if (compteur == mealPerDay){
-                    compteur =1;
-                }
-        }catch(Exception e){
-            break;
-        }
-        }
-
-        Collections.shuffle(recettesUtilesFinales);
-        Planning planning3 = new Planning(); // correspond au choix 3
-        planning3.setId(3);
-        for (int i = 0;  i <meals;i++){
-            try {
-                int compteur = 1;
-                List<Recipe> recipePass =  new ArrayList<>();
-                if (i < mealPerDay%meals ){
-                    recipePass.add(recettesUtilesFinales.get(i));
-                    planning3.addMeal("LundiR"+compteur,recipePass);
-                }else if (i < (mealPerDay%meals)*2){
-                    recipePass.add(recettesUtilesFinales.get(i));
-                    planning3.addMeal("MardiR"+compteur,recipePass);
-                }else if (i < (mealPerDay%meals)*3){
-                    recipePass.add(recettesUtilesFinales.get(i));
-                    planning3.addMeal("MercrediR"+compteur,recipePass);
-                }else if (i < (mealPerDay%meals)*4){
-                    recipePass.add(recettesUtilesFinales.get(i));
-                    planning3.addMeal("JeudiR"+compteur,recipePass);
-                }else if (i < (mealPerDay%meals)*5){
-                    recipePass.add(recettesUtilesFinales.get(i));
-                    planning3.addMeal("VendrediR"+compteur,recipePass);
-                }else if (i < (mealPerDay%meals)*6){
-                    recipePass.add(recettesUtilesFinales.get(i));
-                    planning3.addMeal("SamediR"+compteur,recipePass);
-                }else if (i < (mealPerDay%meals)*7) {
-                    recipePass.add(recettesUtilesFinales.get(i));
-                    planning3.addMeal("DimancheR" + compteur, recipePass);
-                }
-                if (compteur == mealPerDay){
-                    compteur =1;
-                }
-            }catch(Exception e){
-                break;
             }
         }
+
+
+
+        Planning planning3 = getIntent().getParcelableExtra("planning3"); // correspond au choix 3
+        if (planning3 == null){
+            Collections.shuffle(recettesUtilesFinales);
+            planning3 = new Planning();
+            planning3.setId(3);
+            for (int i = 0;  i <meals;i++){
+                try {
+                    int compteur = 1;
+                    List<Recipe> recipePass =  new ArrayList<>();
+                    if (i < mealPerDay%meals ){
+                        recipePass.add(recettesUtilesFinales.get(i));
+                        planning3.addMeal("LundiR"+compteur,recipePass);
+                    }else if (i < (mealPerDay%meals)*2){
+                        recipePass.add(recettesUtilesFinales.get(i));
+                        planning3.addMeal("MardiR"+compteur,recipePass);
+                    }else if (i < (mealPerDay%meals)*3){
+                        recipePass.add(recettesUtilesFinales.get(i));
+                        planning3.addMeal("MercrediR"+compteur,recipePass);
+                    }else if (i < (mealPerDay%meals)*4){
+                        recipePass.add(recettesUtilesFinales.get(i));
+                        planning3.addMeal("JeudiR"+compteur,recipePass);
+                    }else if (i < (mealPerDay%meals)*5){
+                        recipePass.add(recettesUtilesFinales.get(i));
+                        planning3.addMeal("VendrediR"+compteur,recipePass);
+                    }else if (i < (mealPerDay%meals)*6){
+                        recipePass.add(recettesUtilesFinales.get(i));
+                        planning3.addMeal("SamediR"+compteur,recipePass);
+                    }else if (i < (mealPerDay%meals)*7) {
+                        recipePass.add(recettesUtilesFinales.get(i));
+                        planning3.addMeal("DimancheR" + compteur, recipePass);
+                    }
+                    if (compteur == mealPerDay){
+                        compteur =1;
+                    }
+                }catch(Exception e){
+                    break;
+                }
+            }
+        }
+
 
 
         Log.i("planning1:  ",planning1.getMealMenu("LundiR1").get(0).getTitle()+ "");
@@ -243,6 +272,11 @@ public class MakeAChoice extends AppCompatActivity {
             }
         }
 
+        Planning finalPlanning1 = planning1;
+        Planning finalPlanning2 = planning2;
+        Planning finalPlanning3 = planning3;
+
+        
         buttonChoose.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 if (radioButton1.isChecked() == false && radioButton2.isChecked() == false && radioButton3.isChecked() == false ){
@@ -257,12 +291,15 @@ public class MakeAChoice extends AppCompatActivity {
                     }
                     Intent intent = new Intent(MakeAChoice.this, yourchoice.class);
                     intent.putExtra("toggleList",toggleList);
+                    intent.putExtra("planning1", (Parcelable) finalPlanning1);
+                    intent.putExtra("planning2", (Parcelable) finalPlanning2);
+                    intent.putExtra("planning3", (Parcelable) finalPlanning3);
                     intent.putExtra("mealPerDay",mealPerDay +"");
                     intent.putExtra("numberPeople", numberPeople+"");
                     intent.putExtra("planningName", planningName);
                     intent.putExtra("choice",choice+"");
                     // ajouter envoie dietTrue
-                    // ajouter envoie des plannings 
+                    // ajouter envoie des plannings
                     startActivity(intent);
                    }
             }
@@ -294,10 +331,15 @@ public class MakeAChoice extends AppCompatActivity {
                     }
                     Intent intent = new Intent(MakeAChoice.this, yourchoice.class);
                     intent.putExtra("toggleList",toggleList);
+                    intent.putExtra("planning1", (Parcelable) finalPlanning1);
+                    intent.putExtra("planning2", (Parcelable) finalPlanning2);
+                    intent.putExtra("planning3", (Parcelable) finalPlanning3);
                     intent.putExtra("mealPerDay",mealPerDay +"");
                     intent.putExtra("numberPeople", numberPeople+"");
                     intent.putExtra("planningName", planningName);
                     intent.putExtra("choice",choice+"");
+                    // ajouter envoie dietTrue
+                    // ajouter envoie des plannings
                     startActivity(intent);
                 }
 
