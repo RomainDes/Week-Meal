@@ -18,6 +18,7 @@ public class yourchoice extends AppCompatActivity {
     private Button buttonShare1;
     private TextView yourChoice;
     private Button buttonShopping;
+    private Button buttonPlanning;
 
 
     private ArrayList<Boolean> toggleList = new ArrayList<>();
@@ -36,14 +37,23 @@ public class yourchoice extends AppCompatActivity {
         yourChoice  = (TextView) findViewById(R.id.your_choice_textChoice);
 
         buttonShopping = (Button) findViewById(R.id.shopping);
-//        buttonShopping.setOnClickListener(new View.OnClickListener() {
-
-//            public void onClick(View view) {
+        buttonShopping.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
 //                Intent intent = new Intent(yourchoice.this, yourchoice2.class);
 //                startActivity(intent);
-//
-//            }
-//        });
+                findViewById(R.id.planningLayout).setVisibility(View.GONE);
+                findViewById(R.id.shoppingLayout).setVisibility(View.VISIBLE);
+            }
+        });
+
+        buttonPlanning = (Button) findViewById(R.id.planning);
+        buttonPlanning.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                findViewById(R.id.planningLayout).setVisibility(View.VISIBLE);
+                findViewById(R.id.shoppingLayout).setVisibility(View.GONE);
+            }
+        });
 
 
         Bundle extras = getIntent().getExtras();
