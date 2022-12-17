@@ -72,6 +72,14 @@ public class GrosseryListController {
         return grosseryList;
     }
 
+
+    public GrosseryList getGrosseryListById(int i){
+        for(GrosseryList g: grosseryLists)
+            if(g.getId() == i)
+                return grosseryLists.get(i);
+        return null;
+    }
+
     //Singleton :
     private static GrosseryListController instance;
 

@@ -42,4 +42,15 @@ public class GrosseryList {
     public void setId(Integer id) {
         this.id = id;
     }
+
+    public String toString(){
+        StringBuilder textList = new StringBuilder();
+        for(Pair<String, Ingredient> ingredient : ingredientList){
+            textList.append(ingredient.first.split("--")[0]);
+            textList.append(ingredient.second);
+            textList.append(" ");
+            textList.append(ingredient.second.toString());
+        }
+        return textList.toString();
+    }
 }
