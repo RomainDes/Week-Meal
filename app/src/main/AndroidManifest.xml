@@ -21,11 +21,8 @@
                 android:value="" />
         </activity>
 
-            android:name=".yourchoice2"
-            android:exported="false" />
-        <activity
-            android:name=".yourchoice"
-            android:exported="false" />
+
+
 
         <activity
             android:name=".Planning"
@@ -41,20 +38,8 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity
-            android:name=".Register"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".Login"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+
+
 
         <activity
             android:name=".yourchoice2"
