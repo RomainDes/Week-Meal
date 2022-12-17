@@ -40,16 +40,16 @@ public class MakeAChoice extends AppCompatActivity {
         setContentView(R.layout.activity_make_achoice);
 
         name = (TextView) findViewById(R.id.make_choice_makeachoice);
-        buttonReturn = (Button) findViewById(R.id.your_choice_buttonReturn);
-        buttonChoose = (Button) findViewById(R.id.choiceChoose);
+        buttonReturn = (Button) findViewById(R.id.return2);
+        buttonChoose = (Button) findViewById(R.id.choose1);
         // partie de Romain avec les boutons
-        buttonChoose1 = (Button) findViewById(R.id.choiceChoose1);
+        buttonChoose1 = (Button) findViewById(R.id.choose2);
         buttonReturn1 = (Button) findViewById(R.id.return1);
         radioGroup = (RadioGroup) findViewById(R.id.make_choice_radio);
         radioButton1 = (RadioButton) findViewById(R.id.choice1);
         radioButton2 = (RadioButton) findViewById(R.id.choice2);
         radioButton3 = (RadioButton) findViewById(R.id.choice3);
-        linearLayout1 = (LinearLayout) findViewById(R.id.make_choice_linear1);
+//        linearLayout1 = (LinearLayout) findViewById(R.id.make_choice_linear1);
 
 
 

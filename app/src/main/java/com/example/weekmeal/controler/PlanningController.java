@@ -2,6 +2,7 @@ package com.example.weekmeal.controler;
 
 import android.app.Activity;
 
+import com.example.weekmeal.entity.Ingredient;
 import com.example.weekmeal.entity.Planning;
 import com.example.weekmeal.entity.Recipe;
 import com.example.weekmeal.tools.JSONTool;
@@ -38,7 +39,13 @@ public class PlanningController {
             HashMap<String, List<Recipe>> mealsMenu = new HashMap<>();
             LinkedTreeMap recipeListLTM = (LinkedTreeMap) ltm.get("mealsMenu");
             for (Object keyLtm: recipeListLTM.keySet()){
-                mealsMenu.put((String) keyLtm, (List<Recipe>) recipeListLTM.get(keyLtm));
+                //convert to List<recipe> :
+                List<Recipe> listToAdd = new ArrayList<>();
+                for(LinkedTreeMap ltmRecipe: (List<LinkedTreeMap>)recipeListLTM.get(keyLtm)) {
+
+                    listToAdd.add(RecipeController.getInstance().convertLTM(ltmRecipe));
+                }
+                mealsMenu.put((String) keyLtm, listToAdd);
             }
 
             planningList.add(new Planning(

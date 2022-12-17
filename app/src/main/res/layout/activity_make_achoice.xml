@@ -61,17 +61,18 @@
             android:background="@color/black" />
 
         <TextView
-            android:layout_gravity="center"
+            android:id="@+id/make_choice_makeachoice"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_margin="10dp"
+            android:background="@color/white"
             android:fontFamily="@font/glacialindifference_bold"
             android:text="MAKE A CHOICE"
             android:textAlignment="center"
+
+
             android:textColor="@color/black"
-            android:background="@color/white"
-
-
             android:textSize="17sp" />
 
 
@@ -91,6 +92,7 @@
                 android:layout_weight="2">
 
                 <RadioGroup
+                    android:id="@+id/make_choice_radio"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
@@ -101,43 +103,43 @@
                         android:layout_margin="10dp"
                         android:layout_weight="1"
 
-                        android:text="CHOIX N°1\n'double-clique pour plus d'information'"
-                        android:fontFamily="@font/glacialindifference_bold"
-                        android:textColor="@color/black"
-                        android:textAlignment="center"
                         android:background="@drawable/makeachoice"
-                        android:textSize="10dp"/>
+                        android:fontFamily="@font/glacialindifference_bold"
+                        android:text="CHOIX N°1\n'double-clique pour plus d'information'"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="10dp" />
 
                     <RadioButton
                         android:id="@+id/choice2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:layout_margin="10dp"
+                        android:layout_weight="1"
 
-                        android:text="CHOIX N°2\n'double-clique pour plus d'information'"
-                        android:textColor="@color/black"
-                        android:textAlignment="center"
-                        android:fontFamily="@font/glacialindifference_bold"
                         android:background="@drawable/makeachoice"
-                        android:textSize="10dp"
-    />
+                        android:fontFamily="@font/glacialindifference_bold"
+                        android:text="CHOIX N°2\n'double-clique pour plus d'information'"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="10dp" />
+
                     <RadioButton
                         android:id="@+id/choice3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-
-
                         android:layout_margin="10dp"
+
+
+                        android:layout_weight="1"
                         android:background="@drawable/makeachoice"
-                        android:text="CHOIX N°3\n'double-clique pour plus d'information'"
                         android:fontFamily="@font/glacialindifference_bold"
-                        android:textColor="@color/black"
+                        android:text="CHOIX N°3\n'double-clique pour plus d'information'"
                         android:textAlignment="center"
+                        android:textColor="@color/black"
                         android:textSize="10dp"
 
-   />
+                        />
                 </RadioGroup>
 
             </LinearLayout>

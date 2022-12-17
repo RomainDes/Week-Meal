@@ -49,25 +49,30 @@ public class RecipeController {
     public void readLocalDB(Activity activity){
         ArrayList<LinkedTreeMap> RecipesLocal = (ArrayList<LinkedTreeMap>) JSONTool.getInstance().loadJSONFromAsset(activity, recipeList, "Recipe");
         for(LinkedTreeMap ltm : RecipesLocal){
-            //get every ingredients and diets:
-            HashMap<String, Integer> ingredients = new HashMap<>();
-            LinkedTreeMap ingredientListLTM = (LinkedTreeMap) ltm.get("ingredients");
-            for (Object keyLTM : ingredientListLTM.keySet()){
-                ingredients.put((String) keyLTM, ((Double) ingredientListLTM.get(keyLTM)).intValue());
-            }
-            List<Integer> diets = new ArrayList<>();
-            List<Double> dietsListLTM = (ArrayList) ltm.get("diets");
-            for (Double i : dietsListLTM){
-                diets.add(i.intValue());
-            }
-            recipeList.add(new Recipe(
-            new Integer(((Double) ltm.get("id")).intValue()),
-                    (String) ltm.get("title"),
-                    (String) ltm.get("direction"),
-                    ingredients,
-                    diets
-            ));
+
+            recipeList.add(convertLTM(ltm));
         }
+    }
+
+    public Recipe convertLTM(LinkedTreeMap ltm){
+        //get every ingredients and diets:
+        HashMap<String, Integer> ingredients = new HashMap<>();
+        LinkedTreeMap ingredientListLTM = (LinkedTreeMap) ltm.get("ingredients");
+        for (Object keyLTM : ingredientListLTM.keySet()){
+            ingredients.put((String) keyLTM, ((Double) ingredientListLTM.get(keyLTM)).intValue());
+        }
+        List<Integer> diets = new ArrayList<>();
+        List<Double> dietsListLTM = (ArrayList) ltm.get("diets");
+        for (Double i : dietsListLTM){
+            diets.add(i.intValue());
+        }
+        return new Recipe(
+                new Integer(((Double) ltm.get("id")).intValue()),
+                (String) ltm.get("title"),
+                (String) ltm.get("direction"),
+                ingredients,
+                diets
+        );
     }
     //Singleton:
     private static RecipeController instance;
