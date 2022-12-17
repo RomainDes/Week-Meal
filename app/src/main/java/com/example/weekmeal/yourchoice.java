@@ -27,23 +27,23 @@ public class yourchoice extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_yourchoice);
 
-        buttonReturn = (Button) findViewById(R.id.your_choice_buttonReturn);
-        buttonReturn1 = (Button) findViewById(R.id.your_choice_buttonReturn1);
+        buttonReturn = (Button) findViewById(R.id.return1);
+        buttonReturn1 = (Button) findViewById(R.id.return2);
 
         //bouttons share à faire
-        buttonShare = (Button) findViewById(R.id.your_choice_buttonShare);
-        buttonShare1 = (Button) findViewById(R.id.your_choice_buttonShare1);
+        buttonShare = (Button) findViewById(R.id.choose1);
+        buttonShare1 = (Button) findViewById(R.id.choose2);
         yourChoice  = (TextView) findViewById(R.id.your_choice_textChoice);
 
         buttonShopping = (Button) findViewById(R.id.shopping);
-        buttonShopping.setOnClickListener(new View.OnClickListener() {
+//        buttonShopping.setOnClickListener(new View.OnClickListener() {
 
-            public void onClick(View view) {
-                Intent intent = new Intent(yourchoice.this, yourchoice2.class);
-                startActivity(intent);
-
-            }
-        });
+//            public void onClick(View view) {
+//                Intent intent = new Intent(yourchoice.this, yourchoice2.class);
+//                startActivity(intent);
+//
+//            }
+//        });
 
 
         Bundle extras = getIntent().getExtras();
