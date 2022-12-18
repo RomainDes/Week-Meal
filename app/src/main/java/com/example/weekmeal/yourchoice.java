@@ -1,19 +1,25 @@
 package com.example.weekmeal;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.weekmeal.controler.GrosseryListController;
+import com.example.weekmeal.controler.IngredientController;
 import com.example.weekmeal.controler.PlanningController;
+import com.example.weekmeal.controler.RecipeController;
 import com.example.weekmeal.entity.Planning;
+import com.example.weekmeal.entity.Recipe;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class yourchoice extends AppCompatActivity {
 
@@ -24,6 +30,8 @@ public class yourchoice extends AppCompatActivity {
     private TextView yourChoice;
     private Button buttonShopping;
     private Button buttonPlanning;
+
+    private List<Button> mealsButtonList;
 
 
     private ArrayList<Boolean> toggleList = new ArrayList<>();
@@ -103,5 +111,57 @@ public class yourchoice extends AppCompatActivity {
         //setting up quantity to match people numbers:
         GrosseryListController.getInstance().multiplyByNbPeople("grosseryList"+choice, numberPeople);
         shoppingList.setText(GrosseryListController.getInstance().getGrosseryListById("grosseryList"+choice).toString());
+
+        //set meal picture :
+        String[] listMealId = {
+                "LundiR1",
+//                "LundiR2",
+                "MardiR1",
+//                "MardiR2",
+                "MercrediR1",
+//                "MercrediR2",
+                "JeudiR1",
+//                "JeudiR2",
+                "VendrediR1",
+//                "VendrediR2",
+                "SamediR1",
+//                "SamediR2",
+                "DimancheR1",
+//                "DimancheR2",
+        };
+
+        Planning p = PlanningController.getInstance().getPlanningById("planning"+choice, this);
+        this.mealsButtonList = new ArrayList<>();
+
+        int i =0;
+        displayMealPicture(p, listMealId[i], i);i++;
+        displayMealPicture(p, listMealId[i], i);i++;
+        displayMealPicture(p, listMealId[i], i);i++;
+        displayMealPicture(p, listMealId[i], i);i++;
+        displayMealPicture(p, listMealId[i], i);i++;
+        displayMealPicture(p, listMealId[i], i);i++;
+        displayMealPicture(p, listMealId[i], i);i++;
+//        displayMealPicture(p, listMealId[i], i);i++;
+//        displayMealPicture(p, listMealId[i], i);i++;
+//        displayMealPicture(p, listMealId[i], i);i++;
+//        displayMealPicture(p, listMealId[i], i);i++;
+//        displayMealPicture(p, listMealId[i], i);i++;
+//        displayMealPicture(p, listMealId[i], i);i++;
+//        displayMealPicture(p, listMealId[i], i);i++;
+    }
+
+    private void displayMealPicture(Planning p, String mealID, int index) {
+        Recipe r = p.getMealMenu(mealID).get(0);
+        String mealRessId = "meal"+String.valueOf(r.getId()+1);
+//        int viewID = R.id.LundiR1;
+        int viewID = this.getResources().getIdentifier(mealID, "id", this.getPackageName());
+        this.mealsButtonList.add(findViewById(viewID));
+        this.mealsButtonList.get(index).setText(mealRessId);
+
+        int ressID = this.getResources().getIdentifier(mealRessId, "drawable", this.getPackageName());
+//        Drawable d = this.getResources().getDrawable();
+        Drawable d = ContextCompat.getDrawable(this, ressID);
+        this.mealsButtonList.get(index).setBackground(d);
+
     }
 }
