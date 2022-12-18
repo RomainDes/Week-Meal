@@ -44,6 +44,12 @@ public class MakeAChoice extends AppCompatActivity {
     private Button back2;
     private Button back3;
 
+    private Button buttonRecette1Planning1;
+
+    private LinearLayout choice1Recette1;
+
+    private Button backchoice1Recette1;
+
 
 
     private  ArrayList<Boolean> toggleList = new ArrayList<>();
@@ -74,6 +80,14 @@ public class MakeAChoice extends AppCompatActivity {
         back1 = (Button) findViewById(R.id.back1);
         back2 = (Button) findViewById(R.id.back2);
         back3 = (Button) findViewById(R.id.back3);
+
+        buttonRecette1Planning1 = (Button) findViewById(R.id.buttonRecette1Planning1);
+
+
+        choice1Recette1  = (LinearLayout) findViewById(R.id.choice1Recette1);
+
+
+        backchoice1Recette1 = (Button) findViewById(R.id.backchoice1Recette1);
 
 
 
@@ -427,6 +441,26 @@ public class MakeAChoice extends AppCompatActivity {
                 makeachoice.setVisibility(View.VISIBLE);
             }
         });
+
+
+        //Planning1
+
+        //Recette1
+        buttonRecette1Planning1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                choice1Planning.setVisibility(View.GONE);
+                choice1Recette1.setVisibility(View.VISIBLE);
+            }
+        });
+        backchoice1Recette1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                choice1Planning.setVisibility(View.VISIBLE);
+                choice1Recette1.setVisibility(View.GONE);
+            }
+        });
+
+
+
 
 
  /*for (int i=1; i<= meals;i++){

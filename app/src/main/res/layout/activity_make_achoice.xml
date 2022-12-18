@@ -8,6 +8,8 @@
     android:orientation="vertical"
     tools:context=".MakeAChoice">
 
+
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
@@ -147,7 +149,7 @@
 
         </LinearLayout>
 
-
+        #PLANNING 1
         <LinearLayout
             android:id="@+id/choice1Planning"
             android:layout_width="match_parent"
@@ -232,6 +234,7 @@
                         android:layout_rowWeight="1"
                         >
                         <Button
+                            android:id="@+id/buttonRecette1Planning1"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
@@ -580,6 +583,7 @@
 
 
         </LinearLayout>
+        #PLANNING 2
         <LinearLayout
             android:id="@+id/choice2Planning"
             android:layout_width="match_parent"
@@ -1012,6 +1016,7 @@
 
 
         </LinearLayout>
+        #PLANNING 3
         <LinearLayout
             android:id="@+id/choice3Planning"
             android:layout_width="match_parent"
@@ -1441,6 +1446,90 @@
 
                 </GridLayout>
             </ScrollView>
+
+
+        </LinearLayout>
+
+        #CHOICE 1
+        #RECETTE 1
+        <LinearLayout
+            android:id="@+id/choice1Recette1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="7"
+            android:background="@drawable/planshop_true"
+            android:visibility="gone"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/glacialindifference_bold"
+                    android:gravity="center"
+                    android:text="RECETTE 1"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/backchoice1Recette1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_baseline_cancel_24"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+
+
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+
+                android:background="@color/black" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fadeScrollbars="false"
+                android:fillViewport="true"
+                android:padding="10dp"
+                android:scrollbarSize="15dp"
+                android:layout_weight="1"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/imageRecette1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/image1"/>
+                    <TextView
+                        android:id="@+id/ingredientRecette1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="..."/>
+                    <TextView
+                        android:id="@+id/recetteRecette1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="..."/>
+                </LinearLayout>
+
+
+            </ScrollView>
+
 
 
         </LinearLayout>
