@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.weekmeal.controler.DietController;
+import com.example.weekmeal.controler.IngredientController;
+import com.example.weekmeal.controler.RecipeController;
 import com.example.weekmeal.entity.Diet;
 
 import android.content.Intent;
@@ -63,6 +65,12 @@ public class MainActivity extends AppCompatActivity {
 
 
         setContentView(R.layout.activity_main);
+        RecipeController.getInstance().synchronizedWithDB(this);
+        RecipeController.getInstance().readLocalDB(this);
+        DietController.getInstance().synchronizedWithDB(this);
+        DietController.getInstance().readLocalDB(this);
+        IngredientController.getInstance().synchronizedWithDB(this);
+        IngredientController.getInstance().readLocalDB(this);
 //récupérer tous les bouttons lors du lancement de l'application
         buttonMoreMeal = (Button) findViewById(R.id.buttonMoreMeal);
         buttonLessMeal = (Button) findViewById(R.id.buttonLessMeal);

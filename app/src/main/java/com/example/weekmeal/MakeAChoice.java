@@ -2,6 +2,7 @@ package com.example.weekmeal;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
@@ -130,7 +131,7 @@ public class MakeAChoice extends AppCompatActivity {
         Planning planning1 =  getIntent().getParcelableExtra("planning1"); // correspond au choix 1
         if (planning1 == null){
             planning1 = new Planning();
-            planning1.setId(1);
+            planning1.setId("planning1");
             for (int i = 0;  i <meals;i++){
                 try {
                     int compteur = 1;
@@ -170,7 +171,7 @@ public class MakeAChoice extends AppCompatActivity {
         if (planning2 == null){
             Collections.shuffle(recettesUtilesFinales);
             planning2 = new Planning();
-            planning2.setId(2);
+            planning2.setId("planning2");
             for (int i = 0;  i <meals;i++){
                 try {
                     int compteur = 1;
@@ -212,7 +213,7 @@ public class MakeAChoice extends AppCompatActivity {
         if (planning3 == null){
             Collections.shuffle(recettesUtilesFinales);
             planning3 = new Planning();
-            planning3.setId(3);
+            planning3.setId("planning3");
             for (int i = 0;  i <meals;i++){
                 try {
                     int compteur = 1;
@@ -276,6 +277,7 @@ public class MakeAChoice extends AppCompatActivity {
         Planning finalPlanning2 = planning2;
         Planning finalPlanning3 = planning3;
 
+        Activity activity = this;
         
         buttonChoose.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -291,9 +293,9 @@ public class MakeAChoice extends AppCompatActivity {
                     }
                     Intent intent = new Intent(MakeAChoice.this, yourchoice.class);
                     intent.putExtra("toggleList",toggleList);
-                    intent.putExtra("planning1", (Parcelable) finalPlanning1);
-                    intent.putExtra("planning2", (Parcelable) finalPlanning2);
-                    intent.putExtra("planning3", (Parcelable) finalPlanning3);
+                    intent.putExtra("planning1", finalPlanning1.getId());
+                    intent.putExtra("planning2", finalPlanning2.getId());
+                    intent.putExtra("planning3", finalPlanning3.getId());
                     intent.putExtra("mealPerDay",mealPerDay +"");
                     intent.putExtra("numberPeople", numberPeople+"");
                     intent.putExtra("planningName", planningName);
@@ -301,6 +303,11 @@ public class MakeAChoice extends AppCompatActivity {
                     // ajouter envoie dietTrue
                     // ajouter envoie des plannings
                     startActivity(intent);
+
+                    //register planning :
+                    PlanningController.getInstance().addPlannings(finalPlanning1, activity);
+                    PlanningController.getInstance().addPlannings(finalPlanning2, activity);
+                    PlanningController.getInstance().addPlannings(finalPlanning3, activity);
                    }
             }
         });
@@ -331,9 +338,9 @@ public class MakeAChoice extends AppCompatActivity {
                     }
                     Intent intent = new Intent(MakeAChoice.this, yourchoice.class);
                     intent.putExtra("toggleList",toggleList);
-                    intent.putExtra("planning1", (Parcelable) finalPlanning1);
-                    intent.putExtra("planning2", (Parcelable) finalPlanning2);
-                    intent.putExtra("planning3", (Parcelable) finalPlanning3);
+                    intent.putExtra("planning1", finalPlanning1.getId());
+                    intent.putExtra("planning2", finalPlanning2.getId());
+                    intent.putExtra("planning3", finalPlanning3.getId());
                     intent.putExtra("mealPerDay",mealPerDay +"");
                     intent.putExtra("numberPeople", numberPeople+"");
                     intent.putExtra("planningName", planningName);
@@ -341,6 +348,11 @@ public class MakeAChoice extends AppCompatActivity {
                     // ajouter envoie dietTrue
                     // ajouter envoie des plannings
                     startActivity(intent);
+
+                    //register planning :
+                    PlanningController.getInstance().addPlannings(finalPlanning1, activity);
+                    PlanningController.getInstance().addPlannings(finalPlanning2, activity);
+                    PlanningController.getInstance().addPlannings(finalPlanning3, activity);
                 }
 
             }

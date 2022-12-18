@@ -8,7 +8,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.weekmeal.controler.GrosseryListController;
+import com.example.weekmeal.controler.PlanningController;
+import com.example.weekmeal.entity.Planning;
+
 import java.util.ArrayList;
+import java.util.Date;
 
 public class yourchoice extends AppCompatActivity {
 
@@ -22,6 +27,7 @@ public class yourchoice extends AppCompatActivity {
 
 
     private ArrayList<Boolean> toggleList = new ArrayList<>();
+    private Planning planning;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,7 +95,11 @@ public class yourchoice extends AppCompatActivity {
             }
         });
 
+        //get the selected planning :
+        planning = PlanningController.getInstance().getPlanningById("planning"+choice, this);
 
-
+        TextView shoppingList = (TextView) findViewById(R.id.shoppingList);
+        GrosseryListController.getInstance().generateGrossery("grosseryList"+choice, planning.getAllIngredients(), new Date(), this);
+        shoppingList.setText(GrosseryListController.getInstance().getGrosseryListById("grosseryList"+choice).toString());
     }
 }

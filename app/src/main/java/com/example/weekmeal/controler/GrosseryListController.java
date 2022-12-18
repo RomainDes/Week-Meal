@@ -28,16 +28,25 @@ public class GrosseryListController {
      * @param date: Date planed for the grossery by the user,
      * @param ingredientsList :list of ingredient with their quantities
      * */
-    public void generateGrossery(List<Pair<String, Ingredient>> ingredientsList, Date date, Activity activity){
+    public void generateGrossery(String id, List<Pair<String, Ingredient>> ingredientsList, Date date, Activity activity){
         GrosseryList gl = new GrosseryList(ingredientsList, date);
         //write in local files :
         readLocalBD(activity);
-        gl.setId(grosseryLists.size());
-        grosseryLists.add(gl);
+        gl.setId(id);
+        //replace if exist :
+        boolean isRegistered = false;
+        for(int i = 0; i< this.grosseryLists.size(); i++){
+            if(this.grosseryLists.get(i).getId().equals(id)) {
+                grosseryLists.set(i, gl);
+                isRegistered = true;
+            }
+        }
+        if(!isRegistered)
+            grosseryLists.add(gl);
         JSONTool.getInstance().writeJSON(activity, grosseryLists, "GrosseryList");
     }
 
-    public void removeGrosseryById(int id, Activity activity){
+    public void removeGrosseryById(String id, Activity activity){
         //get all the grossery :
         readLocalBD(activity);
         for(int i = 0; i < grosseryLists.size(); i++){
@@ -60,7 +69,7 @@ public class GrosseryListController {
 
     public GrosseryList convertLTM(LinkedTreeMap ltmGrosseryList){
         Date date = new Date((String) ltmGrosseryList.get("grosseryDate"));
-        Integer id = ((Double) ltmGrosseryList.get("id")).intValue();
+        String id = (String) ltmGrosseryList.get("id");
         List<Pair<String, Ingredient>> ingredientList = new ArrayList<>();
         for(LinkedTreeMap ltmIngredient : (ArrayList<LinkedTreeMap>) ltmGrosseryList.get("ingredientList")){
             String ingredientId = (String) ltmIngredient.get("first");
@@ -73,10 +82,10 @@ public class GrosseryListController {
     }
 
 
-    public GrosseryList getGrosseryListById(int i){
+    public GrosseryList getGrosseryListById(String i){
         for(GrosseryList g: grosseryLists)
-            if(g.getId() == i)
-                return grosseryLists.get(i);
+            if(g.getId().equals(i))
+                return g;
         return null;
     }
 
