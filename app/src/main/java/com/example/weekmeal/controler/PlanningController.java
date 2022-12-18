@@ -26,8 +26,17 @@ public class PlanningController {
 
     public void addPlannings(Planning planning, Activity activity){
         readLocalBD(activity);
-        planning.setId(planningList.size());
-        this.planningList.add(planning);
+        //check if the planning isn't already registered:
+        int idIndex = -1;
+        for (int i = 0; i < this.planningList.size(); i++){
+            if(this.planningList.get(i).getId().equals(planning.getId())){
+                idIndex = i;
+                this.planningList.set(i, planning);
+            }
+        }
+        if(idIndex == -1){
+            this.planningList.add(planning);
+        }
         JSONTool.getInstance().writeJSON(activity, planningList, "Planning");
     }
 
@@ -49,10 +58,18 @@ public class PlanningController {
             }
 
             planningList.add(new Planning(
-                    ((Double)ltm.get("id")).intValue(),
+                    (String) ltm.get("id"),
                     mealsMenu
             ));
         }
+    }
+
+    public Planning getPlanningById(String s, Activity activity) {
+        readLocalBD(activity);
+        for(Planning p: this.planningList)
+            if (p.getId().equals(s))
+                return p;
+        return null;
     }
 
     //Singleton:

@@ -10,19 +10,19 @@ import java.util.List;
 
 public class Planning {
 
-    private Integer id;
+    private String id;
 
     //Format = {"LundiR1" : Recipe{Poulet}}  for lundi déjeuner
     private HashMap<String, List<Recipe>> mealsMenu;
 
 
-    public Planning(Integer id, HashMap<String, List<Recipe>> mealsMenu) {
+    public Planning(String id, HashMap<String, List<Recipe>> mealsMenu) {
         this.id = id;
         this.mealsMenu = mealsMenu;
     }
 
     public Planning(){
-        this.id = 0;
+        this.id = "";
         this.mealsMenu = new HashMap<>();
     }
 
@@ -89,11 +89,11 @@ public class Planning {
     }
 
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 }

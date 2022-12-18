@@ -9,7 +9,7 @@ import java.util.List;
 
 public class GrosseryList {
 
-    private Integer id;
+    private String id;
     private List<Pair<String, Ingredient>> ingredientList;
     private Date grosseryDate;
 
@@ -35,11 +35,11 @@ public class GrosseryList {
 
     }
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -47,9 +47,10 @@ public class GrosseryList {
         StringBuilder textList = new StringBuilder();
         for(Pair<String, Ingredient> ingredient : ingredientList){
             textList.append(ingredient.first.split("--")[0]);
-            textList.append(ingredient.second);
+            textList.append(ingredient.second.getQuantity());
             textList.append(" ");
-            textList.append(ingredient.second.toString());
+            textList.append(ingredient.second);
+//            textList.append(ingredient.second.toString());
         }
         return textList.toString();
     }
