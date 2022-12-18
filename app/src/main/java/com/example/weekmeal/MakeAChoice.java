@@ -36,7 +36,15 @@ public class MakeAChoice extends AppCompatActivity {
     private RadioButton radioButton1;
     private RadioButton radioButton2;
     private RadioButton radioButton3;
-    private LinearLayout linearLayout1;
+    private LinearLayout choice1Planning;
+    private LinearLayout choice2Planning;
+    private LinearLayout choice3Planning;
+    private LinearLayout makeachoice;
+    private Button back1;
+    private Button back2;
+    private Button back3;
+
+
 
     private  ArrayList<Boolean> toggleList = new ArrayList<>();
     private int choice;
@@ -59,8 +67,13 @@ public class MakeAChoice extends AppCompatActivity {
         radioButton1 = (RadioButton) findViewById(R.id.choice1);
         radioButton2 = (RadioButton) findViewById(R.id.choice2);
         radioButton3 = (RadioButton) findViewById(R.id.choice3);
-//        linearLayout1 = (LinearLayout) findViewById(R.id.make_choice_linear1);
-
+        choice1Planning = (LinearLayout) findViewById(R.id.choice1Planning);
+        choice2Planning = (LinearLayout) findViewById(R.id.choice2Planning);
+        choice3Planning = (LinearLayout) findViewById(R.id.choice3Planning);
+        makeachoice = (LinearLayout) findViewById(R.id.makeachoice);
+        back1 = (Button) findViewById(R.id.back1);
+        back2 = (Button) findViewById(R.id.back2);
+        back3 = (Button) findViewById(R.id.back3);
 
 
 
@@ -368,6 +381,53 @@ public class MakeAChoice extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+        radioButton1.setOnClickListener(new DoubleClickListener() {
+            @Override
+            public void onDoubleClick() {
+ 					choice1Planning.setVisibility(View.VISIBLE);
+                    makeachoice.setVisibility(View.GONE);
+ 			}
+        });
+
+        radioButton2.setOnClickListener(new DoubleClickListener() {
+            @Override
+            public void onDoubleClick() {
+                choice2Planning.setVisibility(View.VISIBLE);
+                makeachoice.setVisibility(View.GONE);
+            }
+        });
+
+        radioButton3.setOnClickListener(new DoubleClickListener() {
+            @Override
+            public void onDoubleClick() {
+                choice3Planning.setVisibility(View.VISIBLE);
+                makeachoice.setVisibility(View.GONE);
+            }
+        });
+
+        back1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                choice1Planning.setVisibility(View.GONE);
+                makeachoice.setVisibility(View.VISIBLE);
+            }
+        });
+
+        back2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                choice2Planning.setVisibility(View.GONE);
+                makeachoice.setVisibility(View.VISIBLE);
+            }
+        });
+
+        back3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                choice3Planning.setVisibility(View.GONE);
+                makeachoice.setVisibility(View.VISIBLE);
+            }
+        });
+
 
  /*for (int i=1; i<= meals;i++){
             //ConstraintLayout constraint1 = new ConstraintLayout(getApplicationContext());
