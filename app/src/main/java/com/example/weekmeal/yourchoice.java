@@ -100,6 +100,8 @@ public class yourchoice extends AppCompatActivity {
 
         TextView shoppingList = (TextView) findViewById(R.id.shoppingList);
         GrosseryListController.getInstance().generateGrossery("grosseryList"+choice, planning.getAllIngredients(), new Date(), this);
+        //setting up quantity to match people numbers:
+        GrosseryListController.getInstance().multiplyByNbPeople("grosseryList"+choice, numberPeople);
         shoppingList.setText(GrosseryListController.getInstance().getGrosseryListById("grosseryList"+choice).toString());
     }
 }
