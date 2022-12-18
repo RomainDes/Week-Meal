@@ -258,10 +258,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal3"
-
-
-                            app:layout_constraintDimensionRatio="1:1">
+                            android:background="@drawable/meal3">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -293,10 +290,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal11"
-
-
-                            app:layout_constraintDimensionRatio="1:1">
+                            android:background="@drawable/meal11">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -312,10 +306,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal4"
-
-
-                            app:layout_constraintDimensionRatio="1:1">
+                            android:background="@drawable/meal4">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -347,10 +338,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal5"
-
-
-                            app:layout_constraintDimensionRatio="1:1">
+                            android:background="@drawable/meal5">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -366,10 +354,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal6"
-
-
-                            app:layout_constraintDimensionRatio="1:1">
+                            android:background="@drawable/meal6">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -401,10 +386,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal7"
-
-
-                            app:layout_constraintDimensionRatio="1:1">
+                            android:background="@drawable/meal7">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -420,10 +402,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal14"
-
-
-                            app:layout_constraintDimensionRatio="1:1">
+                            android:background="@drawable/meal14">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -456,10 +435,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal8"
-
-
-                            app:layout_constraintDimensionRatio="1:1">
+                            android:background="@drawable/meal8">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -475,10 +451,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal13"
-
-
-                            app:layout_constraintDimensionRatio="1:1">
+                            android:background="@drawable/meal13">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -510,10 +483,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal9"
-
-
-                            app:layout_constraintDimensionRatio="1:1">
+                            android:background="@drawable/meal9">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -529,10 +499,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal10"
-
-
-                            app:layout_constraintDimensionRatio="1:1">
+                            android:background="@drawable/meal10">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -564,10 +531,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal12"
-
-
-                            app:layout_constraintDimensionRatio="1:1">
+                            android:background="@drawable/meal12">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -583,10 +547,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal1"
-
-
-                            app:layout_constraintDimensionRatio="1:1">
+                            android:background="@drawable/meal1">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -1528,7 +1489,7 @@
                         android:id="@+id/imageRecette1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/image1"/>
+                        android:src="@drawable/meal1"/>
 
                     <TextView
                         android:id="@+id/p1ingrédients"
