@@ -1,9 +1,11 @@
 package com.example.weekmeal;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -501,51 +503,93 @@ public class MakeAChoice extends AppCompatActivity {
 
 
 
-            bp1r1.setText(planning1.getMealMenu("LundiR1").get(0).getTitle());
 
-            bp1r2.setText(planning1.getMealMenu("LundiR2").get(0).getTitle());
-            bp1r3.setText(planning1.getMealMenu("MardiR1").get(0).getTitle());
-            bp1r4.setText(planning1.getMealMenu("MardiR2").get(0).getTitle());
-            bp1r5.setText(planning1.getMealMenu("MercrediR1").get(0).getTitle());
-            bp1r6.setText(planning1.getMealMenu("MercrediR2").get(0).getTitle());
-            bp1r7.setText(planning1.getMealMenu("JeudiR1").get(0).getTitle());
-            bp1r8.setText(planning1.getMealMenu("JeudiR2").get(0).getTitle());
-            bp1r9.setText(planning1.getMealMenu("VendrediR1").get(0).getTitle());
-            bp1r10.setText(planning1.getMealMenu("VendrediR2").get(0).getTitle());
-            bp1r11.setText(planning1.getMealMenu("SamediR1").get(0).getTitle());
-            bp1r12.setText(planning1.getMealMenu("SamediR2").get(0).getTitle());
-            bp1r13.setText(planning1.getMealMenu("DimancheR1").get(0).getTitle());
-            bp1r14.setText(planning1.getMealMenu("DimancheR2").get(0).getTitle());
+        bp1r1.setText(planning1.getMealMenu("LundiR1").get(0).getTitle());
+        displayMealPicture(planning1,"LundiR1",bp1r1);
+        bp1r2.setText(planning1.getMealMenu("LundiR2").get(0).getTitle());
+        displayMealPicture(planning1,"LundiR2",bp1r2);
+        bp1r3.setText(planning1.getMealMenu("MardiR1").get(0).getTitle());
+        displayMealPicture(planning1,"MardiR1",bp1r3);
+        bp1r4.setText(planning1.getMealMenu("MardiR2").get(0).getTitle());
+        displayMealPicture(planning1,"MardiR2",bp1r4);
+        bp1r5.setText(planning1.getMealMenu("MercrediR1").get(0).getTitle());
+        displayMealPicture(planning1,"MercrediR1",bp1r5);
+        bp1r6.setText(planning1.getMealMenu("MercrediR2").get(0).getTitle());
+        displayMealPicture(planning1,"MercrediR2",bp1r6);
+        bp1r7.setText(planning1.getMealMenu("JeudiR1").get(0).getTitle());
+        displayMealPicture(planning1,"JeudiR1",bp1r7);
+        bp1r8.setText(planning1.getMealMenu("JeudiR2").get(0).getTitle());
+        displayMealPicture(planning1,"JeudiR2",bp1r8);
+        bp1r9.setText(planning1.getMealMenu("VendrediR1").get(0).getTitle());
+        displayMealPicture(planning1,"VendrediR1",bp1r9);
+        bp1r10.setText(planning1.getMealMenu("VendrediR2").get(0).getTitle());
+        displayMealPicture(planning1,"VendrediR2",bp1r10);
+        bp1r11.setText(planning1.getMealMenu("SamediR1").get(0).getTitle());
+        displayMealPicture(planning1,"SamediR1",bp1r11);
+        bp1r12.setText(planning1.getMealMenu("SamediR2").get(0).getTitle());
+        displayMealPicture(planning1,"SamediR2",bp1r12);
+        bp1r13.setText(planning1.getMealMenu("DimancheR1").get(0).getTitle());
+        displayMealPicture(planning1,"DimancheR1",bp1r13);
+        bp1r14.setText(planning1.getMealMenu("DimancheR2").get(0).getTitle());
+        displayMealPicture(planning1,"DimancheR2",bp1r14);
 
-            bp2r1.setText(planning2.getMealMenu("LundiR1").get(0).getTitle());
-            bp2r2.setText(planning2.getMealMenu("LundiR2").get(0).getTitle());
-            bp2r3.setText(planning2.getMealMenu("MardiR1").get(0).getTitle());
-            bp2r4.setText(planning2.getMealMenu("MardiR2").get(0).getTitle());
-            bp2r5.setText(planning2.getMealMenu("MercrediR1").get(0).getTitle());
-            bp2r6.setText(planning2.getMealMenu("MercrediR2").get(0).getTitle());
-            bp2r7.setText(planning2.getMealMenu("JeudiR1").get(0).getTitle());
-            bp2r8.setText(planning2.getMealMenu("JeudiR2").get(0).getTitle());
-            bp2r9.setText(planning2.getMealMenu("VendrediR1").get(0).getTitle());
-            bp2r10.setText(planning2.getMealMenu("VendrediR2").get(0).getTitle());
-            bp2r11.setText(planning2.getMealMenu("SamediR1").get(0).getTitle());
-            bp2r12.setText(planning2.getMealMenu("SamediR2").get(0).getTitle());
-            bp2r13.setText(planning2.getMealMenu("DimancheR1").get(0).getTitle());
-            bp2r14.setText(planning2.getMealMenu("DimancheR2").get(0).getTitle());
+        bp2r1.setText(planning2.getMealMenu("LundiR1").get(0).getTitle());
+        displayMealPicture(planning2,"LundiR1",bp2r1);
+        bp2r2.setText(planning2.getMealMenu("LundiR2").get(0).getTitle());
+        displayMealPicture(planning2,"LundiR2",bp2r2);
+        bp2r3.setText(planning2.getMealMenu("MardiR1").get(0).getTitle());
+        displayMealPicture(planning2,"MardiR1",bp2r3);
+        bp2r4.setText(planning2.getMealMenu("MardiR2").get(0).getTitle());
+        displayMealPicture(planning2,"MardiR2",bp2r4);
+        bp2r5.setText(planning2.getMealMenu("MercrediR1").get(0).getTitle());
+        displayMealPicture(planning2,"MercrediR1",bp2r5);
+        bp2r6.setText(planning2.getMealMenu("MercrediR2").get(0).getTitle());
+        displayMealPicture(planning2,"MercrediR2",bp2r6);
+        bp2r7.setText(planning2.getMealMenu("JeudiR1").get(0).getTitle());
+        displayMealPicture(planning2,"JeudiR1",bp2r7);
+        bp2r8.setText(planning2.getMealMenu("JeudiR2").get(0).getTitle());
+        displayMealPicture(planning2,"JeudiR2",bp2r8);
+        bp2r9.setText(planning2.getMealMenu("VendrediR1").get(0).getTitle());
+        displayMealPicture(planning2,"VendrediR1",bp2r9);
+        bp2r10.setText(planning2.getMealMenu("VendrediR2").get(0).getTitle());
+        displayMealPicture(planning2,"VendrediR2",bp2r10);
+        bp2r11.setText(planning2.getMealMenu("SamediR1").get(0).getTitle());
+        displayMealPicture(planning2,"SamediR1",bp2r11);
+        bp2r12.setText(planning2.getMealMenu("SamediR2").get(0).getTitle());
+        displayMealPicture(planning2,"SamediR2",bp2r12);
+        bp2r13.setText(planning2.getMealMenu("DimancheR1").get(0).getTitle());
+        displayMealPicture(planning2,"DimancheR1",bp2r13);
+        bp2r14.setText(planning2.getMealMenu("DimancheR2").get(0).getTitle());
+        displayMealPicture(planning2,"DimancheR2",bp2r14);
 
-            bp3r1.setText(planning3.getMealMenu("LundiR1").get(0).getTitle());
-            bp3r2.setText(planning3.getMealMenu("LundiR2").get(0).getTitle());
-            bp3r3.setText(planning3.getMealMenu("MardiR1").get(0).getTitle());
-            bp3r4.setText(planning3.getMealMenu("MardiR2").get(0).getTitle());
-            bp3r5.setText(planning3.getMealMenu("MercrediR1").get(0).getTitle());
-            bp3r6.setText(planning3.getMealMenu("MercrediR2").get(0).getTitle());
-            bp3r7.setText(planning3.getMealMenu("JeudiR1").get(0).getTitle());
-            bp3r8.setText(planning3.getMealMenu("JeudiR2").get(0).getTitle());
-            bp3r9.setText(planning3.getMealMenu("VendrediR1").get(0).getTitle());
-            bp3r10.setText(planning3.getMealMenu("VendrediR2").get(0).getTitle());
-            bp3r11.setText(planning3.getMealMenu("SamediR1").get(0).getTitle());
-            bp3r12.setText(planning3.getMealMenu("SamediR2").get(0).getTitle());
-            bp3r13.setText(planning3.getMealMenu("DimancheR1").get(0).getTitle());
-            bp3r14.setText(planning3.getMealMenu("DimancheR2").get(0).getTitle());
+        bp3r1.setText(planning3.getMealMenu("LundiR1").get(0).getTitle());
+        displayMealPicture(planning3,"LundiR1",bp3r1);
+        bp3r2.setText(planning3.getMealMenu("LundiR2").get(0).getTitle());
+        displayMealPicture(planning3,"LundiR2",bp3r2);
+        bp3r3.setText(planning3.getMealMenu("MardiR1").get(0).getTitle());
+        displayMealPicture(planning3,"MardiR1",bp3r3);
+        bp3r4.setText(planning3.getMealMenu("MardiR2").get(0).getTitle());
+        displayMealPicture(planning3,"MardiR2",bp3r4);
+        bp3r5.setText(planning3.getMealMenu("MercrediR1").get(0).getTitle());
+        displayMealPicture(planning3,"MercrediR1",bp3r5);
+        bp3r6.setText(planning3.getMealMenu("MercrediR2").get(0).getTitle());
+        displayMealPicture(planning3,"MercrediR2",bp3r6);
+        bp3r7.setText(planning3.getMealMenu("JeudiR1").get(0).getTitle());
+        displayMealPicture(planning3,"JeudiR1",bp3r7);
+        bp3r8.setText(planning3.getMealMenu("JeudiR2").get(0).getTitle());
+        displayMealPicture(planning3,"JeudiR2",bp3r8);
+        bp3r9.setText(planning3.getMealMenu("VendrediR1").get(0).getTitle());
+        displayMealPicture(planning3,"VendrediR1",bp3r9);
+        bp3r10.setText(planning3.getMealMenu("VendrediR2").get(0).getTitle());
+        displayMealPicture(planning3,"VendrediR2",bp3r10);
+        bp3r11.setText(planning3.getMealMenu("SamediR1").get(0).getTitle());
+        displayMealPicture(planning3,"SamediR1",bp3r11);
+        bp3r12.setText(planning3.getMealMenu("SamediR2").get(0).getTitle());
+        displayMealPicture(planning3,"SamediR2",bp3r12);
+        bp3r13.setText(planning3.getMealMenu("DimancheR1").get(0).getTitle());
+        displayMealPicture(planning3,"DimancheR1",bp3r13);
+        bp3r14.setText(planning3.getMealMenu("DimancheR2").get(0).getTitle());
+        displayMealPicture(planning3,"DimancheR2",bp3r14);
 
 
 
@@ -803,6 +847,15 @@ public class MakeAChoice extends AppCompatActivity {
         adapter = new MyRecyclerViewAdapter(this, );
         recyclerView.setAdapter(adapter);*/
     }
+
+    private void displayMealPicture(Planning p, String mealID,Button b) {
+        Recipe r = p.getMealMenu(mealID).get(0);
+        String mealRessId = "meal"+String.valueOf(r.getId()+1);
+        int ressID = this.getResources().getIdentifier(mealRessId, "drawable", this.getPackageName());
+        Drawable d = ContextCompat.getDrawable(this, ressID);
+        b.setBackground(d);
+    }
+
 
 
 }
