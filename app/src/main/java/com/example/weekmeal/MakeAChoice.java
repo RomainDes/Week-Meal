@@ -89,8 +89,8 @@ public class MakeAChoice extends AppCompatActivity {
         dietsTrue = (ArrayList<Diet>) getIntent().getSerializableExtra("dietsTrue");
 
         toggleList = (ArrayList<Boolean>) getIntent().getSerializableExtra("toggleList");
-        int mealPerDay = Integer.parseInt(extras.getString("mealPerDay"));
-        int meals = mealPerDay*7;
+        int mealPerDay = 2;
+        int meals = 14;
         int numberPeople = Integer.parseInt(extras.getString ("numberPeople"));
         String planningName = extras.getString("planningName");
 
@@ -288,7 +288,7 @@ public class MakeAChoice extends AppCompatActivity {
 
 
 
-        name.setText("MAKE A CHOICE FOR "+ planningName);
+        name.setText(planningName);
         if(extras.getString ("choice") != null){
             choice =Integer.parseInt(extras.getString ("choice"));
             if (choice == 1){
