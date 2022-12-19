@@ -1492,17 +1492,18 @@
 
         #CHOICE 1
         #RECETTE 1
+
+
         <LinearLayout
             android:id="@+id/choice1Recette1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_weight="7"
             android:background="@drawable/planshop_true"
-            android:visibility="gone"
-            >
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -1524,9 +1525,9 @@
                     android:id="@+id/backchoice1Recette1"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:background="@drawable/ic_baseline_cancel_24"
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_baseline_cancel_24"
 
 
                     />
@@ -1538,24 +1539,25 @@
                 android:layout_height="2dp"
 
                 android:background="@color/black" />
+
             <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:fadeScrollbars="false"
                 android:fillViewport="true"
                 android:padding="10dp"
-                android:scrollbarSize="15dp"
-                android:layout_weight="1"
-                >
+                android:scrollbarSize="15dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
+
                     <ImageView
                         android:id="@+id/imageRecette1"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        />
+                        android:layout_height="wrap_content" />
 
                     <TextView
                         android:id="@+id/p1ingrédients"
@@ -1576,11 +1578,7 @@
             </ScrollView>
 
 
-
         </LinearLayout>
-
-
-
 
         <View
             android:layout_width="wrap_content"
