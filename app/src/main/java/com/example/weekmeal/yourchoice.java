@@ -115,19 +115,19 @@ public class yourchoice extends AppCompatActivity {
         //set meal picture :
         String[] listMealId = {
                 "LundiR1",
-//                "LundiR2",
+                "LundiR2",
                 "MardiR1",
-//                "MardiR2",
+                "MardiR2",
                 "MercrediR1",
-//                "MercrediR2",
+                "MercrediR2",
                 "JeudiR1",
-//                "JeudiR2",
+                "JeudiR2",
                 "VendrediR1",
-//                "VendrediR2",
+                "VendrediR2",
                 "SamediR1",
-//                "SamediR2",
+                "SamediR2",
                 "DimancheR1",
-//                "DimancheR2",
+                "DimancheR2",
         };
 
         Planning p = PlanningController.getInstance().getPlanningById("planning"+choice, this);
@@ -141,13 +141,13 @@ public class yourchoice extends AppCompatActivity {
         displayMealPicture(p, listMealId[i], i);i++;
         displayMealPicture(p, listMealId[i], i);i++;
         displayMealPicture(p, listMealId[i], i);i++;
-//        displayMealPicture(p, listMealId[i], i);i++;
-//        displayMealPicture(p, listMealId[i], i);i++;
-//        displayMealPicture(p, listMealId[i], i);i++;
-//        displayMealPicture(p, listMealId[i], i);i++;
-//        displayMealPicture(p, listMealId[i], i);i++;
-//        displayMealPicture(p, listMealId[i], i);i++;
-//        displayMealPicture(p, listMealId[i], i);i++;
+        displayMealPicture(p, listMealId[i], i);i++;
+        displayMealPicture(p, listMealId[i], i);i++;
+        displayMealPicture(p, listMealId[i], i);i++;
+        displayMealPicture(p, listMealId[i], i);i++;
+        displayMealPicture(p, listMealId[i], i);i++;
+        displayMealPicture(p, listMealId[i], i);i++;
+        displayMealPicture(p, listMealId[i], i);i++;
     }
 
     private void displayMealPicture(Planning p, String mealID, int index) {
@@ -156,7 +156,8 @@ public class yourchoice extends AppCompatActivity {
 //        int viewID = R.id.LundiR1;
         int viewID = this.getResources().getIdentifier(mealID, "id", this.getPackageName());
         this.mealsButtonList.add(findViewById(viewID));
-        this.mealsButtonList.get(index).setText(mealRessId);
+//        this.mealsButtonList.get(index).setText(mealRessId);
+        this.mealsButtonList.get(index).setText(p.getMealMenu(mealID).get(0).getTitle());
 
         int ressID = this.getResources().getIdentifier(mealRessId, "drawable", this.getPackageName());
 //        Drawable d = this.getResources().getDrawable();
