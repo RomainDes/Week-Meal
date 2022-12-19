@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -679,6 +680,8 @@ public class MakeAChoice extends AppCompatActivity {
                     choice1Planning.setVisibility(View.GONE);
                     TextView plat = (TextView) findViewById(R.id.p1recette);
                     plat.setText(finalPlanning1.getMealMenu(finalRepas).get(0).getTitle());
+                    ImageView image = (ImageView) findViewById(R.id.imageRecette1);
+                    displayMealPictureImage(finalPlanning1,finalRepas,image);
                     TextView ingredients = (TextView) findViewById(R.id.p1ingrédients);
                     String ingr ="";
                     HashMap<String, Integer> in = finalPlanning1.getMealMenu(finalRepas).get(0).getIngredients();
@@ -733,6 +736,9 @@ public class MakeAChoice extends AppCompatActivity {
                     choice2Planning.setVisibility(View.GONE);
                     TextView plat = (TextView) findViewById(R.id.p1recette);
                     plat.setText(finalPlanning2.getMealMenu(finalRepas).get(0).getTitle());
+                    ImageView image = (ImageView) findViewById(R.id.imageRecette1);
+                    displayMealPictureImage(finalPlanning2,finalRepas,image);
+
                     TextView ingredients = (TextView) findViewById(R.id.p1ingrédients);
                     String ingr ="";
                     HashMap<String, Integer> in = finalPlanning2.getMealMenu(finalRepas).get(0).getIngredients();
@@ -787,6 +793,9 @@ public class MakeAChoice extends AppCompatActivity {
                     choice3Planning.setVisibility(View.GONE);
                     TextView plat = (TextView) findViewById(R.id.p1recette);
                     plat.setText(finalPlanning3.getMealMenu(finalRepas).get(0).getTitle());
+                    ImageView image = (ImageView) findViewById(R.id.imageRecette1);
+                    displayMealPictureImage(finalPlanning3,finalRepas,image);
+
                     TextView ingredients = (TextView) findViewById(R.id.p1ingrédients);
                     String ingr ="";
                     HashMap<String, Integer> in = finalPlanning3.getMealMenu(finalRepas).get(0).getIngredients();
@@ -855,6 +864,16 @@ public class MakeAChoice extends AppCompatActivity {
         Drawable d = ContextCompat.getDrawable(this, ressID);
         b.setBackground(d);
     }
+
+    private void displayMealPictureImage(Planning p, String mealID,ImageView b) {
+        Recipe r = p.getMealMenu(mealID).get(0);
+        String mealRessId = "meal"+String.valueOf(r.getId()+1);
+        int ressID = this.getResources().getIdentifier(mealRessId, "drawable", this.getPackageName());
+        Drawable d = ContextCompat.getDrawable(this, ressID);
+        b.setBackground(d);
+    }
+
+
 
 
 
