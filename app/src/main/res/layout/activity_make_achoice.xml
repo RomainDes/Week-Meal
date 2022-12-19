@@ -141,10 +141,11 @@
 
                         android:background="@drawable/makeachoice"
                         android:fontFamily="@font/glacialindifference_bold"
-                        android:text="CHOIX N°1\n'double-clique pour plus d'information'"
+                        android:text="CHOIX N°1\n'double-cliquez pour plus d'informations'"
                         android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textSize="10dp" />
+                        android:textSize="10dp"
+                        android:paddingRight="30dp"/>
 
                     <RadioButton
                         android:id="@+id/choice2"
@@ -156,10 +157,11 @@
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/makeachoice"
                         android:fontFamily="@font/glacialindifference_bold"
-                        android:text="CHOIX N°2\n'double-clique pour plus d'information'"
+                        android:text="CHOIX N°2\n'double-cliquez pour plus d'informations'"
                         android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textSize="10dp" />
+                        android:textSize="10dp"
+                        android:paddingRight="30dp"/>
 
                     <RadioButton
                         android:id="@+id/choice3"
@@ -172,11 +174,11 @@
                         android:layout_weight="1"
                         android:background="@drawable/makeachoice"
                         android:fontFamily="@font/glacialindifference_bold"
-                        android:text="CHOIX N°3\n'double-clique pour plus d'information'"
+                        android:text="CHOIX N°3\n'double-cliquez pour plus d'informations'"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="10dp"
-
+                        android:paddingRight="30dp"
                         />
                 </RadioGroup>
 
@@ -284,8 +286,20 @@
                             android:id="@+id/BP1R1"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
-                            app:layout_constraintDimensionRatio="1:1"
                             android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
+                            app:layout_constraintDimensionRatio="1:1"
 
 
 
@@ -304,8 +318,20 @@
                             android:id="@+id/BP1R2"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
-                            app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal3">
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
+                            app:layout_constraintDimensionRatio="1:1">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -336,8 +362,20 @@
                             android:id="@+id/BP1R3"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
-                            app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal11">
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
+                            app:layout_constraintDimensionRatio="1:1">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -352,8 +390,20 @@
                             android:id="@+id/BP1R4"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
-                            app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal4">
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
+                            app:layout_constraintDimensionRatio="1:1">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -384,8 +434,20 @@
                             android:id="@+id/BP1R5"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
-                            app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal5">
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
+                            app:layout_constraintDimensionRatio="1:1">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -400,8 +462,20 @@
                             android:id="@+id/BP1R6"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
-                            app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal6">
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
+                            app:layout_constraintDimensionRatio="1:1">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -432,8 +506,20 @@
                             android:id="@+id/BP1R7"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
-                            app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal7">
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
+                            app:layout_constraintDimensionRatio="1:1">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -448,8 +534,20 @@
                             android:id="@+id/BP1R8"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
-                            app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal14">
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
+                            app:layout_constraintDimensionRatio="1:1">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -481,8 +579,20 @@
                             android:id="@+id/BP1R9"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
-                            app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal8">
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
+                            app:layout_constraintDimensionRatio="1:1">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -497,8 +607,20 @@
                             android:id="@+id/BP1R10"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
-                            app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal13">
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
+                            app:layout_constraintDimensionRatio="1:1">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -529,8 +651,20 @@
                             android:id="@+id/BP1R11"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
-                            app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal9">
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
+                            app:layout_constraintDimensionRatio="1:1">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -545,8 +679,20 @@
                             android:id="@+id/BP1R12"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
-                            app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal10">
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
+                            app:layout_constraintDimensionRatio="1:1">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -577,8 +723,20 @@
                             android:id="@+id/BP1R13"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
-                            app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal12">
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
+                            app:layout_constraintDimensionRatio="1:1">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -593,8 +751,20 @@
                             android:id="@+id/BP1R14"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
-                            app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal1">
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
+                            app:layout_constraintDimensionRatio="1:1">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -705,8 +875,20 @@
                             android:id="@+id/BP2R1"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
-                            app:layout_constraintDimensionRatio="1:1"
                             android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
+                            app:layout_constraintDimensionRatio="1:1"
 
 
                             >
@@ -724,8 +906,20 @@
                             android:id="@+id/BP2R2"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal3"
 
 >
 
@@ -758,8 +952,20 @@
                             android:id="@+id/BP2R3"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal11"
 
 
                           >
@@ -777,8 +983,20 @@
                             android:id="@+id/BP2R4"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal4"
 
 
                             >
@@ -812,8 +1030,20 @@
                             android:id="@+id/BP2R5"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal5"
 
 
                         >
@@ -831,8 +1061,20 @@
                             android:id="@+id/BP2R6"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal6"
 
 
                            >
@@ -866,8 +1108,20 @@
                             android:id="@+id/BP2R7"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal7"
 
 
                            >
@@ -885,8 +1139,20 @@
                             android:id="@+id/BP2R8"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal14"
 
 
                            >
@@ -921,8 +1187,20 @@
                             android:id="@+id/BP2R9"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal8"
 
 
                          >
@@ -940,8 +1218,20 @@
                             android:id="@+id/BP2R10"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal13"
 
 
                             >
@@ -975,8 +1265,20 @@
                             android:id="@+id/BP2R11"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal9"
 
 >
 
@@ -993,8 +1295,20 @@
                             android:id="@+id/BP2R12"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal10"
 
 
                             >
@@ -1028,8 +1342,20 @@
                             android:id="@+id/BP2R13"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal12"
 
 
                             >
@@ -1047,8 +1373,20 @@
                             android:id="@+id/BP2R14"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal1"
 
 
                         >
@@ -1162,8 +1500,20 @@
                             android:id="@+id/BP3R1"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
-                            app:layout_constraintDimensionRatio="1:1"
                             android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
+                            app:layout_constraintDimensionRatio="1:1"
 
 
                            >
@@ -1181,8 +1531,20 @@
                             android:id="@+id/BP3R2"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal3"
 
 
                             >
@@ -1216,8 +1578,20 @@
                             android:id="@+id/BP3R3"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal11"
 
 
                             >
@@ -1235,8 +1609,20 @@
                             android:id="@+id/BP3R4"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal4"
 
 >
 
@@ -1269,8 +1655,20 @@
                             android:id="@+id/BP3R5"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal5"
 
 
                          >
@@ -1288,8 +1686,20 @@
                             android:id="@+id/BP3R6"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal6"
 
 
                            >
@@ -1323,8 +1733,20 @@
                             android:id="@+id/BP3R7"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal7"
 
 
                             >
@@ -1342,8 +1764,20 @@
                             android:id="@+id/BP3R8"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal14"
 
 
                           >
@@ -1378,8 +1812,20 @@
                             android:id="@+id/BP3R9"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal8"
 
 >
 
@@ -1396,8 +1842,20 @@
                             android:id="@+id/BP3R10"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal13"
 
 
                           >
@@ -1431,8 +1889,20 @@
                             android:id="@+id/BP3R11"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal9"
 
 
                             >
@@ -1450,8 +1920,20 @@
                             android:id="@+id/BP3R12"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal10"
 
 
                            >
@@ -1485,8 +1967,20 @@
                             android:id="@+id/BP3R13"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal12"
 
 
                            >
@@ -1504,8 +1998,20 @@
                             android:id="@+id/BP3R14"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
+                            android:background="@drawable/meal2"
+                            android:padding="20dp"
+                            android:fontFamily="@font/glacialindifference_bold"
+                            android:textColor="@color/white"
+                            android:shadowColor="#000000"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="2"
+
+                            android:textAllCaps="true"
+
+
+
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/meal1"
 
 
                             >
@@ -1711,7 +2217,7 @@
                     android:textAlignment="textEnd"
                     android:fontFamily="@font/glacialindifference_bold"
                     android:text="CHOOSE"
-                    android:layout_marginLeft="50dp"/>
+                    android:layout_marginLeft="40dp"/>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="wrap_content"

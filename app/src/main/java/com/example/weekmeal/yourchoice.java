@@ -6,6 +6,7 @@ import androidx.core.content.ContextCompat;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -55,6 +56,9 @@ public class yourchoice extends AppCompatActivity {
         buttonShare = (Button) findViewById(R.id.choose1);
         buttonShare1 = (Button) findViewById(R.id.choose2);
         yourChoice  = (TextView) findViewById(R.id.your_choice_textChoice);
+
+
+
 
         buttonShopping = (Button) findViewById(R.id.shopping);
         buttonShopping.setOnClickListener(new View.OnClickListener() {
@@ -256,6 +260,36 @@ public class yourchoice extends AppCompatActivity {
             });
         }
 
+        buttonShare.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TITLE, planningName);
+                Log.d("TEST1", planningName);
+                sendIntent.putExtra(Intent.EXTRA_TEXT, GrosseryListController.getInstance().getGrosseryListById("grosseryList"+choice).toString());
+                sendIntent.setType("text/plain");
+
+
+                Intent shareIntent = Intent.createChooser(sendIntent, null);
+                startActivity(shareIntent);
+            }
+        });
+
+        buttonShare1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TITLE, planningName);
+                Log.d("TEST1", planningName);
+                sendIntent.putExtra(Intent.EXTRA_TEXT, GrosseryListController.getInstance().getGrosseryListById("grosseryList"+choice).toString());
+                sendIntent.setType("text/plain");
+
+
+                Intent shareIntent = Intent.createChooser(sendIntent, null);
+                startActivity(shareIntent);
+            }
+        });
+
 
 
 
@@ -285,4 +319,6 @@ public class yourchoice extends AppCompatActivity {
         Drawable d = ContextCompat.getDrawable(this, ressID);
         b.setBackground(d);
     }
+
+
 }

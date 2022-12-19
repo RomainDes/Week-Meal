@@ -137,9 +137,7 @@ public class MainActivity extends AppCompatActivity {
             planningName.setText(name);
         }
 
-        if(getIntent().getStringExtra("mealPerDay")!= null ){
-            mealPerDayText.setText(getIntent().getStringExtra("mealPerDay"));
-        }
+
         if(getIntent().getStringExtra("numberPeople") != null){
             numberPeopleText.setText(getIntent().getStringExtra("numberPeople"));
         }
