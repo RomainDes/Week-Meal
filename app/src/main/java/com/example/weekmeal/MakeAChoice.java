@@ -66,6 +66,9 @@ public class MakeAChoice extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_make_achoice);
 
+
+
+
         name = (TextView) findViewById(R.id.make_choice_makeachoice);
         buttonReturn = (Button) findViewById(R.id.return2);
         buttonChoose = (Button) findViewById(R.id.choose1);
@@ -106,21 +109,25 @@ public class MakeAChoice extends AppCompatActivity {
         List<Recipe> recettes = RecipeController.getInstance().getRecipeList();//pour avoir la les recettes dans l'activity sous forme de liste d'objet Java:
         List<Recipe> recettesUtiles = new ArrayList<>();
 
-       // Log.i("taille liste :  ",recettes.size()+ ""); //Taille de la liste du receipe controller
-        for(int i=0; i<recettes.size();i++){ //pour toutes les recettes
-           // Log.i("liste recette :  ",recettes.get(i).getTitle()+ "");
-            for (int j=0; j<dietsTrue.size();j++){
-                //Log.i("liste diets :  ",dietsTrue.get(j).getId()+1+ ""); // recuperation des ids dans la liste des dietsTRue
-                for (int k=0;k<recettes.get(i).getDiets().size();k++){
-                   //Log.i("liste dietsRecettes :  ",recettes.get(i).getDiets().get(k)+ "");
-                     if (dietsTrue.get(j).getId()+1 == recettes.get(i).getDiets().get(k)){
-                       //recup les repas en fonction de si ils ont été coché
-                       //Log.i("repas :  ",recettes.get(i).getTitle()+ "");
+        try {
+            // Log.i("taille liste :  ",recettes.size()+ ""); //Taille de la liste du receipe controller
+            for (int i = 0; i < recettes.size(); i++) { //pour toutes les recettes
+                // Log.i("liste recette :  ",recettes.get(i).getTitle()+ "");
+                for (int j = 0; j < dietsTrue.size(); j++) {
+                    //Log.i("liste diets :  ",dietsTrue.get(j).getId()+1+ ""); // recuperation des ids dans la liste des dietsTRue
+                    for (int k = 0; k < recettes.get(i).getDiets().size(); k++) {
+                        //Log.i("liste dietsRecettes :  ",recettes.get(i).getDiets().get(k)+ "");
+                        if (dietsTrue.get(j).getId() + 1 == recettes.get(i).getDiets().get(k)) {
+                            //recup les repas en fonction de si ils ont été coché
+                            //Log.i("repas :  ",recettes.get(i).getTitle()+ "");
 
-                         recettesUtiles.add(recettes.get(i));
-                   }
-               }
+                            recettesUtiles.add(recettes.get(i));
+                        }
+                    }
+                }
             }
+        }catch (Exception e){
+
         }
 
         //permet d'enlever les doublons de la liste recette utiles
@@ -152,9 +159,16 @@ public class MakeAChoice extends AppCompatActivity {
             Log.i("liste utile :  ",recettesUtilesFinales.get(i).getTitle()+ "");
         }
 */
+        Activity activity = this;
+
+        Planning planning1 = new Planning();
+        if (extras.getString ("choice") == null){
+             planning1 = null;
+        }else {
+             planning1 =  PlanningController.getInstance().getPlanningById("planning1",activity); // correspond au choix 1
+        }
 
 
-        Planning planning1 =  getIntent().getParcelableExtra("planning1"); // correspond au choix 1
         if (planning1 == null){
             planning1 = new Planning();
             planning1.setId("planning1");
@@ -197,7 +211,13 @@ public class MakeAChoice extends AppCompatActivity {
             }
         }
 
-        Planning planning2 = getIntent().getParcelableExtra("planning2"); // correspond au choix 2
+        Planning planning2 = new Planning();
+        if (extras.getString ("choice") == null){
+            planning2 = null;
+        }else {
+            planning2 =  PlanningController.getInstance().getPlanningById("planning2",activity); // correspond au choix 1
+        }
+
         if (planning2 == null){
             Collections.shuffle(recettesUtilesFinales);
             planning2 = new Planning();
@@ -238,9 +258,13 @@ public class MakeAChoice extends AppCompatActivity {
             }
         }
 
+        Planning planning3 = new Planning();
+        if (extras.getString ("choice") == null){
+            planning3 = null;
+        }else {
+            planning3 =  PlanningController.getInstance().getPlanningById("planning3",activity); // correspond au choix 1
+        }
 
-
-        Planning planning3 = getIntent().getParcelableExtra("planning3"); // correspond au choix 3
         if (planning3 == null){
             Collections.shuffle(recettesUtilesFinales);
             planning3 = new Planning();
@@ -310,7 +334,7 @@ public class MakeAChoice extends AppCompatActivity {
         Planning finalPlanning2 = planning2;
         Planning finalPlanning3 = planning3;
 
-        Activity activity = this;
+
         
         buttonChoose.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -341,6 +365,7 @@ public class MakeAChoice extends AppCompatActivity {
                     PlanningController.getInstance().addPlannings(finalPlanning1, activity);
                     PlanningController.getInstance().addPlannings(finalPlanning2, activity);
                     PlanningController.getInstance().addPlannings(finalPlanning3, activity);
+
                    }
             }
         });
