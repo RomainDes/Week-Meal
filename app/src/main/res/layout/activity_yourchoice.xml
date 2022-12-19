@@ -4,9 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fond"
+    android:background="#f7b346"
     android:orientation="vertical"
     tools:context=".MakeAChoice">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/cooker"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:lottie_rawRes="@raw/cooking"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_margin="5dp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_rawRes="@raw/cooking"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_margin="20dp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:lottie_rawRes="@raw/cooking"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
 
     <LinearLayout
 
@@ -28,9 +62,8 @@
 
             android:fontFamily="@font/luthier_bold"
             android:text="WEEK"
-            android:background="@color/white"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="40sp"
 
@@ -46,8 +79,7 @@
             android:fontFamily="@font/luthier_regular"
             android:text="meal"
             android:textAlignment="center"
-            android:textColor="@color/black"
-            android:background="@color/white"
+            android:textColor="@color/white"
             android:textSize="40sp"
 
 
@@ -59,7 +91,7 @@
             android:layout_height="2dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:background="@color/black" />
+            android:background="@color/white" />
 
         <TextView
             android:id="@+id/your_choice_textChoice"
@@ -86,7 +118,7 @@
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp"
             android:layout_weight="1"
-            android:background="@drawable/planshop_true"
+            android:background="@drawable/planshop_true2"
             android:visibility="gone"
             >
 
@@ -227,7 +259,7 @@ du thym\n
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp"
             android:layout_weight="1"
-            android:background="@drawable/planshop_true"
+            android:background="@drawable/planshop_true2"
             android:visibility="visible"
            >
 
@@ -264,7 +296,7 @@ du thym\n
                 android:scrollbarSize="10dp"
                 android:scrollbarThumbVertical="@color/black"
                 android:layout_weight="1"
-                android:background="@drawable/planshop_true">
+>
                 <GridLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -682,7 +714,7 @@ du thym\n
                     android:fontFamily="@font/glacialindifference_bold"
                     android:text="RETURN"
                     android:textAlignment="textStart"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/white" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -695,7 +727,7 @@ du thym\n
                     android:layout_height="match_parent"
                     android:id="@+id/choose1"
                     android:background="@null"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textAlignment="textEnd"
                     android:fontFamily="@font/glacialindifference_bold"
                     android:text="SHARE"
