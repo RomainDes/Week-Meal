@@ -84,6 +84,8 @@ public class MakeAChoice extends AppCompatActivity {
         back2 = (Button) findViewById(R.id.back2);
         back3 = (Button) findViewById(R.id.back3);
 
+        radioGroup = (RadioGroup) findViewById(R.id.make_choice_radio);
+
 
 
 
@@ -816,6 +818,7 @@ public class MakeAChoice extends AppCompatActivity {
 
 
 
+
         choice1Recette1  = (LinearLayout) findViewById(R.id.choice1Recette1);
         backchoice1Recette1 = (Button) findViewById(R.id.backchoice1Recette1);
 
@@ -824,8 +827,19 @@ public class MakeAChoice extends AppCompatActivity {
         //pour chaque recette
         backchoice1Recette1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                choice1Planning.setVisibility(View.VISIBLE);
-                choice1Recette1.setVisibility(View.GONE);
+                int idRadio = radioGroup.getCheckedRadioButtonId();
+                Log.d("TEST1", String.valueOf(idRadio));
+                if(idRadio == 2131296389){
+                    choice1Planning.setVisibility(View.VISIBLE);
+                    choice1Recette1.setVisibility(View.GONE);
+                }else if(idRadio == 2131296392){
+                    choice2Planning.setVisibility(View.VISIBLE);
+                    choice1Recette1.setVisibility(View.GONE);
+                }else{
+                    choice3Planning.setVisibility(View.VISIBLE);
+                    choice1Recette1.setVisibility(View.GONE);
+                }
+
             }
         });
 
