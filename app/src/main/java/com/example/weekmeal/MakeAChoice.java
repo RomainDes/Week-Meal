@@ -224,7 +224,7 @@ public class MakeAChoice extends AppCompatActivity {
                         planning2.addMeal("DimancheR"+compteur,recipePass);
                     }
                     compteur ++;
-                    if (compteur == mealPerDay){
+                    if (compteur == mealPerDay+1){
                         compteur =1;
                     }
                 }catch(Exception e){
@@ -268,7 +268,7 @@ public class MakeAChoice extends AppCompatActivity {
                         planning3.addMeal("DimancheR" + compteur, recipePass);
                     }
                     compteur ++;
-                    if (compteur == mealPerDay){
+                    if (compteur == mealPerDay+1){
                         compteur =1;
                     }
                 }catch(Exception e){
