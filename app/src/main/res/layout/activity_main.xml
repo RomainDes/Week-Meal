@@ -5,795 +5,793 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fond"
+    android:background="#f7b346"
 
     tools:context=".MainActivity">
 
-    <!--<com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/lottie_main"
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/cooker"
         app:lottie_autoPlay="true"
-        app:lottie_rawRes="@raw/animation"
-        app:lottie_loop="true"
-        android:layout_centerInParent="true"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>-->
+        app:lottie_loop="true"/>
 
-    <ScrollView
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:lottie_rawRes="@raw/cooking"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:lottie_rawRes="@raw/cooking"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_margin="5dp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_rawRes="@raw/cooking"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_margin="20dp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true">
-        <LinearLayout
-            android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        app:lottie_rawRes="@raw/cooking"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_marginTop="10sp"
+
+            android:fontFamily="@font/luthier_bold"
+            android:text="WEEK"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="40sp"
 
 
-            <TextView
-                android:layout_gravity="center"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10sp"
-
-                android:fontFamily="@font/luthier_bold"
-                android:text="WEEK"
-                android:background="@color/white"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:textSize="40sp"
-
-
-                />
-
-            <TextView
-                android:layout_gravity="center"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="-10dp"
-                android:layout_marginBottom="10sp"
-                android:fontFamily="@font/luthier_regular"
-                android:text="meal"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:background="@color/white"
-                android:textSize="40sp"
+            />
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="10sp"
+            android:fontFamily="@font/luthier_regular"
+            android:text="meal"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="40sp"
 
 
-                />
+            />
 
 
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="2dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:background="@color/black" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/white" />
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="530dp"
 
-
+            android:fillViewport="true">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="0dp">
+                android:orientation="vertical">
 
-                <TextView
-                    android:layout_gravity="center"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:fontFamily="@font/glacialindifference_bold"
-                    android:text="PLANNING'S NAME"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:background="@color/white"
 
-
-                    android:textSize="17sp" />
-
-                <EditText
-                    android:id="@+id/planningName"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:background="@drawable/generate"
-                    android:textAlignment="center"
-                    android:inputType="textPersonName"
-                    android:layout_marginLeft="20sp"
-                    android:layout_marginRight="20sp"
-                    android:textColor="@color/black"
-                    android:hint="Tap your planning's name"
-                    android:textColorHint="@color/black"
-                    android:textStyle="italic"
-                    android:textSize="13sp"
-                    android:fontFamily="@font/glacialindifference_regular"/>
-
-                <TextView
-                    android:layout_gravity="center"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:fontFamily="@font/glacialindifference_bold"
-                    android:text="PREFERENCES"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:background="@color/white"
-
-
-                    android:textSize="17sp" />
-
-                <TableLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center">
-
-                    <TableRow
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        >
-
-                        <ToggleButton
-                            android:id="@+id/pasta"
-                            android:layout_width="150dp"
-                            android:layout_height="50dp"
-
-                            android:layout_marginLeft="20sp"
-                            android:layout_marginTop="10sp"
-                            android:layout_marginRight="10sp"
-                            android:layout_marginBottom="10sp"
-                            android:layout_weight="1"
-
-                            android:background="@drawable/togglebutton"
-
-                            android:focusable="false"
-                            android:focusableInTouchMode="false"
-                            android:paddingRight="25sp"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textOff="PASTA"
-                            android:textOn="PASTA"
-                            android:fontFamily="@font/glacialindifference_regular"/>
-
-                        <ToggleButton
-                            android:id="@+id/rice"
-                            android:layout_width="150dp"
-                            android:layout_height="50dp"
-                            android:layout_centerVertical="true"
-                            android:layout_marginLeft="10sp"
-                            android:layout_marginTop="10sp"
-                            android:layout_marginRight="20sp"
-                            android:layout_marginBottom="10sp"
-                            android:layout_weight="1"
-                            android:background="@drawable/togglebutton"
-                            android:focusable="false"
-                            android:focusableInTouchMode="false"
-                            android:paddingRight="25sp"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textOff="RICE"
-                            android:textOn="RICE"
-                            android:fontFamily="@font/glacialindifference_regular"/>
-
-
-                    </TableRow>
-                    <TableRow
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        >
-
-                        <ToggleButton
-                            android:id="@+id/healthy"
-                            android:layout_width="150dp"
-                            android:layout_height="50dp"
-
-                            android:layout_marginLeft="20sp"
-                            android:layout_marginTop="10sp"
-                            android:layout_marginRight="10sp"
-                            android:layout_marginBottom="10sp"
-                            android:layout_weight="1"
-
-                            android:background="@drawable/togglebutton"
-
-                            android:focusable="false"
-                            android:focusableInTouchMode="false"
-                            android:paddingRight="25sp"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textOff="HEALTHY"
-                            android:textOn="HEALTHY"
-                            android:fontFamily="@font/glacialindifference_regular"/>
-
-                        <ToggleButton
-                            android:id="@+id/steak"
-                            android:layout_width="150dp"
-                            android:layout_height="50dp"
-                            android:layout_centerVertical="true"
-                            android:layout_marginLeft="10sp"
-                            android:layout_marginTop="10sp"
-                            android:layout_marginRight="20sp"
-                            android:layout_marginBottom="10sp"
-                            android:layout_weight="1"
-                            android:background="@drawable/togglebutton"
-                            android:focusable="false"
-                            android:focusableInTouchMode="false"
-                            android:paddingRight="25sp"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textOff="STEAK"
-                            android:textOn="STEAK"
-                            android:fontFamily="@font/glacialindifference_regular"/>
-
-
-                    </TableRow>
-                    <TableRow
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        >
-
-                        <ToggleButton
-                            android:id="@+id/chicken"
-                            android:layout_width="150dp"
-                            android:layout_height="50dp"
-
-                            android:layout_marginLeft="20sp"
-                            android:layout_marginTop="10sp"
-                            android:layout_marginRight="10sp"
-                            android:layout_marginBottom="10sp"
-                            android:layout_weight="1"
-
-                            android:background="@drawable/togglebutton"
-
-                            android:focusable="false"
-                            android:focusableInTouchMode="false"
-                            android:paddingRight="25sp"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textOff="CHICKEN"
-                            android:textOn="CHICKEN"
-                            android:fontFamily="@font/glacialindifference_regular"/>
-
-                        <ToggleButton
-                            android:id="@+id/potatoes"
-                            android:layout_width="150dp"
-                            android:layout_height="50dp"
-                            android:layout_centerVertical="true"
-                            android:layout_marginLeft="10sp"
-                            android:layout_marginTop="10sp"
-                            android:layout_marginRight="20sp"
-                            android:layout_marginBottom="10sp"
-                            android:layout_weight="1"
-                            android:background="@drawable/togglebutton"
-                            android:focusable="false"
-                            android:focusableInTouchMode="false"
-                            android:paddingRight="25sp"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textOff="POTATOES"
-                            android:textOn="POTATOES"
-                            android:fontFamily="@font/glacialindifference_regular"/>
-
-
-                    </TableRow>
-                    <TableRow
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        >
-
-                        <ToggleButton
-                            android:id="@+id/oven"
-                            android:layout_width="150dp"
-                            android:layout_height="50dp"
-
-                            android:layout_marginLeft="20sp"
-                            android:layout_marginTop="10sp"
-                            android:layout_marginRight="10sp"
-                            android:layout_marginBottom="10sp"
-                            android:layout_weight="1"
-
-                            android:background="@drawable/togglebutton"
-
-                            android:focusable="false"
-                            android:focusableInTouchMode="false"
-                            android:paddingRight="25sp"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textOff="OVEN"
-                            android:textOn="OVEN"
-                            android:fontFamily="@font/glacialindifference_regular"/>
-
-                        <ToggleButton
-                            android:id="@+id/egg"
-                            android:layout_width="150dp"
-                            android:layout_height="50dp"
-                            android:layout_centerVertical="true"
-                            android:layout_marginLeft="10sp"
-                            android:layout_marginTop="10sp"
-                            android:layout_marginRight="20sp"
-                            android:layout_marginBottom="10sp"
-                            android:layout_weight="1"
-                            android:background="@drawable/togglebutton"
-                            android:focusable="false"
-                            android:focusableInTouchMode="false"
-                            android:paddingRight="25sp"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textOff="EGG"
-                            android:textOn="EGG"
-                            android:fontFamily="@font/glacialindifference_regular"/>
-
-
-                    </TableRow>
-                    <TableRow
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        >
-
-                        <ToggleButton
-                            android:id="@+id/vegetarian"
-                            android:layout_width="150dp"
-                            android:layout_height="50dp"
-
-                            android:layout_marginLeft="20sp"
-                            android:layout_marginTop="10sp"
-                            android:layout_marginRight="10sp"
-                            android:layout_marginBottom="10sp"
-                            android:layout_weight="1"
-
-                            android:background="@drawable/togglebutton"
-
-                            android:focusable="false"
-                            android:focusableInTouchMode="false"
-                            android:paddingRight="25sp"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textOff="VEGETARIAN"
-                            android:textOn="VEGETARIAN"
-                            android:fontFamily="@font/glacialindifference_regular"/>
-
-                        <ToggleButton
-                            android:id="@+id/bigEater"
-                            android:layout_width="150dp"
-                            android:layout_height="50dp"
-                            android:layout_centerVertical="true"
-                            android:layout_marginLeft="10sp"
-                            android:layout_marginTop="1sp"
-                            android:layout_marginRight="20sp"
-                            android:layout_marginBottom="10sp"
-                            android:layout_weight="1"
-                            android:background="@drawable/togglebutton"
-                            android:focusable="false"
-                            android:focusableInTouchMode="false"
-                            android:paddingRight="25sp"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textOff="BIG\nEATER"
-                            android:textOn="BIG EATER"
-                            android:fontFamily="@font/glacialindifference_regular"/>
-
-
-                    </TableRow>
-                    <TableRow
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        >
-
-                        <ToggleButton
-                            android:id="@+id/mediumEater"
-                            android:layout_width="150dp"
-                            android:layout_height="50dp"
-
-                            android:layout_marginLeft="20sp"
-                            android:layout_marginTop="10sp"
-                            android:layout_marginRight="10sp"
-                            android:layout_marginBottom="10sp"
-                            android:layout_weight="1"
-
-                            android:background="@drawable/togglebutton"
-
-                            android:focusable="false"
-                            android:focusableInTouchMode="false"
-                            android:paddingRight="25sp"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textOff="MEDIUM\nEATER"
-                            android:textOn="MEDIUM\nEATER"
-                            android:fontFamily="@font/glacialindifference_regular"/>
-
-                        <ToggleButton
-                            android:id="@+id/littleEater"
-                            android:layout_width="150dp"
-                            android:layout_height="50dp"
-                            android:layout_centerVertical="true"
-                            android:layout_marginLeft="10sp"
-                            android:layout_marginTop="10sp"
-                            android:layout_marginRight="20sp"
-                            android:layout_marginBottom="10sp"
-                            android:layout_weight="1"
-                            android:background="@drawable/togglebutton"
-                            android:focusable="false"
-                            android:focusableInTouchMode="false"
-                            android:paddingRight="25sp"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textOff="LITTLE\nEATER"
-                            android:textOn="LITTLE\nEATER"
-                            android:fontFamily="@font/glacialindifference_regular"/>
-
-
-                    </TableRow>
-                    <TableRow
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        >
-
-                        <ToggleButton
-                            android:id="@+id/cheese"
-                            android:layout_width="150dp"
-                            android:layout_height="50dp"
-
-                            android:layout_marginLeft="20sp"
-                            android:layout_marginTop="10sp"
-                            android:layout_marginRight="10sp"
-                            android:layout_marginBottom="10sp"
-                            android:layout_weight="1"
-
-                            android:background="@drawable/togglebutton"
-
-                            android:focusable="false"
-                            android:focusableInTouchMode="false"
-                            android:paddingRight="25sp"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textOff="CHEESE"
-                            android:textOn="CHEESE"
-                            android:fontFamily="@font/glacialindifference_regular"/>
-
-                        <ToggleButton
-                            android:id="@+id/tomatoes"
-                            android:layout_width="150dp"
-                            android:layout_height="50dp"
-                            android:layout_centerVertical="true"
-                            android:layout_marginLeft="10sp"
-                            android:layout_marginTop="10sp"
-                            android:layout_marginRight="20sp"
-                            android:layout_marginBottom="10sp"
-                            android:layout_weight="1"
-                            android:background="@drawable/togglebutton"
-                            android:focusable="false"
-                            android:focusableInTouchMode="false"
-                            android:paddingRight="25sp"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textOff="TOMATOES"
-                            android:textOn="TOMATOES"
-                            android:fontFamily="@font/glacialindifference_regular"/>
-
-
-                    </TableRow>
-                    <TableRow
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        >
-
-                        <ToggleButton
-                            android:id="@+id/pepper"
-                            android:layout_width="150dp"
-                            android:layout_height="50dp"
-
-                            android:layout_marginLeft="20sp"
-                            android:layout_marginTop="10sp"
-                            android:layout_marginRight="10sp"
-                            android:layout_marginBottom="10sp"
-                            android:layout_weight="1"
-
-                            android:background="@drawable/togglebutton"
-
-                            android:focusable="false"
-                            android:focusableInTouchMode="false"
-                            android:paddingRight="25sp"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textOff="PEPPER"
-                            android:textOn="PEPPER"
-                            android:fontFamily="@font/glacialindifference_regular"/>
-
-                        <ToggleButton
-                            android:id="@+id/onion"
-                            android:layout_width="150dp"
-                            android:layout_height="50dp"
-                            android:layout_centerVertical="true"
-                            android:layout_marginLeft="10sp"
-                            android:layout_marginTop="10sp"
-                            android:layout_marginRight="20sp"
-                            android:layout_marginBottom="10sp"
-                            android:layout_weight="1"
-                            android:background="@drawable/togglebutton"
-                            android:focusable="false"
-                            android:focusableInTouchMode="false"
-                            android:paddingRight="25sp"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textOff="ONION"
-                            android:textOn="ONION"
-                            android:fontFamily="@font/glacialindifference_regular"/>
-
-
-                    </TableRow>
-                    <TableRow
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        >
-
-                        <ToggleButton
-                            android:id="@+id/cucumber"
-                            android:layout_width="150dp"
-                            android:layout_height="50dp"
-
-                            android:layout_marginLeft="20sp"
-                            android:layout_marginTop="10sp"
-                            android:layout_marginRight="10sp"
-                            android:layout_marginBottom="10sp"
-                            android:layout_weight="1"
-
-                            android:background="@drawable/togglebutton"
-
-                            android:focusable="false"
-                            android:focusableInTouchMode="false"
-                            android:paddingRight="25sp"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textOff="CUCUMBER"
-                            android:textOn="CUCUMBER"
-                            android:fontFamily="@font/glacialindifference_regular"/>
-
-                        <ToggleButton
-                            android:id="@+id/carrots"
-                            android:layout_width="150dp"
-                            android:layout_height="50dp"
-                            android:layout_centerVertical="true"
-                            android:layout_marginLeft="10sp"
-                            android:layout_marginTop="10sp"
-                            android:layout_marginRight="20sp"
-                            android:layout_marginBottom="10sp"
-                            android:layout_weight="1"
-                            android:background="@drawable/togglebutton"
-                            android:focusable="false"
-                            android:focusableInTouchMode="false"
-                            android:paddingRight="25sp"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textOff="CARROTS"
-                            android:textOn="CARROTS"
-                            android:fontFamily="@font/glacialindifference_regular"/>
-
-
-                    </TableRow>
-                    <TableRow
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        >
-
-                        <ToggleButton
-                            android:id="@+id/lettuce"
-                            android:layout_width="150dp"
-                            android:layout_height="50dp"
-
-                            android:layout_marginLeft="20sp"
-                            android:layout_marginTop="10sp"
-                            android:layout_marginRight="10sp"
-                            android:layout_marginBottom="10sp"
-                            android:layout_weight="1"
-
-                            android:background="@drawable/togglebutton"
-
-                            android:focusable="false"
-                            android:focusableInTouchMode="false"
-                            android:paddingRight="25sp"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textOff="LETTUCE"
-                            android:textOn="LETTUCE"
-                            android:fontFamily="@font/glacialindifference_regular"/>
-
-                        <ToggleButton
-                            android:id="@+id/spinach"
-                            android:layout_width="150dp"
-                            android:layout_height="50dp"
-                            android:layout_centerVertical="true"
-                            android:layout_marginLeft="10sp"
-                            android:layout_marginTop="10sp"
-                            android:layout_marginRight="20sp"
-                            android:layout_marginBottom="10sp"
-                            android:layout_weight="1"
-                            android:background="@drawable/togglebutton"
-                            android:focusable="false"
-                            android:focusableInTouchMode="false"
-                            android:paddingRight="25sp"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textOff="SPINACH"
-                            android:textOn="SPINACH"
-                            android:fontFamily="@font/glacialindifference_regular"/>
-
-
-                    </TableRow>
-                    <TableRow
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        >
-
-                        <ToggleButton
-                            android:id="@+id/garlic"
-                            android:layout_width="150dp"
-                            android:layout_height="50dp"
-
-                            android:layout_marginLeft="20sp"
-                            android:layout_marginTop="10sp"
-                            android:layout_marginRight="10sp"
-                            android:layout_marginBottom="10sp"
-                            android:layout_weight="1"
-
-                            android:background="@drawable/togglebutton"
-
-                            android:focusable="false"
-                            android:focusableInTouchMode="false"
-                            android:paddingRight="25sp"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textOff="GARLIC"
-                            android:textOn="GARLIC"
-                            android:fontFamily="@font/glacialindifference_regular"/>
-
-                        <ToggleButton
-                            android:id="@+id/fish"
-                            android:layout_width="150dp"
-                            android:layout_height="50dp"
-                            android:layout_centerVertical="true"
-                            android:layout_marginLeft="10sp"
-                            android:layout_marginTop="10sp"
-                            android:layout_marginRight="20sp"
-                            android:layout_marginBottom="10sp"
-                            android:layout_weight="1"
-                            android:background="@drawable/togglebutton"
-                            android:focusable="false"
-                            android:focusableInTouchMode="false"
-                            android:paddingRight="25sp"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textOff="FISH"
-                            android:textOn="FISH"
-                            android:fontFamily="@font/glacialindifference_regular"/>
-
-
-                    </TableRow>
-
-                </TableLayout>
-
-                <TextView
-                    android:layout_gravity="center"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:fontFamily="@font/glacialindifference_bold"
-                    android:text="MORE ..."
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:background="@color/white"
-
-
-                    android:textSize="17sp" />
-                <TableLayout
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_gravity="center">
+                    android:orientation="vertical"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="0dp">
 
-                    <TableRow
-                        android:layout_marginBottom="20dp"
-                       >
-                        <TextView
-                            android:layout_gravity="left"
-                            android:layout_width="240dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="15dp"
-                            android:fontFamily="@font/glacialindifference_bold"
-                            android:text="MEALS PER DAY"
-
-                            android:textColor="@color/black"
-                            android:background="@color/white"
-                            android:textSize="14sp"
-
-                             />
-
-                        <androidx.appcompat.widget.AppCompatButton
-                            android:id="@+id/buttonLessMeal"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/less" />
-                        <TextView
-                            android:id="@+id/mealPerDay"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="3"
-                            android:layout_weight="1"
-                            android:textAlignment="center"
-                            android:fontFamily="@font/glacialindifference_regular"
-                            android:textColor="@color/black"
-                            android:textStyle="bold"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            />
-
-                        <androidx.appcompat.widget.AppCompatButton
-                            android:id="@+id/buttonMoreMeal"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_weight="1"
-                            android:layout_marginRight="15dp"
-                            android:background="@drawable/more" />
-                    </TableRow>
-                    <TableRow
-                        >
-                        <TextView
-                            android:layout_gravity="left"
-                            android:layout_width="240dp"
-                            android:layout_height="wrap_content"
-
-                            android:fontFamily="@font/glacialindifference_bold"
-                            android:text="NUMBER OF PEOPLE"
-                            android:layout_marginLeft="15dp"
-                            android:textColor="@color/black"
-                            android:background="@color/white"
-                            android:textSize="14sp"
-
-                            />
-
-                        <androidx.appcompat.widget.AppCompatButton
-                            android:id="@+id/buttonLessPeople"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/less" />
-                        <TextView
-                            android:id="@+id/numberOfPeople"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="1"
-                            android:layout_weight="1"
-                            android:textAlignment="center"
-                            android:fontFamily="@font/glacialindifference_regular"
-                            android:textColor="@color/black"
-                            android:textStyle="bold"
-                            />
-
-                        <androidx.appcompat.widget.AppCompatButton
-                            android:id="@+id/buttonMorePeople"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/more"
-                            android:layout_marginRight="15dp"/>
-                    </TableRow>
-                </TableLayout>
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/buttonGenerate"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_margin="20dp"
-                    android:text="GENERATE YOUR WEEK'MEAL"
-                    android:textColor="@color/black"
-                    android:background="@drawable/generate"
-                    android:fontFamily="@font/glacialindifference_bold"/>
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="@color/white"
+                        android:fontFamily="@font/glacialindifference_bold"
+                        android:text="PLANNING'S NAME"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
 
 
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/planningName"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginRight="20sp"
+                        android:background="@drawable/generate"
+                        android:fontFamily="@font/glacialindifference_regular"
+                        android:hint="Tap your planning's name"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="@color/white"
+                        android:fontFamily="@font/glacialindifference_bold"
+                        android:text="PREFERENCES"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+
+
+                        android:textSize="17sp" />
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ToggleButton
+                                android:id="@+id/pasta"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+
+                                android:layout_marginLeft="20sp"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginRight="10sp"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1"
+
+                                android:background="@drawable/togglebutton"
+
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:fontFamily="@font/glacialindifference_regular"
+                                android:paddingRight="25sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textOff="PASTA"
+                                android:textOn="PASTA" />
+
+                            <ToggleButton
+                                android:id="@+id/rice"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10sp"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginRight="20sp"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1"
+                                android:background="@drawable/togglebutton"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:fontFamily="@font/glacialindifference_regular"
+                                android:paddingRight="25sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textOff="RICE"
+                                android:textOn="RICE" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ToggleButton
+                                android:id="@+id/healthy"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+
+                                android:layout_marginLeft="20sp"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginRight="10sp"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1"
+
+                                android:background="@drawable/togglebutton"
+
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:fontFamily="@font/glacialindifference_regular"
+                                android:paddingRight="25sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textOff="HEALTHY"
+                                android:textOn="HEALTHY" />
+
+                            <ToggleButton
+                                android:id="@+id/steak"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10sp"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginRight="20sp"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1"
+                                android:background="@drawable/togglebutton"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:fontFamily="@font/glacialindifference_regular"
+                                android:paddingRight="25sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textOff="STEAK"
+                                android:textOn="STEAK" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ToggleButton
+                                android:id="@+id/chicken"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+
+                                android:layout_marginLeft="20sp"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginRight="10sp"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1"
+
+                                android:background="@drawable/togglebutton"
+
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:fontFamily="@font/glacialindifference_regular"
+                                android:paddingRight="25sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textOff="CHICKEN"
+                                android:textOn="CHICKEN" />
+
+                            <ToggleButton
+                                android:id="@+id/potatoes"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10sp"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginRight="20sp"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1"
+                                android:background="@drawable/togglebutton"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:fontFamily="@font/glacialindifference_regular"
+                                android:paddingRight="25sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textOff="POTATOES"
+                                android:textOn="POTATOES" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ToggleButton
+                                android:id="@+id/oven"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+
+                                android:layout_marginLeft="20sp"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginRight="10sp"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1"
+
+                                android:background="@drawable/togglebutton"
+
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:fontFamily="@font/glacialindifference_regular"
+                                android:paddingRight="25sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textOff="OVEN"
+                                android:textOn="OVEN" />
+
+                            <ToggleButton
+                                android:id="@+id/egg"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10sp"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginRight="20sp"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1"
+                                android:background="@drawable/togglebutton"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:fontFamily="@font/glacialindifference_regular"
+                                android:paddingRight="25sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textOff="EGG"
+                                android:textOn="EGG" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ToggleButton
+                                android:id="@+id/vegetarian"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+
+                                android:layout_marginLeft="20sp"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginRight="10sp"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1"
+
+                                android:background="@drawable/togglebutton"
+
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:fontFamily="@font/glacialindifference_regular"
+                                android:paddingRight="25sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textOff="VEGETARIAN"
+                                android:textOn="VEGETARIAN" />
+
+                            <ToggleButton
+                                android:id="@+id/bigEater"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10sp"
+                                android:layout_marginTop="1sp"
+                                android:layout_marginRight="20sp"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1"
+                                android:background="@drawable/togglebutton"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:fontFamily="@font/glacialindifference_regular"
+                                android:paddingRight="25sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textOff="BIG\nEATER"
+                                android:textOn="BIG EATER" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ToggleButton
+                                android:id="@+id/mediumEater"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+
+                                android:layout_marginLeft="20sp"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginRight="10sp"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1"
+
+                                android:background="@drawable/togglebutton"
+
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:fontFamily="@font/glacialindifference_regular"
+                                android:paddingRight="25sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textOff="MEDIUM\nEATER"
+                                android:textOn="MEDIUM\nEATER" />
+
+                            <ToggleButton
+                                android:id="@+id/littleEater"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10sp"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginRight="20sp"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1"
+                                android:background="@drawable/togglebutton"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:fontFamily="@font/glacialindifference_regular"
+                                android:paddingRight="25sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textOff="LITTLE\nEATER"
+                                android:textOn="LITTLE\nEATER" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ToggleButton
+                                android:id="@+id/cheese"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+
+                                android:layout_marginLeft="20sp"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginRight="10sp"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1"
+
+                                android:background="@drawable/togglebutton"
+
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:fontFamily="@font/glacialindifference_regular"
+                                android:paddingRight="25sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textOff="CHEESE"
+                                android:textOn="CHEESE" />
+
+                            <ToggleButton
+                                android:id="@+id/tomatoes"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10sp"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginRight="20sp"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1"
+                                android:background="@drawable/togglebutton"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:fontFamily="@font/glacialindifference_regular"
+                                android:paddingRight="25sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textOff="TOMATOES"
+                                android:textOn="TOMATOES" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ToggleButton
+                                android:id="@+id/pepper"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+
+                                android:layout_marginLeft="20sp"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginRight="10sp"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1"
+
+                                android:background="@drawable/togglebutton"
+
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:fontFamily="@font/glacialindifference_regular"
+                                android:paddingRight="25sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textOff="PEPPER"
+                                android:textOn="PEPPER" />
+
+                            <ToggleButton
+                                android:id="@+id/onion"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10sp"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginRight="20sp"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1"
+                                android:background="@drawable/togglebutton"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:fontFamily="@font/glacialindifference_regular"
+                                android:paddingRight="25sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textOff="ONION"
+                                android:textOn="ONION" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ToggleButton
+                                android:id="@+id/cucumber"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+
+                                android:layout_marginLeft="20sp"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginRight="10sp"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1"
+
+                                android:background="@drawable/togglebutton"
+
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:fontFamily="@font/glacialindifference_regular"
+                                android:paddingRight="25sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textOff="CUCUMBER"
+                                android:textOn="CUCUMBER" />
+
+                            <ToggleButton
+                                android:id="@+id/carrots"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10sp"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginRight="20sp"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1"
+                                android:background="@drawable/togglebutton"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:fontFamily="@font/glacialindifference_regular"
+                                android:paddingRight="25sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textOff="CARROTS"
+                                android:textOn="CARROTS" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ToggleButton
+                                android:id="@+id/lettuce"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+
+                                android:layout_marginLeft="20sp"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginRight="10sp"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1"
+
+                                android:background="@drawable/togglebutton"
+
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:fontFamily="@font/glacialindifference_regular"
+                                android:paddingRight="25sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textOff="LETTUCE"
+                                android:textOn="LETTUCE" />
+
+                            <ToggleButton
+                                android:id="@+id/spinach"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10sp"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginRight="20sp"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1"
+                                android:background="@drawable/togglebutton"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:fontFamily="@font/glacialindifference_regular"
+                                android:paddingRight="25sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textOff="SPINACH"
+                                android:textOn="SPINACH" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ToggleButton
+                                android:id="@+id/garlic"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+
+                                android:layout_marginLeft="20sp"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginRight="10sp"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1"
+
+                                android:background="@drawable/togglebutton"
+
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:fontFamily="@font/glacialindifference_regular"
+                                android:paddingRight="25sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textOff="GARLIC"
+                                android:textOn="GARLIC" />
+
+                            <ToggleButton
+                                android:id="@+id/fish"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10sp"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginRight="20sp"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1"
+                                android:background="@drawable/togglebutton"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:fontFamily="@font/glacialindifference_regular"
+                                android:paddingRight="25sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textOff="FISH"
+                                android:textOn="FISH" />
+
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <TextView
+                        android:layout_width="196dp"
+                        android:layout_height="17dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="@color/white"
+                        android:fontFamily="@font/glacialindifference_bold"
+                        android:text="MORE ..."
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+
+
+                        android:textSize="17sp" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp">
+
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="240dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+
+                                android:layout_marginLeft="15dp"
+                                android:fontFamily="@font/glacialindifference_bold"
+                                android:text="NUMBER OF PEOPLE"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+
+                                />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/buttonLessPeople"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/less" />
+
+                            <TextView
+                                android:id="@+id/numberOfPeople"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/glacialindifference_regular"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/buttonMorePeople"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/more" />
+                        </TableRow>
+                    </TableLayout>
+
+
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
+        </ScrollView>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonGenerate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:text="GENERATE YOUR WEEK'MEAL"
+            android:textColor="@color/black"
+            android:background="@drawable/generate"
+            android:fontFamily="@font/glacialindifference_bold"/>
+    </LinearLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

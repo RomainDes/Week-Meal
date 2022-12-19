@@ -23,7 +23,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private int numberPeople = 0;
-    private int mealPerDay = 0;
+
 
     private EditText planningName;
 
@@ -72,8 +72,8 @@ public class MainActivity extends AppCompatActivity {
         IngredientController.getInstance().synchronizedWithDB(this);
         IngredientController.getInstance().readLocalDB(this);
 //récupérer tous les bouttons lors du lancement de l'application
-        buttonMoreMeal = (Button) findViewById(R.id.buttonMoreMeal);
-        buttonLessMeal = (Button) findViewById(R.id.buttonLessMeal);
+        //buttonMoreMeal = (Button) findViewById(R.id.buttonMoreMeal);
+        //buttonLessMeal = (Button) findViewById(R.id.buttonLessMeal);
         buttonMorePeople = (Button) findViewById(R.id.buttonMorePeople);
         buttonLessPeople = (Button) findViewById(R.id.buttonLessPeople);
         buttonGenerate = (Button) findViewById(R.id.buttonGenerate);
@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //récupérer tous les textes lors du lancement de l'application
-        mealPerDayText = (TextView) findViewById(R.id.mealPerDay);
+        //mealPerDayText = (TextView) findViewById(R.id.mealPerDay);
         numberPeopleText = (TextView) findViewById(R.id.numberOfPeople);
 
         planningName =  (EditText)  findViewById(R.id.planningName);
@@ -145,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        buttonMoreMeal.setOnClickListener(new View.OnClickListener() {
+        /*buttonMoreMeal.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
                 mealPerDay =  Integer.parseInt(mealPerDayText.getText().toString());
@@ -163,7 +163,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
             }
-        });
+        });*/
         buttonMorePeople.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view){
@@ -278,7 +278,6 @@ public class MainActivity extends AppCompatActivity {
 
                 //Log.i("taille liste toggle  :",toggleList.size()+ "");
                 intent.putExtra("dietsTrue", dietsTrue);
-                intent.putExtra("mealPerDay",mealPerDayText.getText().toString());
                 intent.putExtra("numberPeople", numberPeopleText.getText().toString());
 
                 startActivity(intent);
