@@ -99,7 +99,7 @@ public class Connector {
                 dbEntity.add(entityToAdd).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                 @Override
                 public void onSuccess(DocumentReference documentReference) {
-                    Toast.makeText(activity.getBaseContext(), type+" added with success", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(activity.getBaseContext(), type+" added with success", Toast.LENGTH_SHORT).show();
                 }
                 });
             }
@@ -153,16 +153,16 @@ public class Connector {
 
                     JSONTool.getInstance().writeJSON(activity, objectList, type);
                     JSONTool.getInstance().loadJSONFromAsset(activity, objectList, type);
-                    Toast.makeText(activity, objectList.size()+" "+type+" synchronized with data base !", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(activity, objectList.size()+" "+type+" synchronized with data base !", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    Toast.makeText(activity, "Fail to synchronize !", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(activity, "Fail to synchronize !", Toast.LENGTH_SHORT).show();
                 }
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                Toast.makeText(activity, "Fail to connect !", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(activity, "Fail to connect !", Toast.LENGTH_SHORT).show();
             }
         });
     }

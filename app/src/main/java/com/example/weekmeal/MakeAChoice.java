@@ -847,17 +847,15 @@ public class MakeAChoice extends AppCompatActivity {
         choice1Recette1  = (LinearLayout) findViewById(R.id.choice1Recette1);
         backchoice1Recette1 = (Button) findViewById(R.id.backchoice1Recette1);
 
-
-
         //pour chaque recette
         backchoice1Recette1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 int idRadio = radioGroup.getCheckedRadioButtonId();
                 Log.d("TEST1", String.valueOf(idRadio));
-                if(idRadio == 2131296389){
+                if(idRadio == radioButton1.getId()){
                     choice1Planning.setVisibility(View.VISIBLE);
                     choice1Recette1.setVisibility(View.GONE);
-                }else if(idRadio == 2131296392){
+                }else if(idRadio == radioButton2.getId()){
                     choice2Planning.setVisibility(View.VISIBLE);
                     choice1Recette1.setVisibility(View.GONE);
                 }else{
