@@ -1548,7 +1548,6 @@
                         android:id="@+id/imageRecette1"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/meal1"
                         />
 
                     <TextView
