@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -14,15 +13,16 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import com.example.weekmeal.controler.IngredientController;
 import com.example.weekmeal.controler.PlanningController;
 import com.example.weekmeal.controler.RecipeController;
 import com.example.weekmeal.entity.Diet;
 import com.example.weekmeal.entity.Recipe;
 import com.example.weekmeal.entity.Planning;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 
 public class MakeAChoice extends AppCompatActivity {
@@ -44,7 +44,6 @@ public class MakeAChoice extends AppCompatActivity {
     private Button back2;
     private Button back3;
 
-    private Button buttonRecette1Planning1;
 
     private LinearLayout choice1Recette1;
 
@@ -81,13 +80,7 @@ public class MakeAChoice extends AppCompatActivity {
         back2 = (Button) findViewById(R.id.back2);
         back3 = (Button) findViewById(R.id.back3);
 
-        buttonRecette1Planning1 = (Button) findViewById(R.id.buttonRecette1Planning1);
 
-
-        choice1Recette1  = (LinearLayout) findViewById(R.id.choice1Recette1);
-
-
-        backchoice1Recette1 = (Button) findViewById(R.id.backchoice1Recette1);
 
 
 
@@ -159,9 +152,11 @@ public class MakeAChoice extends AppCompatActivity {
         if (planning1 == null){
             planning1 = new Planning();
             planning1.setId("planning1");
+            int compteur = 1;
             for (int i = 0;  i <meals;i++){
+
                 try {
-                    int compteur = 1;
+
                     List<Recipe> recipePass =  new ArrayList<>();
                     if (i < mealPerDay%meals ){
                         recipePass.add(recettesUtilesFinales.get(i));
@@ -185,9 +180,11 @@ public class MakeAChoice extends AppCompatActivity {
                         recipePass.add(recettesUtilesFinales.get(i));
                         planning1.addMeal("DimancheR"+compteur,recipePass);
                     }
-                    if (compteur == mealPerDay){
+                    compteur ++;
+                    if (compteur == mealPerDay+1){
                         compteur =1;
                     }
+
                 }catch(Exception e){
                     break;
                 }
@@ -199,9 +196,9 @@ public class MakeAChoice extends AppCompatActivity {
             Collections.shuffle(recettesUtilesFinales);
             planning2 = new Planning();
             planning2.setId("planning2");
+            int compteur = 1;
             for (int i = 0;  i <meals;i++){
                 try {
-                    int compteur = 1;
                     List<Recipe> recipePass =  new ArrayList<>();
                     if (i < mealPerDay%meals ){
                         recipePass.add(recettesUtilesFinales.get(i));
@@ -225,6 +222,7 @@ public class MakeAChoice extends AppCompatActivity {
                         recipePass.add(recettesUtilesFinales.get(i));
                         planning2.addMeal("DimancheR"+compteur,recipePass);
                     }
+                    compteur ++;
                     if (compteur == mealPerDay){
                         compteur =1;
                     }
@@ -241,9 +239,10 @@ public class MakeAChoice extends AppCompatActivity {
             Collections.shuffle(recettesUtilesFinales);
             planning3 = new Planning();
             planning3.setId("planning3");
+            int compteur = 1;
             for (int i = 0;  i <meals;i++){
                 try {
-                    int compteur = 1;
+
                     List<Recipe> recipePass =  new ArrayList<>();
                     if (i < mealPerDay%meals ){
                         recipePass.add(recettesUtilesFinales.get(i));
@@ -267,6 +266,7 @@ public class MakeAChoice extends AppCompatActivity {
                         recipePass.add(recettesUtilesFinales.get(i));
                         planning3.addMeal("DimancheR" + compteur, recipePass);
                     }
+                    compteur ++;
                     if (compteur == mealPerDay){
                         compteur =1;
                     }
@@ -280,10 +280,10 @@ public class MakeAChoice extends AppCompatActivity {
 
         Log.i("planning1:  ",planning1.getMealMenu("LundiR1").get(0).getTitle()+ "");
         Log.i("planning1:  ",planning1.getMealMenu("DimancheR1").get(0).getTitle()+ "");
-        Log.i("planning2:  ",planning2.getMealMenu("LundiR1").get(0).getTitle()+ "");
-        Log.i("planning2:  ",planning2.getMealMenu("DimancheR1").get(0).getTitle()+ "");
-        Log.i("planning3:  ",planning3.getMealMenu("LundiR1").get(0).getTitle()+ "");
-        Log.i("planning3:  ",planning3.getMealMenu("DimancheR1").get(0).getTitle()+ "");
+        //Log.i("planning2:  ",planning2.getMealMenu("LundiR1").get(0).getTitle()+ "");
+        //Log.i("planning2:  ",planning2.getMealMenu("DimancheR1").get(0).getTitle()+ "");
+        //Log.i("planning3:  ",planning3.getMealMenu("LundiR1").get(0).getTitle()+ "");
+        //Log.i("planning3:  ",planning3.getMealMenu("DimancheR1").get(0).getTitle()+ "");
 
 
 
@@ -444,14 +444,114 @@ public class MakeAChoice extends AppCompatActivity {
 
 
         //Planning1
+        Button bp1r1 = (Button) findViewById(R.id.BP1R1);
+        bp1r1.setText(planning1.getMealMenu("LundiR1").get(0).getTitle());
+        Button bp1r2 = (Button) findViewById(R.id.BP1R2);
+        bp1r2.setText(planning1.getMealMenu("LundiR2").get(0).getTitle());
+        Button bp1r3 = (Button) findViewById(R.id.BP1R3);
+        bp1r3.setText(planning1.getMealMenu("MardiR1").get(0).getTitle());
+        Button bp1r4 = (Button) findViewById(R.id.BP1R4);
+        bp1r4.setText(planning1.getMealMenu("MardiR2").get(0).getTitle());
+        Button bp1r5 = (Button) findViewById(R.id.BP1R5);
+        bp1r5.setText(planning1.getMealMenu("MercrediR1").get(0).getTitle());
+        Button bp1r6 = (Button) findViewById(R.id.BP1R6);
+        bp1r6.setText(planning1.getMealMenu("MercrediR2").get(0).getTitle());
+        Button bp1r7 = (Button) findViewById(R.id.BP1R7);
+        bp1r7.setText(planning1.getMealMenu("JeudiR1").get(0).getTitle());
+        Button bp1r8 = (Button) findViewById(R.id.BP1R8);
+        bp1r8.setText(planning1.getMealMenu("JeudiR2").get(0).getTitle());
+        Button bp1r9 = (Button) findViewById(R.id.BP1R9);
+        bp1r9.setText(planning1.getMealMenu("VendrediR1").get(0).getTitle());
+        Button bp1r10 = (Button) findViewById(R.id.BP1R10);
+        bp1r10.setText(planning1.getMealMenu("VendrediR2").get(0).getTitle());
+        Button bp1r11 = (Button) findViewById(R.id.BP1R11);
+        bp1r11.setText(planning1.getMealMenu("SamediR1").get(0).getTitle());
+        Button bp1r12 = (Button) findViewById(R.id.BP1R12);
+        bp1r12.setText(planning1.getMealMenu("SamediR2").get(0).getTitle());
+        Button bp1r13 = (Button) findViewById(R.id.BP1R13);
+        bp1r13.setText(planning1.getMealMenu("DimancheR1").get(0).getTitle());
+        Button bp1r14 = (Button) findViewById(R.id.BP1R14);
+        bp1r14.setText(planning1.getMealMenu("DimancheR2").get(0).getTitle());
+        ArrayList<Button> buttonp1 =  new ArrayList<>();
+        buttonp1.add(bp1r1);
+        buttonp1.add(bp1r2);
+        buttonp1.add(bp1r3);
+        buttonp1.add(bp1r4);
+        buttonp1.add(bp1r5);
+        buttonp1.add(bp1r6);
+        buttonp1.add(bp1r7);
+        buttonp1.add(bp1r8);
+        buttonp1.add(bp1r9);
+        buttonp1.add(bp1r10);
+        buttonp1.add(bp1r11);
+        buttonp1.add(bp1r12);
+        buttonp1.add(bp1r13);
+        buttonp1.add(bp1r14);
 
-        //Recette1
-        buttonRecette1Planning1.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                choice1Planning.setVisibility(View.GONE);
-                choice1Recette1.setVisibility(View.VISIBLE);
+
+
+        choice1Recette1  = (LinearLayout) findViewById(R.id.choice1Recette1);
+        backchoice1Recette1 = (Button) findViewById(R.id.backchoice1Recette1);
+
+        for (int i = 0; i<14; i++){
+            String repas = null;
+            if (i == 0){
+                repas = "LundiR1";
+            }else if (i == 1){
+                repas = "LundiR2";
+            }else if (i == 2){
+                repas = "MardiR1";
+            }else if (i == 3){
+                repas = "MardiR2";
+            }else if (i == 4){
+                repas = "MercrediR1";
+            }else if (i == 5){
+                repas = "MercrediR2";
+            }else if (i == 6){
+                repas = "JeudiR1";
+            }else if (i == 7){
+                repas = "JeudiR1";
+            }else if (i == 8){
+                repas = "VendrediR1";
+            }else if (i == 9){
+                repas = "VendrediR1";
+            }else if (i == 10){
+                repas = "SamediR1";
+            }else if (i == 11){
+                repas = "SamediR2";
+            }else if (i == 12){
+                repas = "DimancheR1";
+            }else if (i == 13){
+                repas = "DimancheR2";
             }
-        });
+            String finalRepas = repas;
+            buttonp1.get(i).setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    choice1Planning.setVisibility(View.GONE);
+                    TextView plat = (TextView) findViewById(R.id.p1recette);
+                    plat.setText(finalPlanning1.getMealMenu(finalRepas).get(0).getTitle());
+                    TextView ingredients = (TextView) findViewById(R.id.p1ingrédients);
+
+                    String ingr ="";
+                    HashMap<String, Integer> in = finalPlanning1.getMealMenu(finalRepas).get(0).getIngredients();
+                    for(String keyi : in.keySet()){
+                       int idi = in.get(keyi);
+                       String quantity= keyi.split("--")[0];
+                       ingr = ingr +"\n"+ quantity +" " + IngredientController.getInstance().getIngredientByID(idi).getQuantity() + " "  + IngredientController.getInstance().getIngredientByID(idi).toString();
+
+                    }
+
+                    ingredients.setText( ingr);
+                    Log.i("planning1ing:  ",ingr+ "");
+                    TextView  recette = (TextView) findViewById(R.id.p1platrecette);
+                    recette.setText(finalPlanning1.getMealMenu(finalRepas).get(0).getDirection().toString());
+                    choice1Recette1.setVisibility(View.VISIBLE);
+                }
+            });
+        }
+        //Recette1
+
+
         backchoice1Recette1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 choice1Planning.setVisibility(View.VISIBLE);

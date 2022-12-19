@@ -27,6 +27,10 @@ public class GrosseryList {
         return ingredientList;
     }
 
+    public void setIngredientList(int i, Pair<String, Ingredient> p){
+        this.ingredientList.set(i, p);
+    }
+
     public Date getGrosseryDate() {
         return grosseryDate;
     }

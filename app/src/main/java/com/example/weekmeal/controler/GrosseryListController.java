@@ -89,6 +89,34 @@ public class GrosseryListController {
         return null;
     }
 
+    public void multiplyByNbPeople(String idGrosseryList, int nbPeople){
+        GrosseryList g = getGrosseryListById(idGrosseryList);
+        for (int i =0; i < g.getIngredientList().size(); i++){
+            String quantity = g.getIngredientList().get(i).first.split("--")[0];
+            String id = g.getIngredientList().get(i).first.split("--")[1];
+            String newQuantity = String.valueOf(StringtoDouble(quantity) * nbPeople);
+            g.setIngredientList(i, new Pair<>(newQuantity+"--"+id, g.getIngredientList().get(i).second));
+        }
+    }
+
+    private static double StringtoDouble(String dose){
+
+        if(dose!=null&&dose.length()>0){
+            if(dose.contains("/")){
+                String[] inter = dose.trim().split("/");
+                if(inter[0].contains(" ")){
+                    String[] inter2 = inter[0].split(" ");
+                    return (double)Math.round((Float.parseFloat(inter2[0])+Float.parseFloat(inter2[1])/Float.parseFloat(inter[1]))*100)/100;
+                } else {
+                    return (double)Math.floor((Float.parseFloat(inter[0])/Float.parseFloat(inter[1]))*100)/100;
+                }
+            } else {
+                return (double)Math.floor((Float.parseFloat(dose))*100)/100;
+            }
+        } else {
+            return 0;
+        }
+    }
     //Singleton :
     private static GrosseryListController instance;
 

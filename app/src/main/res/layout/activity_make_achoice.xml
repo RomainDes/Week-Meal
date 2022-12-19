@@ -272,11 +272,11 @@
                         android:layout_rowWeight="1"
                         >
                         <Button
-                            android:id="@+id/buttonRecette1Planning1"
+                            android:id="@+id/BP1R1"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image1"
+                            android:background="@drawable/meal2"
 
 
 
@@ -290,15 +290,13 @@
                         android:layout_columnWeight="1"
                         android:layout_rowWeight="1"
                         >
+
                         <Button
+                            android:id="@+id/BP1R2"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image3"
-
-
-
-                            >
+                            android:background="@drawable/meal3">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -324,33 +322,29 @@
                         android:layout_columnWeight="1"
                         android:layout_rowWeight="1"
                         >
+
                         <Button
+                            android:id="@+id/BP1R3"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image4"
-
-
-
-                            >
+                            android:background="@drawable/meal11">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
+
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_columnWeight="1"
                         android:layout_rowWeight="1"
-                        >
+                        android:layout_columnWeight="1">
+
                         <Button
+                            android:id="@+id/BP1R4"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image5"
-
-
-
-                            >
+                            android:background="@drawable/meal4">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -376,15 +370,13 @@
                         android:layout_columnWeight="1"
                         android:layout_rowWeight="1"
                         >
+
                         <Button
+                            android:id="@+id/BP1R5"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image6"
-
-
-
-                            >
+                            android:background="@drawable/meal5">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -394,15 +386,13 @@
                         android:layout_columnWeight="1"
                         android:layout_rowWeight="1"
                         >
+
                         <Button
+                            android:id="@+id/BP1R6"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image7"
-
-
-
-                            >
+                            android:background="@drawable/meal6">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -428,15 +418,13 @@
                         android:layout_columnWeight="1"
                         android:layout_rowWeight="1"
                         >
+
                         <Button
+                            android:id="@+id/BP1R7"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image8"
-
-
-
-                            >
+                            android:background="@drawable/meal7">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -446,15 +434,13 @@
                         android:layout_columnWeight="1"
                         android:layout_rowWeight="1"
                         >
+
                         <Button
+                            android:id="@+id/BP1R8"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image9"
-
-
-
-                            >
+                            android:background="@drawable/meal14">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -481,15 +467,13 @@
                         android:layout_columnWeight="1"
                         android:layout_rowWeight="1"
                         >
+
                         <Button
+                            android:id="@+id/BP1R9"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image10"
-
-
-
-                            >
+                            android:background="@drawable/meal8">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -499,15 +483,13 @@
                         android:layout_columnWeight="1"
                         android:layout_rowWeight="1"
                         >
+
                         <Button
+                            android:id="@+id/BP1R10"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image11"
-
-
-
-                            >
+                            android:background="@drawable/meal13">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -533,15 +515,13 @@
                         android:layout_columnWeight="1"
                         android:layout_rowWeight="1"
                         >
+
                         <Button
+                            android:id="@+id/BP1R11"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image12"
-
-
-
-                            >
+                            android:background="@drawable/meal9">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -551,15 +531,13 @@
                         android:layout_columnWeight="1"
                         android:layout_rowWeight="1"
                         >
+
                         <Button
+                            android:id="@+id/BP1R12"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image13"
-
-
-
-                            >
+                            android:background="@drawable/meal10">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -585,15 +563,13 @@
                         android:layout_columnWeight="1"
                         android:layout_rowWeight="1"
                         >
+
                         <Button
+                            android:id="@+id/BP1R13"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image14"
-
-
-
-                            >
+                            android:background="@drawable/meal12">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -603,15 +579,13 @@
                         android:layout_columnWeight="1"
                         android:layout_rowWeight="1"
                         >
+
                         <Button
+                            android:id="@+id/BP1R14"
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image15"
-
-
-
-                            >
+                            android:background="@drawable/meal1">
 
                         </Button>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -711,7 +685,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image1"
+                            android:background="@drawable/meal2"
 
 
 
@@ -729,7 +703,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image3"
+                            android:background="@drawable/meal3"
 
 
 
@@ -763,7 +737,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image4"
+                            android:background="@drawable/meal11"
 
 
 
@@ -781,7 +755,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image5"
+                            android:background="@drawable/meal4"
 
 
 
@@ -815,7 +789,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image6"
+                            android:background="@drawable/meal5"
 
 
 
@@ -833,7 +807,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image7"
+                            android:background="@drawable/meal6"
 
 
 
@@ -867,7 +841,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image8"
+                            android:background="@drawable/meal7"
 
 
 
@@ -885,7 +859,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image9"
+                            android:background="@drawable/meal14"
 
 
 
@@ -920,7 +894,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image10"
+                            android:background="@drawable/meal8"
 
 
 
@@ -938,7 +912,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image11"
+                            android:background="@drawable/meal13"
 
 
 
@@ -972,7 +946,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image12"
+                            android:background="@drawable/meal9"
 
 
 
@@ -990,7 +964,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image13"
+                            android:background="@drawable/meal10"
 
 
 
@@ -1024,7 +998,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image14"
+                            android:background="@drawable/meal12"
 
 
 
@@ -1042,7 +1016,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image15"
+                            android:background="@drawable/meal1"
 
 
 
@@ -1146,7 +1120,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image1"
+                            android:background="@drawable/meal2"
 
 
 
@@ -1164,7 +1138,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image3"
+                            android:background="@drawable/meal3"
 
 
 
@@ -1198,7 +1172,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image4"
+                            android:background="@drawable/meal11"
 
 
 
@@ -1216,7 +1190,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image5"
+                            android:background="@drawable/meal4"
 
 
 
@@ -1250,7 +1224,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image6"
+                            android:background="@drawable/meal5"
 
 
 
@@ -1268,7 +1242,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image7"
+                            android:background="@drawable/meal6"
 
 
 
@@ -1302,7 +1276,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image8"
+                            android:background="@drawable/meal7"
 
 
 
@@ -1320,7 +1294,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image9"
+                            android:background="@drawable/meal14"
 
 
 
@@ -1355,7 +1329,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image10"
+                            android:background="@drawable/meal8"
 
 
 
@@ -1373,7 +1347,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image11"
+                            android:background="@drawable/meal13"
 
 
 
@@ -1407,7 +1381,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image12"
+                            android:background="@drawable/meal9"
 
 
 
@@ -1425,7 +1399,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image13"
+                            android:background="@drawable/meal10"
 
 
 
@@ -1459,7 +1433,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image14"
+                            android:background="@drawable/meal12"
 
 
 
@@ -1477,7 +1451,7 @@
                             android:layout_width="150dp"
                             android:layout_height="0dp"
                             app:layout_constraintDimensionRatio="1:1"
-                            android:background="@drawable/image15"
+                            android:background="@drawable/meal1"
 
 
 
@@ -1513,6 +1487,7 @@
 
 
                 <TextView
+                    android:id="@+id/p1recette"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:fontFamily="@font/glacialindifference_bold"
@@ -1556,17 +1531,21 @@
                         android:id="@+id/imageRecette1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/image1"/>
+                        android:src="@drawable/meal1"/>
+
                     <TextView
-                        android:id="@+id/ingredientRecette1"
+                        android:id="@+id/p1ingrédients"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="..."/>
+                        android:text="..."
+                        android:textColor="@color/black" />
+
                     <TextView
-                        android:id="@+id/recetteRecette1"
+                        android:id="@+id/p1platrecette"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="..."/>
+                        android:text="..."
+                        android:textColor="@color/black" />
                 </LinearLayout>
 
 
